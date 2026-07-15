@@ -21,8 +21,8 @@ export default function Header() {
     { href: "https://vantoplayer.com/activation", text: "ACTIVATE DEVICE" },
     { href: "https://vantoplayer.com/#playlists", text: "MANAGE PLAYLISTS" },
     { href: "https://vantoplayer.com/#tutorials", text: "HOW TO TUTORIALS" },
-    { href: "https://vantoplayer.com/#support", text: "SUPPORT" },
-    { href: "https://vantoplayer.com/#legal", text: "LEGAL TERMS" },
+    { href: "https://vantoplayer.com/support", text: "SUPPORT" },
+    { href: "https://vantoplayer.com/legal", text: "LEGAL TERMS" },
     { href: "https://vantoplayer.com/contact", text: "CONTACT" },
   ];
 

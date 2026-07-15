@@ -49,15 +49,15 @@ export default function Footer() {
           {/* Support */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Support</h4>
-            <Link href="https://vantoplayer.com/#faq" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
+            <Link href="https://vantoplayer.com/support" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Support Center</Link>
             <Link href="https://vantoplayer.com/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Contact Us</Link>
+            <Link href="https://vantoplayer.com/support#faq" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
             <Link href="https://vantoplayer.com/#fraud" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Report Fraud</Link>
-            <Link href="https://vantoplayer.com/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Help Center</Link>
           </div>
 
           {/* Legal */}
           <div className="flex flex-col gap-5">
-            <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Legal</h4>
+            <Link href="https://vantoplayer.com/legal" className="text-white font-semibold text-lg tracking-tight mb-1 hover:text-[#3b82f6] transition-colors">Legal</Link>
             <Link href="https://vantoplayer.com/terms" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Terms of Service</Link>
             <Link href="https://vantoplayer.com/privacy" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Privacy Policy</Link>
             <Link href="https://vantoplayer.com/refund" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Refund Policy</Link>
