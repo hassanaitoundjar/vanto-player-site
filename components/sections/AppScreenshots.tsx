@@ -22,7 +22,7 @@ export default function AppScreenshots() {
           {/* Main Cinematic TV Screen - Takes up 2x2 */}
           <div className="col-span-1 md:col-span-2 md:row-span-2 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
-              src="/home-page.png" 
+              src="/images/home-page.png" 
               alt="Smart TV Interface" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
