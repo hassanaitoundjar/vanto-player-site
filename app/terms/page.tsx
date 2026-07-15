@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Vanto Player',
   description: 'Read the Terms of Service for using Vanto Player. Vanto Player is a media player and does not provide any media content or playlists.',
+  alternates: {
+    canonical: 'https://vantoplayer.com/terms',
+  },
 };
 
 export default function TermsOfServicePage() {

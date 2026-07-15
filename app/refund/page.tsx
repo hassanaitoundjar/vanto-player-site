@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Refund Policy | Vanto Player',
   description: 'Read the Refund Policy for Vanto Player. Understand the terms under which refunds are provided.',
+  alternates: {
+    canonical: 'https://vantoplayer.com/refund',
+  },
 };
 
 export default function RefundPolicyPage() {

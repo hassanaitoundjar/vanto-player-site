@@ -1,4 +1,5 @@
 import { X, Info } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -26,9 +27,9 @@ export default function Hero() {
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-10 py-4 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 text-sm md:text-base shadow-[0_0_30px_-10px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.7)] hover:-translate-y-1">
+            <Link href="https://vantoplayer.com/download" className="px-10 py-4 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 text-sm md:text-base shadow-[0_0_30px_-10px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.7)] hover:-translate-y-1 text-center inline-block">
               Download App
-            </button>
+            </Link>
             <button className="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm md:text-base backdrop-blur-md hover:-translate-y-1">
               Become a Reseller
             </button>

@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'DMCA Policy | Vanto Player',
   description: 'Digital Millennium Copyright Act (DMCA) policy for Vanto Player.',
+  alternates: {
+    canonical: 'https://vantoplayer.com/dmca',
+  },
 };
 
 export default function DMCAPolicyPage() {

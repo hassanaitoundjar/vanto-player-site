@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vantoplayer.com'),
   title: "Vanto Player - Premium IPTV Experience",
   description: "The ultimate IPTV player for all your devices.",
 };

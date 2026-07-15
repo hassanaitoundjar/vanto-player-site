@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Manage Your Playlist | Vanto Player',
   description: 'Login to activate your device and manage your IPTV playlists.',
+  alternates: {
+    canonical: 'https://vantoplayer.com/activation',
+  },
 };
 
 export default function ActivationPage() {

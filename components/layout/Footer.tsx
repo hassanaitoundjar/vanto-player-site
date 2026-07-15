@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="flex flex-col gap-6 lg:col-span-2 pr-0 lg:pr-12">
-            <Link href="/" className="flex items-center gap-3 w-max">
+            <Link href="https://vantoplayer.com/" className="flex items-center gap-3 w-max">
               <div className="w-12 h-12 rounded-xl shadow-lg flex items-center justify-center overflow-hidden">
                 <Image src="/logo.png" alt="Vanto Player Logo" width={48} height={48} className="object-cover w-full h-full" />
               </div>
@@ -40,28 +40,28 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Product</h4>
-            <Link href="/#features" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Features</Link>
-            <Link href="/download" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Download</Link>
-            <Link href="/#devices" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Compatible Devices</Link>
-            <Link href="/#parental" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Parental Control</Link>
+            <Link href="https://vantoplayer.com/#features" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Features</Link>
+            <Link href="https://vantoplayer.com/download" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Download</Link>
+            <Link href="https://vantoplayer.com/#devices" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Compatible Devices</Link>
+            <Link href="https://vantoplayer.com/#parental" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Parental Control</Link>
           </div>
 
           {/* Support */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Support</h4>
-            <Link href="/#faq" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
-            <Link href="/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Contact Us</Link>
-            <Link href="/#fraud" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Report Fraud</Link>
-            <Link href="/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Help Center</Link>
+            <Link href="https://vantoplayer.com/#faq" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
+            <Link href="https://vantoplayer.com/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Contact Us</Link>
+            <Link href="https://vantoplayer.com/#fraud" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Report Fraud</Link>
+            <Link href="https://vantoplayer.com/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Help Center</Link>
           </div>
 
           {/* Legal */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Legal</h4>
-            <Link href="/terms" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Terms of Service</Link>
-            <Link href="/privacy" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Privacy Policy</Link>
-            <Link href="/refund" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Refund Policy</Link>
-            <Link href="/dmca" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">DMCA Policy</Link>
+            <Link href="https://vantoplayer.com/terms" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Terms of Service</Link>
+            <Link href="https://vantoplayer.com/privacy" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Privacy Policy</Link>
+            <Link href="https://vantoplayer.com/refund" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Refund Policy</Link>
+            <Link href="https://vantoplayer.com/dmca" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">DMCA Policy</Link>
           </div>
 
         </div>

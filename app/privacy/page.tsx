@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Vanto Player',
   description: 'Read the Privacy Policy for Vanto Player to understand how we handle your data.',
+  alternates: {
+    canonical: 'https://vantoplayer.com/privacy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

@@ -17,13 +17,13 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "/download", text: "DOWNLOADS" },
-    { href: "/activation", text: "ACTIVATE DEVICE" },
-    { href: "/#playlists", text: "MANAGE PLAYLISTS" },
-    { href: "/#tutorials", text: "HOW TO TUTORIALS" },
-    { href: "/#support", text: "SUPPORT" },
-    { href: "/#legal", text: "LEGAL TERMS" },
-    { href: "/contact", text: "CONTACT" },
+    { href: "https://vantoplayer.com/download", text: "DOWNLOADS" },
+    { href: "https://vantoplayer.com/activation", text: "ACTIVATE DEVICE" },
+    { href: "https://vantoplayer.com/#playlists", text: "MANAGE PLAYLISTS" },
+    { href: "https://vantoplayer.com/#tutorials", text: "HOW TO TUTORIALS" },
+    { href: "https://vantoplayer.com/#support", text: "SUPPORT" },
+    { href: "https://vantoplayer.com/#legal", text: "LEGAL TERMS" },
+    { href: "https://vantoplayer.com/contact", text: "CONTACT" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Header() {
       <div className="container mx-auto px-6 md:px-8 xl:px-12 relative z-50">
         <div className="flex h-24 items-center justify-between w-full">
           {/* Logo Section */}
-          <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="https://vantoplayer.com/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="relative h-[60px] w-[60px] rounded-xl overflow-hidden shadow-lg shadow-black/50">
               <Image 
                 src="/logo.png" 
@@ -49,11 +49,19 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-            {navLinks.map((link) => (
-              <NavLink key={link.text} href={link.href} text={link.text} />
-            ))}
-          </nav>
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+            <nav className="flex items-center gap-6 xl:gap-8">
+              {navLinks.filter(link => link.text !== "DOWNLOADS").map((link) => (
+                <NavLink key={link.text} href={link.href} text={link.text} />
+              ))}
+            </nav>
+            <Link 
+              href="https://vantoplayer.com/download"
+              className="bg-[#3b82f6] text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-blue-500/20 hover:bg-blue-600 hover:shadow-blue-500/40 transition-all active:scale-95 text-sm tracking-wider uppercase"
+            >
+              Get App
+            </Link>
+          </div>
 
           {/* Mobile Menu Button (Hamburger/Close) */}
           <button 
@@ -107,7 +115,7 @@ export default function Header() {
             ></div>
             
             <Link 
-              href="#downloads"
+              href="https://vantoplayer.com/download"
               onClick={() => setIsMobileMenuOpen(false)}
               className="bg-[#3b82f6] text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-600 transition-all active:scale-95 tracking-wider"
               style={{ 
