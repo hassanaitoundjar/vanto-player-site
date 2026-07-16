@@ -1,4 +1,4 @@
-import { getPostBySlug, getPostSlugs } from '@/lib/blog';
+import { getPostBySlug, getPostSlugs, getAllPosts } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -47,6 +47,9 @@ export default async function BlogPostPage({ params }: Props) {
   } catch (e) {
     notFound();
   }
+
+  const allPosts = getAllPosts();
+  const relatedPosts = allPosts.filter(p => p.slug !== slug).slice(0, 3);
 
   return (
     <div className="flex flex-col items-center justify-start flex-1 w-full bg-white">
@@ -136,15 +139,21 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </div>
             
-            {/* Related Articles Placeholder */}
+            {/* Related Articles */}
             <div className="mt-20">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-100 pb-4">Related Articles</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((i) => (
-                  <Link href="/blog" key={i} className="group flex flex-col gap-3">
+                {relatedPosts.map((relatedPost) => (
+                  <Link href={`/blog/${relatedPost.slug}`} key={relatedPost.slug} className="group flex flex-col gap-3">
                     <span className="text-[#3b82f6] text-xs font-bold uppercase tracking-wider">Guide</span>
-                    <h4 className="font-bold text-gray-900 group-hover:text-[#3b82f6] transition-colors line-clamp-2">How to Setup Vanto Player on Your Smart TV</h4>
-                    <span className="text-gray-500 text-sm">June 10, 2026</span>
+                    <h4 className="font-bold text-gray-900 group-hover:text-[#3b82f6] transition-colors line-clamp-2">{relatedPost.title}</h4>
+                    <span className="text-gray-500 text-sm">
+                      {new Date(relatedPost.date).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                      })}
+                    </span>
                   </Link>
                 ))}
               </div>

@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
               Vanto Player respects your privacy. As a standard media player, we collect minimal data required to provide our services:
             </p>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Device Information:</strong> We collect your device's MAC address and IP address solely for the purpose of device activation and to prevent abuse of our licensing system.</li>
+              <li><strong>Authentication Data:</strong> We securely process the M3U URLs or Xtream Codes API credentials you provide strictly to load your media library. We do not store these credentials on our servers.</li>
               <li><strong>Usage Data:</strong> We may collect anonymous crash reports and analytical data to improve the Application's stability and performance.</li>
             </ul>
           </div>
@@ -46,12 +46,12 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How We Use Your Information</h2>
             <p>
-              The minimal information we collect (like MAC addresses) is used exclusively for:
+              The minimal information we process is used exclusively for:
             </p>
             <ul className="list-disc list-inside space-y-2 mt-4">
-              <li>Managing your app activation status.</li>
-              <li>Providing customer support when you reach out to us with your device ID.</li>
-              <li>Ensuring the security and integrity of our licensing system.</li>
+              <li>Facilitating your connection to your M3U or Xtream API provider.</li>
+              <li>Providing customer support when you reach out to us with technical issues.</li>
+              <li>Improving the stability and performance of the application.</li>
             </ul>
           </div>
 
