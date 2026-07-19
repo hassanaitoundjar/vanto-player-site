@@ -34,7 +34,7 @@ export default function Header() {
       <div className="container mx-auto px-6 md:px-8 xl:px-12 relative z-50">
         <div className="flex h-24 items-center justify-between w-full">
           {/* Logo Section */}
-          <Link href="https://vantoplayer.com/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="https://vantoplayer.com/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)} aria-label="Vanto Player Home">
             <div className="relative h-10 w-10 rounded-xl overflow-hidden shadow-lg shadow-black/50">
               <Image 
                 src="/logo.png" 
@@ -68,6 +68,8 @@ export default function Header() {
           <button 
             className="lg:hidden text-white/80 hover:text-white p-2 focus:outline-none z-50 relative w-10 h-10 flex flex-col justify-center items-center gap-1.5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             <span className={`block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
             <span className={`block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-0 translate-x-3' : ''}`}></span>

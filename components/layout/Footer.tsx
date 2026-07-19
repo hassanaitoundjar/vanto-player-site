@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="flex flex-col gap-6 lg:col-span-2 pr-0 lg:pr-12">
-            <Link href="https://vantoplayer.com/" className="flex items-center gap-3 w-max">
+            <Link href="https://vantoplayer.com/" className="flex items-center gap-3 w-max" aria-label="Vanto Player Home">
               <div className="w-12 h-12 rounded-xl shadow-lg flex items-center justify-center overflow-hidden">
                 <Image src="/logo.png" alt="Vanto Player Logo" width={48} height={48} className="object-cover w-full h-full" />
               </div>
