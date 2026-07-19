@@ -8,8 +8,8 @@ export default function ParentalControl() {
           {/* Text Content */}
           <div className="flex-1 text-left">
             <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.15] mb-6">
-              <span className="text-[#3b82f6]">Guardians of Content:</span><br />
-              <span className="text-gray-900">Unveiling Vanto Player&apos;s<br />Parental Power</span>
+              <span className="text-[#3b82f6]">Vanto Player</span><br />
+              <span className="text-gray-900">Parental Controls</span>
             </h2>
             <p className="text-gray-700 text-[15px] leading-relaxed max-w-lg font-medium">
               Enhance peace of mind with Vanto Player&apos;s Parental Controls. Customize family
@@ -24,7 +24,7 @@ export default function ParentalControl() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 w-full max-w-[600px] aspect-[4/3] lg:aspect-[16/10]">
               <Image 
                 src="/screenshots/profile-screen.png" 
-                alt="Parental Controls" 
+                alt="Vanto Player Parental Controls Interface" 
                 fill
                 className="object-cover"
               />

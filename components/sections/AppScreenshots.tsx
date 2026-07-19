@@ -7,7 +7,7 @@ export default function AppScreenshots() {
       <div className="container mx-auto px-6 md:px-8 xl:px-12">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-            Inside Vanto Player
+            Vanto Player App Screenshots
           </h2>
           <div className="w-16 h-[3px] bg-[#3b82f6] mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-[15px] leading-relaxed">
@@ -23,7 +23,7 @@ export default function AppScreenshots() {
           <div className="col-span-1 md:col-span-2 md:row-span-2 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
               src="/images/home-page.png" 
-              alt="Smart TV Interface" 
+              alt="Vanto Player Smart TV Interface Screenshot" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
@@ -45,7 +45,7 @@ export default function AppScreenshots() {
           <div className="col-span-1 md:col-span-2 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
               src="/screenshots/live-screen.png" 
-              alt="Web Player Interface" 
+              alt="Vanto Player Web Interface Screenshot" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
@@ -65,7 +65,7 @@ export default function AppScreenshots() {
           <div className="col-span-1 md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
               src="/screenshots/movies-screen.png" 
-              alt="Mobile Interface" 
+              alt="Vanto Player Mobile Interface Screenshot" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />

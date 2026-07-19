@@ -14,7 +14,7 @@ export default function FeatureVideo() {
         {/* Left Content */}
         <div className="max-w-xl">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
-            <span className="text-[#3b82f6]">Vanto Player:</span> Stream Smarter, Binge Better with Our Media Player Service
+            <span className="text-[#3b82f6]">Vanto Player:</span> Media Player Service Features
           </h2>
           
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -53,7 +53,7 @@ export default function FeatureVideo() {
               {/* YouTube-like Header */}
               <div className="absolute top-0 left-0 w-full p-4 flex items-start gap-3 z-10">
                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-white shadow-md p-1 overflow-hidden shrink-0">
-                    <Image src="/logo.png" alt="Vanto" width={40} height={40} className="w-full h-full object-cover rounded-full" />
+                    <Image src="/logo.png" alt="Vanto Player Logo" width={40} height={40} className="w-full h-full object-cover rounded-full" />
                  </div>
                  <div className="text-white drop-shadow-md">
                    <h3 className="font-bold text-base sm:text-lg leading-tight line-clamp-1">Vanto Player - How to Use and Activate the App</h3>

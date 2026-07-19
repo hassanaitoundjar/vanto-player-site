@@ -9,12 +9,11 @@ import FAQSection from '@/components/sections/FAQ';
 import FraudAwareness from '@/components/sections/FraudAwareness';
 
 import { buildMetadata } from '@/lib/siteConfig';
-import { SoftwareApplicationLd, VideoObjectLd } from '@/components/seo/JsonLd';
+import { SoftwareApplicationLd, VideoObjectLd, FAQPageLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
-  title: 'Vanto Player - Premium IPTV & M3U Media Player for All Devices',
-  description:
-    'Vanto Player is the ultimate cross-platform IPTV and M3U media player. Stream live TV, VOD, and series in stunning 4K on Android, Smart TV, Windows, Mac, and Web — zero buffering, beautiful interface.',
+  title: 'Vanto Player: Premium IPTV & Media Player',
+  description: 'Vanto Player is a premium IPTV & media player supporting M3U/JSON playlists on Smart TV, Android, iOS, and Web. 4K playback, zero buffering. Download free.',
   path: '/',
 });
 
@@ -23,6 +22,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-start flex-1 w-full">
       <SoftwareApplicationLd />
       <VideoObjectLd />
+      <FAQPageLd />
       <Hero />
       <FeatureVideo />
       <CompatibleDevices />
