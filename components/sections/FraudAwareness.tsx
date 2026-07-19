@@ -37,7 +37,7 @@ export default function FraudAwareness() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-[15px] leading-relaxed">
-                  To ensure that you are using a legitimate website, please ensure that the URL begins with <strong className="text-green-600 font-semibold break-all">&quot;https://www.vantoplayer.com/&quot;</strong> and we don&apos;t sell any IPTV subscriptions or Channel Packages. Also, you have verified the website&apos;s authenticity through other means, such as checking for a secure SSL certificate and contacting our customer support for confirmation.
+                  To ensure that you are using a legitimate website, please ensure that the URL begins with <strong className="text-green-600 font-semibold break-all">&quot;https://vantoplayer.com/&quot;</strong> and we don&apos;t sell any IPTV subscriptions or Channel Packages. Also, you have verified the website&apos;s authenticity through other means, such as checking for a secure SSL certificate and contacting our customer support for confirmation.
                 </p>
               </div>
 
@@ -49,7 +49,7 @@ export default function FraudAwareness() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-[15px] leading-relaxed">
-                  We take the protection of our customers and brand very seriously and are taking steps to shut down these fraudulent websites. If you find any other website, you suspect is fake. Please <a href="#" className="text-[#3b82f6] font-semibold hover:underline">report it</a> to us immediately.
+                  We take the protection of our customers and brand very seriously and are taking steps to shut down these fraudulent websites. If you find any other website, you suspect is fake. Please <a href="/contact" className="text-[#3b82f6] font-semibold hover:underline">report it</a> to us immediately.
                 </p>
               </div>
 

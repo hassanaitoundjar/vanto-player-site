@@ -3,9 +3,9 @@ export default function CompatibleDevices() {
     <section className="w-full bg-[#050505] py-24 md:py-32 border-y border-white/5 overflow-hidden">
       
       <div className="container mx-auto px-6 md:px-8 xl:px-12 flex flex-col items-center">
-        <h1 className="text-white/60 text-sm md:text-base font-medium mb-16 text-center">
+        <h2 className="text-white/60 text-sm md:text-base font-medium mb-16 text-center">
           Watch Vanto Player with these compatible streaming devices
-        </h1>
+        </h2>
 
         {/* Marquee Wrapper with Container width */}
         <div className="w-full overflow-hidden relative flex">

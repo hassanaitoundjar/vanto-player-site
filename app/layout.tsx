@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { siteConfig } from "@/lib/siteConfig";
+import { OrganizationLd } from "@/components/seo/JsonLd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vantoplayer.com'),
-  title: "Vanto Player - Premium IPTV Experience",
-  description: "The ultimate IPTV player for all your devices.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} - Premium IPTV & M3U Media Player`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -28,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
       <body className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans selection:bg-[#3b82f6] selection:text-white">
+        <OrganizationLd />
         <Header />
         <main className="flex-1 flex flex-col">{children}</main>
         <Footer />

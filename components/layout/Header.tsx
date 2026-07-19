@@ -19,8 +19,8 @@ export default function Header() {
   const navLinks = [
     { href: "https://vantoplayer.com/download", text: "DOWNLOADS" },
     { href: "https://vantoplayer.com/activation", text: "ACTIVATE DEVICE" },
-    { href: "https://vantoplayer.com/#playlists", text: "MANAGE PLAYLISTS" },
-    { href: "https://vantoplayer.com/#tutorials", text: "HOW TO TUTORIALS" },
+    { href: "https://vantoplayer.com/activation", text: "MANAGE PLAYLISTS" },
+    { href: "https://vantoplayer.com/blog", text: "HOW TO TUTORIALS" },
     { href: "https://vantoplayer.com/support", text: "SUPPORT" },
     { href: "https://vantoplayer.com/legal", text: "LEGAL TERMS" },
     { href: "https://vantoplayer.com/contact", text: "CONTACT" },

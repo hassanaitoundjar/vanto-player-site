@@ -1,6 +1,6 @@
 'use client';
 
-import { Copy, Apple, Monitor, Smartphone, Play, Globe, Tv, LayoutGrid } from 'lucide-react';
+import { Copy, Apple, Monitor, Smartphone, Play, Globe, Tv, LayoutGrid, Terminal } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -69,32 +69,32 @@ export default function DownloadSection() {
               <div className="flex flex-col gap-2 mb-6">
                 {/* URL Copy Box */}
                 <div className="flex items-center justify-between bg-[#f4ebff] p-2.5 rounded-sm">
-                  <span className="text-[10px] text-gray-700 font-medium truncate mr-2">https://vantoplayer.com/vanto-5.0.apk</span>
-                  <button onClick={() => handleCopy('https://vantoplayer.com/vanto-5.0.apk', true)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy URL">
+                  <span className="text-[10px] text-gray-700 font-medium truncate mr-2">https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk</span>
+                  <button onClick={() => handleCopy('https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk', true)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy URL">
                     <Copy className={`w-3.5 h-3.5 ${copiedUrl ? 'text-green-600' : 'text-[#a855f7]'}`} />
                   </button>
                 </div>
 
                 {/* Code Copy Box */}
                 <div className="flex items-center justify-between bg-[#f4ebff] p-2.5 rounded-sm">
-                  <span className="text-[10px] text-gray-700 font-medium">Code for Downloader App <strong className="ml-1 text-black font-bold">6468112</strong></span>
-                  <button onClick={() => handleCopy('6468112', false)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy Code">
+                  <span className="text-[10px] text-gray-700 font-medium">Code for Downloader App <strong className="ml-1 text-black font-bold">7392829</strong></span>
+                  <button onClick={() => handleCopy('7392829', false)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy Code">
                     <Copy className={`w-3.5 h-3.5 ${copiedCode ? 'text-green-600' : 'text-[#a855f7]'}`} />
                   </button>
                 </div>
               </div>
 
               <div className="mt-auto flex items-center gap-3">
-                <Link href="https://vantoplayer.com/vanto-5.0.apk" target="_blank" className="flex-1 bg-[#4b8df8] text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-blue-600 transition-colors shadow-sm text-center flex items-center justify-center">
+                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk" target="_blank" className="flex-1 bg-[#4b8df8] text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-blue-600 transition-colors shadow-sm text-center flex items-center justify-center">
                   Download APK
                 </Link>
-                <Link href="https://play.google.com/store" target="_blank" className="flex-1 bg-black text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-gray-800 transition-colors shadow-sm flex items-center justify-center gap-1.5">
-                  <Play className="w-3.5 h-3.5 fill-white text-white" /> 
+                <div className="flex-1 bg-gray-100 text-gray-400 font-bold text-[12px] py-2.5 rounded-sm flex items-center justify-center gap-1.5 cursor-not-allowed border border-gray-200">
+                  <Play className="w-3.5 h-3.5 fill-gray-400 text-gray-400" /> 
                   <div className="flex flex-col items-start leading-none text-left">
-                     <span className="text-[6px] font-normal uppercase text-gray-300">Get it on</span>
+                     <span className="text-[6px] font-normal uppercase text-gray-400">Coming Soon</span>
                      <span className="text-[11px] mt-0.5">Google Play</span>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -129,17 +129,16 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">IOS App</h3>
-              <p className="text-[12px] text-gray-800 font-bold">Download Latest Version (v1.1.3)</p>
-              <p className="text-[11px] text-gray-500 font-medium mb-6">(Smarters Player Lite)</p>
+              <p className="text-[12px] text-gray-500 font-medium mb-6">(Vanto Player Pro)</p>
 
               <div className="mt-auto flex justify-center pt-8">
-                <Link href="https://apps.apple.com/" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-2.5 w-[180px]">
-                  <Apple className="w-7 h-7 fill-white" /> 
+                <div className="bg-gray-100 text-gray-400 font-semibold px-4 py-2.5 rounded-lg flex items-center justify-center gap-2.5 w-[180px] cursor-not-allowed border border-gray-200">
+                  <Apple className="w-7 h-7 fill-gray-400" /> 
                   <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Download on the</span>
+                    <span className="text-[8px] leading-none text-gray-400">Coming Soon</span>
                     <span className="text-[15px] leading-none font-semibold mt-0.5">App Store</span>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -170,18 +169,18 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">MacOS App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.1.2)</p>
+              <p className="text-[12px] text-gray-500 font-medium mb-6">Coming Soon</p>
 
               <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://apps.apple.com/" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-2.5 w-[180px]">
-                  <div className="w-6 h-6 bg-[#007aff] rounded-sm flex items-center justify-center">
+                <div className="bg-gray-100 text-gray-400 font-semibold px-4 py-2.5 rounded-lg flex items-center justify-center gap-2.5 w-[180px] cursor-not-allowed border border-gray-200">
+                  <div className="w-6 h-6 bg-gray-300 rounded-sm flex items-center justify-center">
                     <span className="text-white font-bold text-[8px]">Mac</span>
                   </div>
                   <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
+                    <span className="text-[8px] leading-none text-gray-400">Coming Soon</span>
                     <span className="text-[15px] leading-none font-semibold mt-0.5">MAC OS</span>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -237,8 +236,45 @@ export default function DownloadSection() {
               </div>
             </div>
           </div>
+          {/* Card 5: Linux App */}
+          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+            {/* Image Composition */}
+            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
+              <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
+                <Image src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" alt="Linux Screen" fill className="object-cover opacity-80" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
+                  <Play className="w-3 h-3 text-black fill-black ml-0.5" />
+                </div>
+              </div>
+              <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
+              
+              {/* Badge */}
+              <div className="absolute bottom-4 left-6 bg-[#dd4814] rounded-xl p-2 shadow-lg z-10 border-2 border-white">
+                <Terminal className="w-6 h-6 text-white" />
+              </div>
+              <div className="absolute top-0 right-4 bg-white rounded-lg p-1.5 shadow-lg z-10 border border-gray-200 flex items-center justify-center">
+                <Monitor className="w-6 h-6 text-gray-500" />
+              </div>
+            </div>
 
-          {/* Card 5: Web Browser Player */}
+            {/* Content */}
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Linux App</h3>
+              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version</p>
+
+              <div className="mt-auto flex justify-center pt-10">
+                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/linux/vanto_player" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
+                  <Terminal className="w-6 h-6 text-white" />
+                  <div className="flex flex-col items-start text-left">
+                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
+                    <span className="text-[15px] leading-none font-semibold mt-0.5">Linux</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6: Web Browser Player */}
           <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
@@ -316,7 +352,7 @@ export default function DownloadSection() {
               <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.0.4)</p>
 
               <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://vantoplayer.com/download/tv" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
+                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
                   <Monitor className="w-6 h-6 text-white" />
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-300">Available for</span>

@@ -3,24 +3,20 @@ import DownloadSection from '@/components/sections/Download';
 import CompatibleDevices from '@/components/sections/CompatibleDevices';
 import FAQSection from '@/components/sections/FAQ';
 import { Tv, Monitor, Search, Download, PlayCircle, Globe, CheckCircle2, Hash } from 'lucide-react';
+import { buildMetadata } from '@/lib/siteConfig';
+import { SoftwareApplicationLd } from '@/components/seo/JsonLd';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Download Vanto Player App | APK, Smart TV, Web & Windows',
-  description: 'Download the latest version of Vanto Player for Android, Smart TV, Windows, or Mac. Install via Downloader code or direct APK download for a seamless media experience.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/download',
-  },
-  openGraph: {
-    title: 'Download Vanto Player - The Ultimate Media Experience',
-    description: 'Get Vanto Player for Android, Smart TV, or PC. Download the APK or use our Web Player today.',
-    url: 'https://vantoplayer.com/download',
-    type: 'website',
-  }
-};
+  description:
+    'Download the latest version of Vanto Player for Android, Smart TV, Windows, Mac, or Linux. Install via Downloader code or direct APK download for a seamless IPTV media experience.',
+  path: '/download',
+});
 
 export default function DownloadPage() {
   return (
     <div className="flex flex-col items-center justify-start flex-1 w-full bg-[#f8f9fa]">
+      <SoftwareApplicationLd />
       {/* SEO Optimized Hero Section */}
       <section className="w-full bg-white pt-32 pb-12 border-b border-gray-100">
         <div className="container mx-auto px-6 md:px-8 xl:px-12 text-center max-w-4xl relative z-10">
@@ -83,7 +79,7 @@ export default function DownloadPage() {
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
                       <Hash className="w-4 h-4 text-gray-400" /> Enter Quick Code
                     </h4>
-                    <p className="text-gray-600 font-medium">Open Downloader and type our quick code: <span className="inline-block bg-blue-50 text-blue-700 font-bold px-3 py-1 rounded-md border border-blue-100 ml-1">6468112</span></p>
+                    <p className="text-gray-600 font-medium">Open Downloader and type our quick code: <span className="inline-block bg-blue-50 text-blue-700 font-bold px-3 py-1 rounded-md border border-blue-100 ml-1">7392829</span></p>
                   </div>
                 </div>
 

@@ -1,22 +1,21 @@
 import Link from 'next/link';
 import { LifeBuoy, BookOpen, MessageSquare, PlayCircle, ArrowRight } from 'lucide-react';
 import FAQSection from '@/components/sections/FAQ';
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
-  title: 'Support Center | Vanto Player',
-  description: 'Get help with Vanto Player. Browse tutorials, read FAQs, or contact our support team.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/support'
-  }
-};
+export const metadata = buildMetadata({
+  title: 'Support Center',
+  description:
+    'Get help with Vanto Player. Browse step-by-step installation tutorials, read FAQs about playlists and troubleshooting, or contact our support team directly.',
+  path: '/support',
+});
 
 const supportResources = [
   {
     title: 'How-to Tutorials',
     description: 'Step-by-step guides on how to install and set up Vanto Player on various devices.',
     icon: PlayCircle,
-    href: '/#tutorials',
+    href: '/blog',
     color: 'text-blue-500',
     bg: 'bg-blue-50',
     border: 'border-blue-100'
@@ -25,7 +24,7 @@ const supportResources = [
     title: 'Manage Playlists',
     description: 'Learn how to add, edit, and organize your M3U playlists in the Vanto Player dashboard.',
     icon: BookOpen,
-    href: '/#playlists',
+    href: '/activation',
     color: 'text-purple-500',
     bg: 'bg-purple-50',
     border: 'border-purple-100'

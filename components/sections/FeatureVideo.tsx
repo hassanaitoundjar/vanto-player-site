@@ -32,7 +32,7 @@ export default function FeatureVideo() {
           {/* YouTube-like Header */}
           <div className="absolute top-0 left-0 w-full p-4 flex items-start gap-3 z-10">
              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-white shadow-md p-1 overflow-hidden shrink-0">
-                <Image src="/vanto_logo_true_square.png" alt="Vanto" width={40} height={40} className="w-full h-full object-cover rounded-full" />
+                <Image src="/logo.png" alt="Vanto" width={40} height={40} className="w-full h-full object-cover rounded-full" />
              </div>
              <div className="text-white drop-shadow-md">
                <h3 className="font-bold text-base sm:text-lg leading-tight line-clamp-1">Vanto Player - How to Use and Activate the App</h3>
