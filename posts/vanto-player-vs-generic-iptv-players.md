@@ -20,6 +20,8 @@ Most generic players look like they were designed a decade ago. They feature clu
 **Vanto Player:**
 Vanto Player is built with a modern, cinematic user interface. The design is sleek, dark, and highly responsive. More importantly, it features deep categorization capabilities. It intelligently parses your playlist data to create distinct, easily navigable sections for Live TV, Movies, and Series, complete with poster art and metadata (when provided by your playlist source).
 
+![Vanto Player sleek cinematic UI showing live TV categories](/screenshots/live-screen.png)
+
 ## 2. 4K Playback and Codec Support
 
 **Generic Players:**
@@ -34,7 +36,9 @@ Under the hood, Vanto Player is engineered for modern streaming demands. It util
 If you use a generic player on your TV and want to watch on your phone, you usually have to download a completely different app and manually type in your long M3U URLs all over again.
 
 **Vanto Player:**
-Vanto Player is truly cross-platform, available on Android, iOS, Windows, macOS, and major Smart TVs. By managing your playlists through the centralized [web portal](/), your content is instantly synced across all your linked devices. Add a playlist once, and watch it anywhere.
+Vanto Player is truly cross-platform, available on Android, iOS, Windows, macOS, and major Smart TVs. By managing your playlists through the centralized [web portal](/), your content is instantly synced across all your linked devices. Add a playlist once, and watch it anywhere. Additionally, it offers a powerful multiscreen feature allowing you to watch multiple events simultaneously on the same screen.
+
+![Vanto Player Multiscreen Feature](/screenshots/multiscreen.png)
 
 ## Feature Comparison Table
 
@@ -59,6 +63,8 @@ If you value a clean interface, ad-free navigation, and reliable 4K playback, up
 
 **Does Vanto Player support Catch-up TV?**
 Yes, if your playlist provider includes Catch-up (archive) functionality, Vanto Player has built-in support to let you seamlessly navigate past broadcasts in the EPG.
+
+![Vanto Player Catch-up TV Interface](/screenshots/catch-up-screen.png)
 
 **Can I try Vanto Player before committing?**
 Absolutely. You can [download Vanto Player](/download) and take advantage of the free trial period to test the interface and playback engine with your own playlists.

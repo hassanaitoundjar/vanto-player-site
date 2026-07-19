@@ -32,6 +32,8 @@ Before you can lock any content, you need to establish your master security PIN.
 5. Confirm the PIN by entering it a second time.
 6. Make sure to toggle the main **Enable Parental Controls** switch to the ON position.
 
+![Vanto Player Settings and Profile Screen](/screenshots/profile-screen.png)
+
 *Tip: Do not use simple codes like 0000 or 1234, as these are easily bypassed.*
 
 ## Step 2: Locking Categories and Channels

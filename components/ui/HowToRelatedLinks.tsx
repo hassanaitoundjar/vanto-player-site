@@ -25,6 +25,10 @@ export function HowToRelatedLinks() {
           <span className="text-[#3b82f6] font-medium block mb-1">Fix Playlist Issues</span>
           <span className="text-gray-300 text-sm">Troubleshooting buffering and loading errors</span>
         </Link>
+        <Link href="/how-to/use-vanto-player" className="block p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+          <span className="text-[#3b82f6] font-medium block mb-1">App Feature Guide</span>
+          <span className="text-gray-300 text-sm">Learn how to use Live TV, VOD, and more</span>
+        </Link>
         <Link href="/download" className="block p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
           <span className="text-[#3b82f6] font-medium block mb-1">Download Vanto Player</span>
           <span className="text-gray-300 text-sm">Get the app for all your devices</span>

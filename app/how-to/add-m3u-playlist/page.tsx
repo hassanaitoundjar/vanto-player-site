@@ -2,6 +2,7 @@ import { buildMetadata } from '@/lib/siteConfig';
 import { BreadcrumbNav } from '@/components/ui/BreadcrumbNav';
 import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
 import { BreadcrumbListLd } from '@/components/seo/JsonLd';
+import Image from 'next/image';
 
 export const metadata = buildMetadata({
   title: 'How to Add an M3U Playlist to Vanto Player',
@@ -28,9 +29,12 @@ export default function AddPlaylist() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Step-by-Step Instructions</h2>
-        <ol className="list-decimal pl-6 space-y-4">
+        <ol className="list-decimal pl-6 space-y-8">
           <li>
             <strong>Get Your Device Details:</strong> Open Vanto Player on your TV or mobile device. On the main screen, you will see a <strong>MAC Address</strong> (e.g., b0:c4:5c:xx:xx) and a <strong>Device Key</strong>.
+            <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
+               <Image src="/screenshots/welcome-screen.png" alt="Vanto Player Welcome Screen with MAC Address and Device Key" width={1200} height={675} className="w-full object-cover" />
+            </div>
           </li>
           <li>
             <strong>Visit the Activation Portal:</strong> On your computer or smartphone, go to our <a href="/activation" className="text-blue-400 hover:underline">Manage Playlists</a> page.
@@ -43,13 +47,19 @@ export default function AddPlaylist() {
           </li>
           <li>
             <strong>Enter Playlist Details:</strong>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
+            <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
               <li><strong>Playlist Name:</strong> Give it a recognizable name (e.g., "My Live TV").</li>
               <li><strong>Playlist URL:</strong> Paste the M3U link provided by your IPTV service.</li>
             </ul>
+            <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
+               <Image src="/screenshots/logi-m3u-screen.png" alt="Adding an M3U playlist via Vanto Player login screen" width={1200} height={675} className="w-full object-cover" />
+            </div>
           </li>
           <li>
             <strong>Save and Sync:</strong> Click Save. Then, go back to your TV, restart the Vanto Player app, and your channels will begin loading automatically!
+            <div className="mt-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
+               <Image src="/screenshots/home-screen.png" alt="Vanto Player Home Screen after syncing playlist" width={1200} height={675} className="w-full object-cover" />
+            </div>
           </li>
         </ol>
       </div>

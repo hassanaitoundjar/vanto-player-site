@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/how-to/install-on-firestick-android-tv',
     '/how-to/add-m3u-playlist',
     '/how-to/fix-playlist-not-loading',
+    '/how-to/use-vanto-player',
   ].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),

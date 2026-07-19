@@ -38,6 +38,8 @@ To activate your device and manage your playlists, you need to use a web browser
 
 Once successfully authenticated, you will be taken to your device dashboard. From here, you can add your M3U playlist URLs or Xtream Codes logins. 
 
+![Vanto Player User Profile Selection Screen](/screenshots/userlist-screen.png)
+
 ## Understanding Activation Fees and Trials
 
 Vanto Player typically offers a generous **Free Trial** period for all new devices. This allows you to thoroughly test the 4K playback engine, user interface, and overall stability using your own playlists before committing to the app.

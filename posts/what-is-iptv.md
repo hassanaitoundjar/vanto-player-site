@@ -26,6 +26,7 @@ There are three main types of IPTV services:
 
 - **Live Television**: Broadcasting live TV shows or sports events as they happen, similar to traditional TV but over the internet.
 - **Video on Demand (VOD)**: You select a movie or TV show from a catalog, and it starts playing immediately (like Netflix or Hulu).
+![VOD Movies Catalog in Vanto Player](/screenshots/movies-screen.png)
 - **Time-Shifted Media**: This allows you to watch broadcasts that you missed. "Catch-up TV" lets you view shows that aired hours or days ago.
 
 ## Why Choose IPTV?

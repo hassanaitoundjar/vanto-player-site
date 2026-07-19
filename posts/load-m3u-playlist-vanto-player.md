@@ -25,6 +25,8 @@ The easiest way to manage your playlists is by using a web browser on your compu
 ### 1. Access the Vanto Player Web Portal
 Open a web browser on your computer or phone and navigate to the official Vanto Player website. Go directly to the playlist management or [Activation page](/activation).
 
+![Vanto Player Welcome Screen with MAC Address and Device Key](/screenshots/welcome-screen.png)
+
 ### 2. Enter Your Device Credentials
 In the portal, you will see fields asking for your device information. 
 * Enter the **MAC Address** exactly as it appears on your TV screen.
@@ -34,6 +36,8 @@ In the portal, you will see fields asking for your device information.
 ### 3. Add Your Playlist
 Once logged into your device's profile on the web portal, look for the option to **Add Playlist**.
 
+![Adding an M3U playlist via Vanto Player login screen](/screenshots/logi-m3u-screen.png)
+
 You generally have two options:
 * **M3U URL (Recommended):** Paste the dynamic M3U link provided by your service. This is the best method because your channel list and VODs will update automatically whenever your provider makes changes.
 * **Local File Upload:** If you have an `.m3u` file saved to your computer, you can upload it directly. Note that local files will not automatically update over time.
@@ -42,6 +46,8 @@ Give your playlist a recognizable name (e.g., "Sports Playlist" or "Main TV") so
 
 ### 4. Save and Sync
 Click **Save** or **Add Playlist**. 
+
+![Vanto Player Home Screen after syncing playlist](/screenshots/home-screen.png)
 
 Now, look back at your TV or mobile device running Vanto Player. The app should detect the new playlist automatically. If it doesn't load immediately, look for a **Reload** or **Refresh** button on the Vanto Player home screen.
 

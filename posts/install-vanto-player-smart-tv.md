@@ -51,6 +51,8 @@ Once you have successfully downloaded and launched the application on your Smart
 
 Head over to the [Vanto Player Activation portal](/activation) to link your device and upload your content.
 
+![Vanto Player Series Details Screen](/screenshots/series-details.png)
+
 ## Frequently Asked Questions (FAQ)
 
 **Does Vanto Player support 4K streaming on Smart TVs?**
