@@ -24,6 +24,12 @@ export function buildMetadata(opts: {
   return {
     title: opts.title,
     description: opts.description,
+    authors: [{ name: 'Vanto Player' }],
+    publisher: 'Vanto Player',
+    robots: {
+      index: true,
+      follow: true,
+    },
     alternates: {
       canonical: url,
     },

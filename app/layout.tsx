@@ -25,6 +25,12 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  authors: [{ name: 'Vanto Player' }],
+  publisher: 'Vanto Player',
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
