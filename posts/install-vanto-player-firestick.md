@@ -6,6 +6,8 @@ author: "Vanto Player Team"
 ---
 # How to Install Vanto Player on Firestick and Fire TV: Complete 2026 Guide
 
+![Install Vanto Player on Firestick](/screenshots/install-vanto-player-firestick-main.jpg.webp)
+
 If you are looking for a reliable, high-performance media player to handle your M3U or JSON playlists, Vanto Player is an exceptional choice. Designed to handle 4K streaming seamlessly, it offers a clean, ad-free interface that puts your content front and center. 
 
 Because Amazon's Appstore frequently updates its catalog, sideloading is often the fastest and most reliable way to get custom media players onto your device. In this guide, we will walk you through exactly how to install Vanto Player on your Amazon Firestick or Fire TV using the Downloader app.
@@ -19,11 +21,11 @@ Before you can install Vanto Player on Firestick, you need to grant your device 
 **1.** Turn on your Firestick and navigate to the **Settings** gear icon. Click on **My Fire TV**.
 *(Note: If you don't see Developer Options, click on **About**, then click on your device name 7 times rapidly to reveal the hidden developer menu).*
 
-![Firestick Developer Options Settings](/screenshots/firestick-developer-options.png)
+![Firestick Developer Options Settings](/screenshots/vanto-player-on-firestick-1.jpg.webp)
 
 **2.** Select **Developer Options** and turn ON **Apps from Unknown Sources**. Click **Turn On** when the warning prompt appears.
 
-![Enable Apps from Unknown Sources](/screenshots/firestick-unknown-sources.png)
+![Enable Apps from Unknown Sources](/screenshots/vanto-player-on-firestick-2.jpg.webp)
 
 ## Step 2: Install the Downloader App
 
@@ -31,11 +33,11 @@ To download the Vanto Player APK directly to your Fire TV, we will use an applic
 
 **1.** Return to the Firestick **Home Screen**. Go to the **Find** menu and select **Search**. Type in **"Downloader"**.
 
-![Search for Downloader on Firestick](/screenshots/firestick-search-downloader.png)
+![Search for Downloader on Firestick](/screenshots/vanto-player-on-firestick-3.jpg.webp)
 
 **2.** Select the Downloader app (it has an orange background) and click **Download** or **Get**. Once installed, click **Open**.
 
-![Download the Downloader App](/screenshots/firestick-get-downloader.png)
+![Download the Downloader App](/screenshots/vanto-player-on-firestick-4.jpg.webp)
 
 ## Step 3: Download and Install Vanto Player
 
@@ -43,23 +45,23 @@ Now that Downloader is ready, we can use it to fetch the Vanto Player installati
 
 **1.** Open the Downloader app. Allow Downloader any permissions it requests to access files on your device. Click into the URL bar.
 
-![Downloader App URL Bar](/screenshots/downloader-url-bar.png)
+![Downloader App URL Bar](/screenshots/vanto-player-on-firestick-5.jpg.webp)
 
-**2.** Enter the official Vanto Player AFTVnews Downloader code (e.g., `123456`) or the official URL: `https://vantoplayer.com/download` and click **Go**.
+**2.** Enter the official Vanto Player AFTVnews Downloader code: `7392829` or the official URL: `https://vantoplayer.com/download` and click **Go**.
 
-![Enter AFTVnews Code in Downloader](/screenshots/downloader-enter-code.png)
+![Enter AFTVnews Code in Downloader](/screenshots/vanto-player-on-firestick-6.jpg.webp)
 
 **3.** The Downloader app will connect to the server and begin downloading the Vanto Player APK file.
 
-![Downloading Vanto Player APK](/screenshots/downloader-downloading.png)
+![Downloading Vanto Player APK](/screenshots/vanto-player-on-firestick-7.jpg.webp)
 
 **4.** Once the download finishes, Fire TV will automatically prompt you to install the application. Click **Install**. After the installation is complete, click **Done** (do not click Open just yet).
 
-![Install Vanto Player on Fire TV](/screenshots/firestick-install-app.png)
+![Install Vanto Player on Fire TV](/screenshots/vanto-player-on-firestick-8.jpg.webp)
 
 **5.** Downloader will ask if you want to delete the installation file. Click **Delete**, and then **Delete** again to free up storage space on your Firestick.
 
-![Delete APK File in Downloader](/screenshots/downloader-delete-apk.png)
+![Delete APK File in Downloader](/screenshots/vanto-player-on-firestick-9.jpg.webp)
 
 ## Step 4: Login to Vanto Player
 
