@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex h-24 items-center justify-between w-full">
           {/* Logo Section */}
           <Link href="https://vantoplayer.com/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="relative h-[60px] w-[60px] rounded-xl overflow-hidden shadow-lg shadow-black/50">
+            <div className="relative h-10 w-10 rounded-xl overflow-hidden shadow-lg shadow-black/50">
               <Image 
                 src="/logo.png" 
                 alt="Vanto Player Logo" 
@@ -43,7 +43,7 @@ export default function Header() {
                 className="object-cover"
               />
             </div>
-            <span className="text-3xl font-extrabold tracking-wider text-white hidden sm:block">
+            <span className="text-2xl font-extrabold tracking-wider text-white hidden sm:block">
               VANTO <span className="text-[#3b82f6]">PLAYER</span>
             </span>
           </Link>
