@@ -41,7 +41,7 @@ Now that Downloader is ready, we can use it to fetch the Vanto Player installati
 1. Open the Downloader app.
 2. Allow Downloader any permissions it requests to access files on your device.
 3. In the Home tab of Downloader, click into the URL bar.
-4. Enter the official Vanto Player download URL: `https://vantoplayer.com/download` (or the direct APK code if provided on the official site) and click **Go**.
+4. Enter the official Vanto Player AFTVnews Downloader code (e.g., `123456`) or the official URL: `https://vantoplayer.com/download` and click **Go**.
 5. The Downloader app will connect to the server and begin downloading the Vanto Player APK file.
 6. Once the download finishes, Fire TV will automatically prompt you to install the application. Click **Install**.
 7. After the installation is complete, click **Done** (do not click Open just yet).
@@ -52,6 +52,12 @@ Now that Downloader is ready, we can use it to fetch the Vanto Player installati
 Now that Vanto Player is installed, you can launch it from your Apps menu. 
 
 When you first open the application, you will be presented with a Device ID and an Activation Key. To link your device, you will need to complete the activation process. For detailed instructions on this step, visit our full [Vanto Player Activation Guide](/activation).
+
+![Vanto Player Welcome Screen with MAC Address](/screenshots/welcome-screen.png)
+
+Once activated, your M3U playlist will load and you will be greeted by the beautiful Vanto Player interface, ready to stream live TV and VODs.
+
+![Vanto Player Live TV Screen](/screenshots/live-screen.png)
 
 ## Frequently Asked Questions (FAQ)
 
