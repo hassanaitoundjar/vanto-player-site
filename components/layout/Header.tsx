@@ -40,6 +40,7 @@ export default function Header() {
                 src="/logo.png" 
                 alt="Vanto Player Logo" 
                 fill
+                priority
                 className="object-cover"
               />
             </div>

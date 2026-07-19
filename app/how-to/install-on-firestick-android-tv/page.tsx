@@ -1,5 +1,7 @@
 import { buildMetadata } from '@/lib/siteConfig';
-import { Download, Search, Tv, Hash } from 'lucide-react';
+import { BreadcrumbNav } from '@/components/ui/BreadcrumbNav';
+import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
+import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Install Vanto Player on Firestick & Android TV',
@@ -8,8 +10,16 @@ export const metadata = buildMetadata({
 });
 
 export default function InstallFirestick() {
+  const breadcrumbs = [
+    { name: 'Home', item: 'https://vantoplayer.com/' },
+    { name: 'Support', item: 'https://vantoplayer.com/support' },
+    { name: 'Install on Firestick & Android TV', item: 'https://vantoplayer.com/how-to/install-on-firestick-android-tv' },
+  ];
+
   return (
     <div className="container mx-auto px-6 py-24 max-w-4xl">
+      <BreadcrumbListLd items={breadcrumbs} />
+      <BreadcrumbNav title="Install on Firestick & Android TV" />
       <h1 className="text-4xl font-bold mb-8">How to Install Vanto Player on Firestick & Android TV</h1>
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
@@ -41,6 +51,7 @@ export default function InstallFirestick() {
           <li>Click <strong>Done</strong> or <strong>Open</strong> to launch Vanto Player!</li>
         </ol>
       </div>
+      <HowToRelatedLinks />
     </div>
   );
 }

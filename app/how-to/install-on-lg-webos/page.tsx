@@ -1,4 +1,7 @@
 import { buildMetadata } from '@/lib/siteConfig';
+import { BreadcrumbNav } from '@/components/ui/BreadcrumbNav';
+import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
+import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Install Vanto Player on LG webOS',
@@ -7,8 +10,16 @@ export const metadata = buildMetadata({
 });
 
 export default function InstallLGWebOS() {
+  const breadcrumbs = [
+    { name: 'Home', item: 'https://vantoplayer.com/' },
+    { name: 'Support', item: 'https://vantoplayer.com/support' },
+    { name: 'Install on LG webOS', item: 'https://vantoplayer.com/how-to/install-on-lg-webos' },
+  ];
+
   return (
     <div className="container mx-auto px-6 py-24 max-w-4xl">
+      <BreadcrumbListLd items={breadcrumbs} />
+      <BreadcrumbNav title="Install on LG webOS" />
       <h1 className="text-4xl font-bold mb-8">How to Install Vanto Player on LG webOS</h1>
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
@@ -30,6 +41,7 @@ export default function InstallLGWebOS() {
           When you first launch the app, you'll see your device's MAC address and Device Key. Make a note of these details. You can now proceed to our <a href="/activation" className="text-blue-400 hover:underline">activation page</a> to link your M3U playlist to your TV.
         </p>
       </div>
+      <HowToRelatedLinks />
     </div>
   );
 }

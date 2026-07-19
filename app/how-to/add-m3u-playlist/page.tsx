@@ -1,4 +1,7 @@
 import { buildMetadata } from '@/lib/siteConfig';
+import { BreadcrumbNav } from '@/components/ui/BreadcrumbNav';
+import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
+import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Add an M3U Playlist to Vanto Player',
@@ -7,8 +10,16 @@ export const metadata = buildMetadata({
 });
 
 export default function AddPlaylist() {
+  const breadcrumbs = [
+    { name: 'Home', item: 'https://vantoplayer.com/' },
+    { name: 'Support', item: 'https://vantoplayer.com/support' },
+    { name: 'Add M3U Playlist', item: 'https://vantoplayer.com/how-to/add-m3u-playlist' },
+  ];
+
   return (
     <div className="container mx-auto px-6 py-24 max-w-4xl">
+      <BreadcrumbListLd items={breadcrumbs} />
+      <BreadcrumbNav title="Add M3U Playlist" />
       <h1 className="text-4xl font-bold mb-8">How to Add an M3U Playlist to Vanto Player</h1>
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
@@ -42,6 +53,7 @@ export default function AddPlaylist() {
           </li>
         </ol>
       </div>
+      <HowToRelatedLinks />
     </div>
   );
 }

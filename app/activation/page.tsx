@@ -72,11 +72,12 @@ export default function ActivationPage() {
                 
                 {/* Mac Address */}
                 <div className="space-y-2">
-                  <label className="text-gray-300 text-xs font-semibold ml-1 uppercase tracking-wider">
+                  <label htmlFor="macAddress" className="text-gray-300 text-xs font-semibold ml-1 uppercase tracking-wider">
                     Mac Address <span className="text-blue-500">*</span>
                   </label>
                   <div className="relative">
                     <input 
+                      id="macAddress"
                       type="text" 
                       placeholder="b0:c4:5c:68:a0:57"
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all placeholder:text-gray-600 font-mono text-sm"
@@ -87,11 +88,12 @@ export default function ActivationPage() {
 
                 {/* Device Key */}
                 <div className="space-y-2">
-                  <label className="text-gray-300 text-xs font-semibold ml-1 uppercase tracking-wider flex justify-between">
+                  <label htmlFor="deviceKey" className="text-gray-300 text-xs font-semibold ml-1 uppercase tracking-wider flex justify-between">
                     <span>Device Key <span className="text-blue-500">*</span></span>
                   </label>
                   <div className="relative">
                     <input 
+                      id="deviceKey"
                       type="password" 
                       placeholder="••••••"
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all placeholder:text-gray-600 text-lg tracking-[0.3em]"
@@ -109,6 +111,7 @@ export default function ActivationPage() {
                         <div className="absolute inset-0 bg-blue-500/20 mix-blend-overlay"></div>
                       </div>
                       <input 
+                        aria-label="Captcha Code"
                         type="text" 
                         placeholder="Enter code"
                         className="bg-transparent border-none text-white outline-none w-24 text-sm font-mono placeholder:text-gray-600"

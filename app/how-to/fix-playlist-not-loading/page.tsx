@@ -1,4 +1,7 @@
 import { buildMetadata } from '@/lib/siteConfig';
+import { BreadcrumbNav } from '@/components/ui/BreadcrumbNav';
+import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
+import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Fix Playlist Not Loading or Buffering',
@@ -7,8 +10,16 @@ export const metadata = buildMetadata({
 });
 
 export default function FixPlaylist() {
+  const breadcrumbs = [
+    { name: 'Home', item: 'https://vantoplayer.com/' },
+    { name: 'Support', item: 'https://vantoplayer.com/support' },
+    { name: 'Fix Playlist Not Loading', item: 'https://vantoplayer.com/how-to/fix-playlist-not-loading' },
+  ];
+
   return (
     <div className="container mx-auto px-6 py-24 max-w-4xl">
+      <BreadcrumbListLd items={breadcrumbs} />
+      <BreadcrumbNav title="Fix Playlist Not Loading" />
       <h1 className="text-4xl font-bold mb-8">How to Fix Playlist Not Loading or Buffering</h1>
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
@@ -43,6 +54,7 @@ export default function FixPlaylist() {
           Sometimes the app cache becomes full or corrupted. Go to your TV's settings, find the Vanto Player app, and select <strong>"Clear Cache"</strong> (do not clear data, or you will need to re-login). Restart the app afterward.
         </p>
       </div>
+      <HowToRelatedLinks />
     </div>
   );
 }
