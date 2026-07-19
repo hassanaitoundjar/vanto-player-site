@@ -31,32 +31,27 @@ export default function AddPlaylist() {
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Step-by-Step Instructions</h2>
         <ol className="list-decimal pl-6 space-y-8">
           <li>
-            <strong>Get Your Device Details:</strong> Open Vanto Player on your TV or mobile device. On the main screen, you will see a <strong>MAC Address</strong> (e.g., b0:c4:5c:xx:xx) and a <strong>Device Key</strong>.
+            <strong>Launch Vanto Player:</strong> Open Vanto Player on your TV or mobile device. On the main screen, you will be prompted to add a new user or playlist.
             <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
-               <Image src="/screenshots/welcome-screen.png" alt="Vanto Player Welcome Screen with MAC Address and Device Key" width={1200} height={675} className="w-full object-cover" />
+               <Image src="/screenshots/welcome-screen.png" alt="Vanto Player Login Options" width={1200} height={675} className="w-full object-cover" />
             </div>
           </li>
           <li>
-            <strong>Visit the Activation Portal:</strong> On your computer or smartphone, go to our <a href="/activation" className="text-blue-400 hover:underline">Manage Playlists</a> page.
-          </li>
-          <li>
-            <strong>Login:</strong> Enter the MAC Address and Device Key exactly as they appear on your TV screen. Complete the security captcha and click Login.
-          </li>
-          <li>
-            <strong>Add Playlist:</strong> Once logged in, click "Add Playlist".
+            <strong>Select Login Method:</strong> Choose either <strong>Xtream Codes API</strong> (recommended for best performance) or <strong>Load Your Playlist (M3U URL)</strong>.
           </li>
           <li>
             <strong>Enter Playlist Details:</strong>
             <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
-              <li><strong>Playlist Name:</strong> Give it a recognizable name (e.g., "My Live TV").</li>
-              <li><strong>Playlist URL:</strong> Paste the M3U link provided by your IPTV service.</li>
+              <li><strong>Any Name:</strong> Give it a recognizable name (e.g., "My Live TV").</li>
+              <li><strong>Xtream Codes:</strong> Enter your Username, Password, and the Server URL provided by your IPTV service.</li>
+              <li><strong>M3U URL:</strong> If you selected M3U, paste the full `.m3u` link provided by your IPTV service.</li>
             </ul>
             <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/logi-m3u-screen.png" alt="Adding an M3U playlist via Vanto Player login screen" width={1200} height={675} className="w-full object-cover" />
             </div>
           </li>
           <li>
-            <strong>Save and Sync:</strong> Click Save. Then, go back to your TV, restart the Vanto Player app, and your channels will begin loading automatically!
+            <strong>Add User:</strong> Click the "Add User" or "Login" button. Vanto Player will instantly download and categorize your channels, movies, and series!
             <div className="mt-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/home-screen.png" alt="Vanto Player Home Screen after syncing playlist" width={1200} height={675} className="w-full object-cover" />
             </div>

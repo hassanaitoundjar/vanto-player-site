@@ -45,11 +45,13 @@ LG televisions utilize the webOS platform. Like Samsung, LG has its own dedicate
 5. Select the Vanto Player app and click **Install**.
 6. Launch the app to retrieve your device credentials.
 
-## Next Steps: Linking Your Device
+## Next Steps: Add Your Playlist
 
-Once you have successfully downloaded and launched the application on your Smart TV, the screen will display a Device ID or MAC Address. You will need these details to sync your playlists from your computer or smartphone to your TV. 
+Once you have successfully downloaded and launched the application on your Smart TV, the screen will prompt you to add a user. 
 
-Head over to the [Vanto Player Activation portal](/activation) to link your device and upload your content.
+You can log in directly on your TV using either an **Xtream Codes API** or an **M3U URL**. Simply enter the details provided by your IPTV service and click Login.
+
+![Vanto Player Login Screen](/screenshots/login-xtream-api-screen.png)
 
 ![Vanto Player Series Details Screen](/screenshots/series-details.png)
 
