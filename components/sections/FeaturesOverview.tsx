@@ -62,7 +62,7 @@ export default function FeaturesOverview() {
             {/* Back Image (Landscape) */}
             <div className="absolute right-0 top-10 w-[85%] h-[80%] rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/20">
               <Image 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop" 
+                src="/screenshots/live-player.png" 
                 alt="High Quality Streaming" 
                 fill
                 className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
@@ -89,7 +89,7 @@ export default function FeaturesOverview() {
             {/* Front Image (Tilted Portrait) */}
             <div className="absolute left-0 bottom-4 md:bottom-10 w-[50%] h-[75%] rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] bg-black -rotate-[15deg] border-[6px] border-white transition-transform hover:-rotate-6 duration-300 z-10">
               <Image 
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop" 
+                src="/screenshots/multiscreen.png" 
                 alt="Mobile Streaming" 
                 fill
                 className="object-cover opacity-90"

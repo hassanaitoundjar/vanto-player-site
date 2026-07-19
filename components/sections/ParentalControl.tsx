@@ -23,7 +23,7 @@ export default function ParentalControl() {
           <div className="flex-1 w-full flex justify-center md:justify-end">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 w-full max-w-[600px] aspect-[4/3] lg:aspect-[16/10]">
               <Image 
-                src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=800&auto=format&fit=crop" 
+                src="/screenshots/profile-screen.png" 
                 alt="Parental Controls" 
                 fill
                 className="object-cover"

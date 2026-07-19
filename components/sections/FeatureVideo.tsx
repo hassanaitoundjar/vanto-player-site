@@ -45,7 +45,7 @@ export default function FeatureVideo() {
           ) : (
             <>
               {/* Placeholder background image representing the app/TV interface */}
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1593789382576-54f489cea5dd?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"></div>
+              <div className="absolute inset-0 bg-[url('/screenshots/home-screen.png')] bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"></div>
               
               {/* Overlay to darken slightly for text visibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/70"></div>

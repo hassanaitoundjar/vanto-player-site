@@ -41,7 +41,7 @@ export default function DownloadSection() {
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               {/* Back Image */}
               <div className="absolute right-2 top-0 w-[75%] h-28 rounded-lg overflow-hidden shadow-md">
-                <Image src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill priority className="object-cover" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill priority className="object-cover" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
                    <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                    <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
@@ -49,7 +49,7 @@ export default function DownloadSection() {
               </div>
               {/* Front Image */}
               <div className="absolute left-2 bottom-2 w-[70%] h-28 rounded-lg overflow-hidden shadow-xl border-4 border-white bg-black">
-                <Image src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Android Mobile Interface - VOD Library" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/movies-screen.png" alt="Vanto Player Android Mobile Interface - VOD Library" fill className="object-cover opacity-90" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
                    <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                    <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
@@ -105,14 +105,14 @@ export default function DownloadSection() {
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               {/* Back Phone */}
               <div className="absolute top-2 w-[85%] h-28 rounded-2xl overflow-hidden shadow-lg border-[4px] border-black bg-black">
-                <Image src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=600&auto=format&fit=crop" alt="Vanto Player iOS Interface - Channel Guide" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player iOS Interface - Channel Guide" fill className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" />
                 </div>
               </div>
               {/* Front Phone */}
               <div className="absolute bottom-2 right-4 w-[50%] h-20 rounded-xl overflow-hidden shadow-xl border-[3px] border-black bg-black">
-                <Image src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=600&auto=format&fit=crop" alt="Vanto Player iOS Interface - Movie Details" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/movies-details.png" alt="Vanto Player iOS Interface - Movie Details" fill className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" />
                 </div>
@@ -148,7 +148,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=600&auto=format&fit=crop" alt="Vanto Player MacOS Desktop Application Interface" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player MacOS Desktop Application Interface" fill className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" />
                 </div>
@@ -190,7 +190,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Windows Desktop Interface - Home Screen" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player Windows Desktop Interface - Home Screen" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" />
                 </div>
@@ -198,7 +198,7 @@ export default function DownloadSection() {
               <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
               
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Windows Desktop Interface - Settings" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/userlist-screen.png" alt="Vanto Player Windows Desktop Interface - Settings" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" />
                 </div>
@@ -241,7 +241,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Linux Desktop Application Interface" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/live-player.png" alt="Vanto Player Linux Desktop Application Interface" fill className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" />
                 </div>
@@ -284,12 +284,12 @@ export default function DownloadSection() {
                   <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
                   <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
                 </div>
-                <Image src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Vanto Web Player Interface - Series Library" fill className="object-cover" />
+                <Image src="/screenshots/series-screen.png" alt="Vanto Web Player Interface - Series Library" fill className="object-cover" />
               </div>
               <div className="absolute bottom-6 w-20 h-1.5 bg-gray-200 rounded-t-lg"></div>
               
               <div className="absolute left-0 top-16 w-[40%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?q=80&w=600&auto=format&fit=crop" alt="Vanto Web Player Interface - Live Player" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/live-player.png" alt="Vanto Web Player Interface - Live Player" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" />
                 </div>
@@ -323,7 +323,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-sm overflow-hidden shadow-lg border-[3px] border-black bg-black">
-                <Image src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Android TV Interface - Home Dashboard" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player Android TV Interface - Home Dashboard" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" />
                 </div>
@@ -331,7 +331,7 @@ export default function DownloadSection() {
               <div className="absolute bottom-6 w-12 h-1 bg-black rounded-sm"></div>
               
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-sm overflow-hidden shadow-xl border-[2px] border-black bg-black">
-                <Image src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=600&auto=format&fit=crop" alt="Vanto Player Android TV Interface - EPG Guide" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android TV Interface - EPG Guide" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" />
                 </div>

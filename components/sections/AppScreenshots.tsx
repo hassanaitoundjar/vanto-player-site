@@ -44,7 +44,7 @@ export default function AppScreenshots() {
           {/* Top Right - Tablet / Web */}
           <div className="col-span-1 md:col-span-2 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
-              src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800&auto=format&fit=crop" 
+              src="/screenshots/live-screen.png" 
               alt="Web Player Interface" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
@@ -64,7 +64,7 @@ export default function AppScreenshots() {
           {/* Bottom Middle - Mobile Portrait */}
           <div className="col-span-1 md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
             <Image 
-              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" 
+              src="/screenshots/movies-screen.png" 
               alt="Mobile Interface" 
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
