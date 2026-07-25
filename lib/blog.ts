@@ -10,6 +10,7 @@ export interface BlogPost {
   content: string;
   coverImage?: string;
   author?: string;
+  readingTime?: number;
 }
 
 const postsDirectory = path.join(process.cwd(), 'posts');
@@ -27,6 +28,9 @@ export function getPostBySlug(slug: string): BlogPost {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
+  const wordCount = content.split(/\s+/).length;
+  const readingTime = Math.ceil(wordCount / 200);
+
   return {
     slug: realSlug,
     title: data.title || 'Untitled',
@@ -34,6 +38,7 @@ export function getPostBySlug(slug: string): BlogPost {
     excerpt: data.excerpt || '',
     coverImage: data.coverImage || null,
     author: data.author || 'Vanto Player Team',
+    readingTime,
     content,
   };
 }

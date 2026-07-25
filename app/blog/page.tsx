@@ -96,7 +96,7 @@ export default function BlogIndexPage() {
                       <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                       GUIDES
                     </span>
-                    <span className="text-gray-400">5 MIN READ</span>
+                    <span className="text-gray-400">{post.readingTime} MIN READ</span>
                   </div>
                   
                   <h4 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#3b82f6] transition-colors leading-snug line-clamp-3">
