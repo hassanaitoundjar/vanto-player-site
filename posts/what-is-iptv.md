@@ -1,7 +1,7 @@
 ---
 title: "What is IPTV and How Does it Work? A Complete Guide"
 category: "Guides"
-excerpt: "Learn everything you need to know about IPTV (Internet Protocol Television), how it differs from traditional cable, and why it's the future of home entertainment."
+excerpt: "Learn everything you need to know about IPTV (Internet Protocol Television), how it differs from traditional cable, and why it's the future of home..."
 date: "2026-07-15"
 author: "Vanto Team"
 ---

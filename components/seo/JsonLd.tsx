@@ -47,7 +47,7 @@ export function VideoObjectLd() {
     name: 'Vanto Player Features',
     description: 'A quick overview of the Vanto Player media player features.',
     thumbnailUrl: 'https://vantoplayer.com/logo.png',
-    uploadDate: '2023-01-01T08:00:00+08:00',
+    uploadDate: '2026-07-25T08:00:00+00:00',
     contentUrl: 'https://vantoplayer.com',
   };
 

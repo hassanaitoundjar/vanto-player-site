@@ -2,7 +2,7 @@ import { getPostBySlug, getPostSlugs, getAllPosts } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Calendar, User, ArrowLeft } from 'lucide-react';
+import { Calendar, User } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/siteConfig';
