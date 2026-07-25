@@ -66,7 +66,7 @@ export default function Header() {
 
           {/* Mobile Menu Button (Hamburger/Close) */}
           <button 
-            className="lg:hidden text-white/80 hover:text-white p-2 focus:outline-none z-50 relative w-10 h-10 flex flex-col justify-center items-center gap-1.5"
+            className="lg:hidden text-white/80 hover:text-white p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md z-50 relative w-10 h-10 flex flex-col justify-center items-center gap-1.5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
             aria-expanded={isMobileMenuOpen}

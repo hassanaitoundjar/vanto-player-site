@@ -64,7 +64,7 @@ export default function FAQSection() {
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none"
+                  className="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:bg-white/5 rounded-xl transition-all"
                 >
                   <span className="font-bold text-[15px] text-gray-900 pr-8">
                     {faq.question}
