@@ -23,7 +23,7 @@ export default function DownloadSection() {
   return (
     <section id="downloads" className="w-full bg-[#f8f9fa] py-24 border-t border-gray-100 scroll-mt-24">
       <div className="container mx-auto px-6 md:px-8 xl:px-12">
-        
+
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 tracking-wide uppercase mb-4">
@@ -34,7 +34,7 @@ export default function DownloadSection() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-          
+
           {/* Card 1: Android */}
           <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
             {/* Image Composition */}
@@ -43,16 +43,16 @@ export default function DownloadSection() {
               <div className="absolute right-2 top-0 w-[75%] h-28 rounded-lg overflow-hidden shadow-md">
                 <Image src="/screenshots/live-screen.png" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill priority className="object-cover" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
-                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                 </div>
               </div>
               {/* Front Image */}
               <div className="absolute left-2 bottom-2 w-[70%] h-28 rounded-lg overflow-hidden shadow-xl border-4 border-white bg-black">
                 <Image src="/screenshots/movies-screen.png" alt="Vanto Player Android Mobile Interface - VOD Library" fill className="object-cover opacity-90" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
-                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                 </div>
               </div>
               {/* Android Badge */}
@@ -89,10 +89,10 @@ export default function DownloadSection() {
                   Download APK
                 </Link>
                 <div className="flex-1 bg-gray-100 text-gray-400 font-bold text-[12px] py-2.5 rounded-sm flex items-center justify-center gap-1.5 cursor-not-allowed border border-gray-200">
-                  <Play className="w-3.5 h-3.5 fill-gray-400 text-gray-400" aria-hidden="true" /> 
+                  <Play className="w-3.5 h-3.5 fill-gray-400 text-gray-400" aria-hidden="true" />
                   <div className="flex flex-col items-start leading-none text-left">
-                     <span className="text-[6px] font-normal uppercase text-gray-400">Coming Soon</span>
-                     <span className="text-[11px] mt-0.5">Google Play</span>
+                    <span className="text-[6px] font-normal uppercase text-gray-400">Coming Soon</span>
+                    <span className="text-[11px] mt-0.5">Google Play</span>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function DownloadSection() {
 
               <div className="mt-auto flex justify-center pt-8">
                 <div className="bg-gray-100 text-gray-400 font-semibold px-4 py-2.5 rounded-lg flex items-center justify-center gap-2.5 w-[180px] cursor-not-allowed border border-gray-200">
-                  <Apple className="w-7 h-7 fill-gray-400" aria-hidden="true" /> 
+                  <Apple className="w-7 h-7 fill-gray-400" aria-hidden="true" />
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-400">Coming Soon</span>
                     <span className="text-[15px] leading-none font-semibold mt-0.5">App Store</span>
@@ -154,11 +154,11 @@ export default function DownloadSection() {
                 </div>
               </div>
               <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-              
+
               {/* Badges */}
               <div className="absolute bottom-4 left-6 bg-white rounded-lg p-1 shadow-lg z-10 border border-gray-100 flex items-center justify-center">
                 <div className="w-6 h-6 bg-[#007aff] rounded flex items-center justify-center">
-                   <span className="text-white font-bold text-[8px] leading-none">Mac</span>
+                  <span className="text-white font-bold text-[8px] leading-none">Mac</span>
                 </div>
               </div>
               <div className="absolute top-0 right-4 bg-white rounded-lg p-1.5 shadow-lg z-10 border border-gray-200 flex items-center justify-center">
@@ -196,21 +196,21 @@ export default function DownloadSection() {
                 </div>
               </div>
               <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-              
+
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
                 <Image src="/screenshots/userlist-screen.png" alt="Vanto Player Windows Desktop Interface - Settings" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
               </div>
-              
+
               {/* Badge */}
               <div className="absolute -bottom-2 right-2 bg-[#0286a5] rounded-xl p-2.5 shadow-lg z-10 border-2 border-white">
                 <div className="grid grid-cols-2 gap-[2px] w-6 h-6">
-                   <div className="bg-white"></div>
-                   <div className="bg-white"></div>
-                   <div className="bg-white"></div>
-                   <div className="bg-white"></div>
+                  <div className="bg-white"></div>
+                  <div className="bg-white"></div>
+                  <div className="bg-white"></div>
+                  <div className="bg-white"></div>
                 </div>
               </div>
             </div>
@@ -223,10 +223,10 @@ export default function DownloadSection() {
               <div className="mt-auto flex justify-center pt-10">
                 <Link href="https://vantoplayer.com/download/windows" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
                   <div className="grid grid-cols-2 gap-[1px] w-6 h-6">
-                     <div className="bg-[#00adef]"></div>
-                     <div className="bg-[#00adef]"></div>
-                     <div className="bg-[#00adef]"></div>
-                     <div className="bg-[#00adef]"></div>
+                    <div className="bg-[#00adef]"></div>
+                    <div className="bg-[#00adef]"></div>
+                    <div className="bg-[#00adef]"></div>
+                    <div className="bg-[#00adef]"></div>
                   </div>
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-300">Available for</span>
@@ -247,7 +247,7 @@ export default function DownloadSection() {
                 </div>
               </div>
               <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-              
+
               {/* Badge */}
               <div className="absolute bottom-4 left-6 bg-[#dd4814] rounded-xl p-2 shadow-lg z-10 border-2 border-white">
                 <Terminal className="w-6 h-6 text-white" aria-hidden="true" />
@@ -287,14 +287,14 @@ export default function DownloadSection() {
                 <Image src="/screenshots/series-screen.png" alt="Vanto Web Player Interface - Series Library" fill className="object-cover" />
               </div>
               <div className="absolute bottom-6 w-20 h-1.5 bg-gray-200 rounded-t-lg"></div>
-              
+
               <div className="absolute left-0 top-16 w-[40%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
                 <Image src="/screenshots/live-player.png" alt="Vanto Web Player Interface - Live Player" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
               </div>
-              
+
               {/* Badge */}
               <div className="absolute bottom-4 right-2 bg-[#02376b] rounded-xl p-2 shadow-lg z-10 border-2 border-white">
                 <Globe className="w-7 h-7 text-yellow-400" aria-hidden="true" />
@@ -329,14 +329,14 @@ export default function DownloadSection() {
                 </div>
               </div>
               <div className="absolute bottom-6 w-12 h-1 bg-black rounded-sm"></div>
-              
+
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-sm overflow-hidden shadow-xl border-[2px] border-black bg-black">
                 <Image src="/screenshots/live-screen.png" alt="Vanto Player Android TV Interface - EPG Guide" fill className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
               </div>
-              
+
               {/* Badge */}
               <div className="absolute bottom-2 right-2 bg-[#b1aaff] rounded-xl p-2 shadow-lg z-10 border-2 border-white flex items-center gap-1">
                 <div className="w-6 h-3 bg-gray-900 rounded-sm flex items-center justify-center relative">
