@@ -42,20 +42,20 @@ export default function ContactClient() {
             <div className="lg:col-span-2 flex flex-col gap-8">
               <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:border-[#3b82f6]/50 hover:shadow-xl transition-all shadow-md">
                 <div className="w-12 h-12 bg-[#3b82f6]/10 rounded-xl flex items-center justify-center mb-6">
-                  <Mail className="w-6 h-6 text-[#3b82f6]" / aria-hidden="true">
+                  <Mail className="w-6 h-6 text-[#3b82f6]" aria-hidden="true" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Email Support</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed font-medium">
                   Our support team typically replies within 24 hours. Please include your device details if you have technical issues.
                 </p>
                 <a href="mailto:support@vantoplayer.com" className="text-[#3b82f6] font-bold hover:text-blue-700 transition-colors flex items-center gap-2">
-                  support@vantoplayer.com <ArrowRight className="w-4 h-4" / aria-hidden="true">
+                  support@vantoplayer.com <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </a>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-2xl p-8 hover:border-purple-400/50 hover:shadow-xl transition-all shadow-md">
                 <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6">
-                  <Clock className="w-6 h-6 text-purple-600" / aria-hidden="true">
+                  <Clock className="w-6 h-6 text-purple-600" aria-hidden="true" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Support Hours</h3>
                 <p className="text-gray-600 leading-relaxed font-medium">
@@ -71,7 +71,7 @@ export default function ContactClient() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#3b82f6]/5 blur-[80px] rounded-full pointer-events-none"></div>
               
               <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                <MessageSquare className="w-7 h-7 text-[#3b82f6]" / aria-hidden="true"> Send a Message
+                <MessageSquare className="w-7 h-7 text-[#3b82f6]" aria-hidden="true" /> Send a Message
               </h2>
 
               {isSubmitted ? (

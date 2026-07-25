@@ -85,12 +85,12 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Author & Date */}
             <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
               <span className="flex items-center gap-2">
-                <User className="w-4 h-4 text-gray-300" / aria-hidden="true">
+                <User className="w-4 h-4 text-gray-300" aria-hidden="true" />
                 By {post.author}
               </span>
               <span>•</span>
               <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-gray-300" / aria-hidden="true">
+                <Calendar className="w-4 h-4 text-gray-300" aria-hidden="true" />
                 {new Date(post.date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
@@ -129,7 +129,7 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Author Box */}
             <div className="mt-12 bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
               <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center shrink-0">
-                <User className="w-8 h-8 text-gray-500" / aria-hidden="true">
+                <User className="w-8 h-8 text-gray-500" aria-hidden="true" />
               </div>
               <div className="text-center sm:text-left">
                 <h4 className="text-lg font-bold text-gray-900">{post.author}</h4>

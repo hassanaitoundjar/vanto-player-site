@@ -21,7 +21,7 @@ export default function FraudAwareness() {
               <div className="flex gap-5">
                 <div className="flex-shrink-0 mt-1">
                   <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center border border-red-100">
-                    <AlertTriangle className="w-5 h-5 text-red-500" / aria-hidden="true">
+                    <AlertTriangle className="w-5 h-5 text-red-500" aria-hidden="true" />
                   </div>
                 </div>
                 <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -33,7 +33,7 @@ export default function FraudAwareness() {
               <div className="flex gap-5">
                 <div className="flex-shrink-0 mt-1">
                   <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center border border-green-100">
-                    <ShieldCheck className="w-5 h-5 text-green-500" / aria-hidden="true">
+                    <ShieldCheck className="w-5 h-5 text-green-500" aria-hidden="true" />
                   </div>
                 </div>
                 <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -45,7 +45,7 @@ export default function FraudAwareness() {
               <div className="flex gap-5">
                 <div className="flex-shrink-0 mt-1">
                   <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center border border-blue-100">
-                    <ShieldAlert className="w-5 h-5 text-[#3b82f6]" / aria-hidden="true">
+                    <ShieldAlert className="w-5 h-5 text-[#3b82f6]" aria-hidden="true" />
                   </div>
                 </div>
                 <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -73,19 +73,19 @@ export default function FraudAwareness() {
                 <div className="relative mb-8">
                   <div className="absolute inset-0 bg-[#3b82f6] blur-xl opacity-20 rounded-full"></div>
                   <div className="bg-white w-28 h-28 rounded-3xl shadow-[0_10px_40px_rgb(0,0,0,0.08)] flex items-center justify-center border border-gray-50 transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-out cursor-default relative z-10">
-                    <ShieldAlert className="w-14 h-14 text-[#3b82f6]" strokeWidth={1.5} / aria-hidden="true">
+                    <ShieldAlert className="w-14 h-14 text-[#3b82f6]" strokeWidth={1.5} aria-hidden="true" />
                   </div>
                   
                   {/* Small floating alert badge */}
                   <div className="absolute -top-3 -right-3 bg-red-500 w-8 h-8 rounded-full shadow-lg flex items-center justify-center animate-bounce z-20">
-                     <AlertTriangle className="w-4 h-4 text-white" strokeWidth={2.5} / aria-hidden="true">
+                     <AlertTriangle className="w-4 h-4 text-white" strokeWidth={2.5} aria-hidden="true" />
                   </div>
                 </div>
 
                 {/* Secure URL Badge */}
                 <div className="bg-white/80 backdrop-blur-md pl-4 pr-6 py-3 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white flex items-center gap-3 transform translate-y-2 hover:-translate-y-0 transition-transform duration-300">
                   <div className="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center">
-                    <LinkIcon className="w-4 h-4 text-green-600" / aria-hidden="true">
+                    <LinkIcon className="w-4 h-4 text-green-600" aria-hidden="true" />
                   </div>
                   <span className="text-sm font-bold text-gray-800 tracking-tight">vantoplayer.com</span>
                 </div>

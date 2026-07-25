@@ -63,7 +63,7 @@ export default function FeatureVideo() {
 
               {/* YouTube Play Button */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-11 sm:w-20 sm:h-14 bg-red-600 rounded-xl flex items-center justify-center shadow-lg group-hover:bg-red-700 transition-colors z-10">
-                <Play className="w-6 h-6 sm:w-8 sm:h-8 fill-white text-white ml-1" / aria-hidden="true">
+                <Play className="w-6 h-6 sm:w-8 sm:h-8 fill-white text-white ml-1" aria-hidden="true" />
               </div>
 
               {/* YouTube-like Footer */}

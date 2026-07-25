@@ -20,7 +20,7 @@ export default function BlogIndexPage() {
           {/* Pill Tag */}
           <div className="mb-8">
             <span className="inline-flex items-center gap-2 border border-white/10 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#3b82f6] bg-white/5">
-              <BookOpen className="w-3.5 h-3.5" / aria-hidden="true"> Vanto Player Blog
+              <BookOpen className="w-3.5 h-3.5" aria-hidden="true" /> Vanto Player Blog
             </span>
           </div>
           
@@ -61,7 +61,7 @@ export default function BlogIndexPage() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-white/10 pt-6">
                 <div className="flex items-center gap-6 text-sm text-gray-500 font-medium">
                   <span className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" / aria-hidden="true">
+                    <Calendar className="w-4 h-4" aria-hidden="true" />
                     {new Date(posts[0].date).toLocaleDateString('en-US', {
                       month: 'short',
                       day: 'numeric',
@@ -70,7 +70,7 @@ export default function BlogIndexPage() {
                   </span>
                 </div>
                 <div className="flex items-center text-[#3b82f6] font-bold text-sm tracking-widest uppercase group-hover:text-blue-400 transition-colors">
-                  READ ARTICLE <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" / aria-hidden="true">
+                  READ ARTICLE <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                 </div>
               </div>
             </Link>
@@ -114,7 +114,7 @@ export default function BlogIndexPage() {
                       })}
                     </span>
                     <div className="flex items-center text-[#3b82f6] font-bold text-[11px] tracking-widest uppercase group-hover:text-blue-700 transition-colors">
-                      READ <ArrowRight className="w-3.5 h-3.5 ml-1.5 transform group-hover:translate-x-1 transition-transform" / aria-hidden="true">
+                      READ <ArrowRight className="w-3.5 h-3.5 ml-1.5 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                     </div>
                   </div>
                 </Link>

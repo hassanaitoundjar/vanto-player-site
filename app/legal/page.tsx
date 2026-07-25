@@ -83,7 +83,7 @@ export default function LegalPage() {
                   </p>
                   
                   <div className="flex items-center text-[#3b82f6] font-bold mt-auto relative z-10 group-hover:text-blue-700 transition-colors">
-                    Read Document <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" / aria-hidden="true">
+                    Read Document <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                   </div>
                 </Link>
               )

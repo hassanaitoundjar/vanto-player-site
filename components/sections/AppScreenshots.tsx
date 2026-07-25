@@ -32,7 +32,7 @@ export default function AppScreenshots() {
             
             <div className="absolute bottom-0 left-0 p-8 md:p-10 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
               <div className="bg-white/20 backdrop-blur-xl w-14 h-14 rounded-2xl flex items-center justify-center mb-5 border border-white/20 shadow-lg">
-                <MonitorPlay className="text-white w-7 h-7" / aria-hidden="true">
+                <MonitorPlay className="text-white w-7 h-7" aria-hidden="true" />
               </div>
               <h3 className="text-white text-3xl font-bold mb-3 tracking-tight">Cinematic TV UI</h3>
               <p className="text-gray-200 text-base font-medium max-w-sm">
@@ -53,7 +53,7 @@ export default function AppScreenshots() {
             <div className="absolute bottom-0 left-0 p-8 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
               <div className="flex items-center gap-3 mb-2">
                  <div className="bg-[#3b82f6] w-10 h-10 rounded-xl flex items-center justify-center shadow-lg">
-                   <Tablet className="text-white w-5 h-5" / aria-hidden="true">
+                   <Tablet className="text-white w-5 h-5" aria-hidden="true" />
                  </div>
                  <h3 className="text-white text-2xl font-bold tracking-tight">Tablet & Web</h3>
               </div>
@@ -72,7 +72,7 @@ export default function AppScreenshots() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
               <div className="flex items-center gap-3 mb-1">
-                 <Smartphone className="text-white w-5 h-5" / aria-hidden="true">
+                 <Smartphone className="text-white w-5 h-5" aria-hidden="true" />
                  <h3 className="text-white text-xl font-bold">Mobile iOS & Android</h3>
               </div>
             </div>

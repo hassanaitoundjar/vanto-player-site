@@ -50,7 +50,7 @@ export default function SupportPage() {
 
         <div className="container mx-auto max-w-5xl relative z-10 text-center">
           <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-8 border border-blue-100 shadow-sm">
-            <LifeBuoy className="w-10 h-10 text-[#3b82f6]" / aria-hidden="true">
+            <LifeBuoy className="w-10 h-10 text-[#3b82f6]" aria-hidden="true" />
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
             How can we <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3b82f6] to-[#22c55e]">help you?</span>
@@ -81,7 +81,7 @@ export default function SupportPage() {
                     {resource.description}
                   </p>
                   <div className="flex items-center text-[#3b82f6] font-bold mt-auto group-hover:text-blue-700 transition-colors">
-                    Get Started <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" / aria-hidden="true">
+                    Get Started <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                   </div>
                 </Link>
               )

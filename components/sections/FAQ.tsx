@@ -70,7 +70,7 @@ export default function FAQSection() {
                     {faq.question}
                   </span>
                   <span className="flex-shrink-0 text-gray-300">
-                    {isOpen ? <X className="w-5 h-5 text-gray-900" / aria-hidden="true"> : <Plus className="w-5 h-5" / aria-hidden="true">}
+                    {isOpen ? <X className="w-5 h-5 text-gray-900" aria-hidden="true" /> : <Plus className="w-5 h-5" aria-hidden="true" />}
                   </span>
                 </button>
                 
