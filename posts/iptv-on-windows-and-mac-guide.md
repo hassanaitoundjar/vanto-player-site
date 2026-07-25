@@ -5,9 +5,9 @@ excerpt: "Want to stream live TV on your computer? Discover the best methods and
 author: "Vanto Player Team"
 ---
 
-While the living room Smart TV gets most of the attention, many users prefer to watch their media on a laptop or desktop computer. Whether you are traveling with a MacBook, working on a second monitor on your Windows PC, or setting up a dedicated Home Theater PC (HTPC), watching IPTV on a computer is incredibly popular.
+While the living room [Smart TV](/blog/install-vanto-player-smart-tv) gets most of the attention, many users prefer to watch their media on a laptop or desktop computer. Whether you are traveling with a MacBook, working on a second monitor on your [Windows](/blog/vanto-player-mac-windows-web-browser) PC, or setting up a dedicated Home Theater PC (HTPC), watching IPTV on a computer is incredibly popular.
 
-However, the software landscape for desktop IPTV is notoriously fragmented. Here is the ultimate guide to streaming IPTV on Windows and Mac in 2026.
+However, the software landscape for desktop IPTV is notoriously fragmented. Here is the ultimate guide to streaming IPTV on Windows and [Mac](/blog/vanto-player-mac-windows-web-browser) in 2026.
 
 ## The Old Way: Android Emulators
 
@@ -20,7 +20,7 @@ They would run a heavy, resource-intensive emulator just to install an Android A
 
 [VLC Media Player](https://www.videolan.org/vlc/) is fantastic for playing local video files, and technically, it can open `.m3u` files. 
 
-* **The Problem:** VLC is not an IPTV application. It does not have an Electronic Program Guide (EPG), it does not categorize Live TV vs VODs, and navigating a playlist with 10,000 channels in VLC is a nightmare.
+* **The Problem:** VLC is not an IPTV application. It does not have an [Electronic Program Guide](/blog/understanding-epg-electronic-program-guide) (EPG), it does not categorize Live TV vs VODs, and navigating a playlist with 10,000 channels in VLC is a nightmare.
 
 ## The Best Way: Native Desktop Applications
 

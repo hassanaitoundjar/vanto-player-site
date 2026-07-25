@@ -19,7 +19,7 @@ While there are legacy options like GSE Smart IPTV, we highly recommend using a 
 
 To use your media player, you need a playlist. Ensure your provider has given you one of the following:
 * An **M3U Link** (A long URL ending in .m3u)
-* **Xtream Codes API Credentials** (A server URL, a username, and a password)
+* **[[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api) Credentials** (A server URL, a username, and a password)
 
 ## Step 3: Input Your Credentials
 
@@ -31,7 +31,7 @@ To use your media player, you need a playlist. Ensure your provider has given yo
 
 ## Step 4: Let the EPG Sync
 
-Once connected, Vanto Player will begin downloading your channel list, VODs (Video on Demand), and the EPG (Electronic Program Guide). Because the Apple TV has a massive amount of RAM, this parsing process is usually instantaneous. 
+Once connected, Vanto Player will begin downloading your channel list, VODs (Video on Demand), and the EPG ([Electronic Program Guide](/blog/understanding-epg-electronic-program-guide)). Because the Apple TV has a massive amount of RAM, this parsing process is usually instantaneous. 
 
 ## Conclusion
 

@@ -23,7 +23,7 @@ An M3U file is essentially a simple text document. Inside, it contains a list of
 ### Pros of M3U:
 * **Universal Compatibility:** Every media player on the market, including Vanto Player, supports M3U formats natively.
 * **Easy to Edit:** Because it is just plain text, you can open an M3U file in Notepad or any text editor to delete channels you do not want or reorganize the order.
-* **Live Updates:** When you use a dynamic M3U URL (a link rather than a downloaded file), your provider can update the channel list remotely, and your player will sync the new channels automatically.
+* **Live Updates:** When you use a dynamic [M3U URL](/blog/load-m3u-playlist-vanto-player) (a link rather than a downloaded file), your provider can update the channel list remotely, and your player will sync the new channels automatically.
 
 ## What is a JSON Playlist?
 
@@ -49,7 +49,7 @@ Regardless of which format you use, getting it into Vanto Player is easy.
 
 1. Locate your M3U URL or JSON link.
 2. Go to the Vanto Player [Activation portal](/activation).
-3. Log in using your Device MAC Address and Device Key.
+3. Log in using your Device [MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address and Device Key.
 4. Paste the URL into the "Add Playlist" section.
 5. Save, and open Vanto Player on your device to sync the content.
 

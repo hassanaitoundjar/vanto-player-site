@@ -17,13 +17,13 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "https://vantoplayer.com/download", text: "DOWNLOADS" },
-    { href: "https://vantoplayer.com/activation", text: "ACTIVATE DEVICE" },
-    { href: "https://vantoplayer.com/activation", text: "MANAGE PLAYLISTS" },
-    { href: "https://vantoplayer.com/blog", text: "HOW TO TUTORIALS" },
-    { href: "https://vantoplayer.com/support", text: "SUPPORT" },
-    { href: "https://vantoplayer.com/legal", text: "LEGAL TERMS" },
-    { href: "https://vantoplayer.com/contact", text: "CONTACT" },
+    { href: "/download", text: "DOWNLOADS" },
+    { href: "/activation", text: "ACTIVATE DEVICE" },
+    { href: "/activation", text: "MANAGE PLAYLISTS" },
+    { href: "/blog", text: "HOW TO TUTORIALS" },
+    { href: "/support", text: "SUPPORT" },
+    { href: "/legal", text: "LEGAL TERMS" },
+    { href: "/contact", text: "CONTACT" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Header() {
       <div className="container mx-auto px-6 md:px-8 xl:px-12 relative z-50">
         <div className="flex h-24 items-center justify-between w-full">
           {/* Logo Section */}
-          <Link href="https://vantoplayer.com/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)} aria-label="Vanto Player Home">
+          <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)} aria-label="Vanto Player Home">
             <div className="relative h-10 w-10 rounded-xl overflow-hidden shadow-lg shadow-black/50">
               <Image 
                 src="/logo.png" 
@@ -57,7 +57,7 @@ export default function Header() {
               ))}
             </nav>
             <Link 
-              href="https://vantoplayer.com/download"
+              href="/download"
               className="bg-[#3b82f6] text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-blue-500/20 hover:bg-blue-600 hover:shadow-blue-500/40 transition-all active:scale-95 text-sm tracking-wider uppercase"
             >
               Get App
@@ -118,7 +118,7 @@ export default function Header() {
             ></div>
             
             <Link 
-              href="https://vantoplayer.com/download"
+              href="/download"
               onClick={() => setIsMobileMenuOpen(false)}
               className="bg-[#3b82f6] text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-600 transition-all active:scale-95 tracking-wider"
               style={{ 

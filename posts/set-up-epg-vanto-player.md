@@ -6,7 +6,7 @@ author: "Vanto Player Team"
 ---
 # How to Set Up an EPG (Electronic Program Guide) with a Compatible Provider
 
-A premium media player experience isn't just about flawless 4K playback—it's also about navigation. Navigating hundreds of live channels is incredibly tedious if you do not know what is currently airing. This is where an EPG (Electronic Program Guide) becomes essential.
+A premium media player experience isn't just about flawless 4K playback—it's also about navigation. Navigating hundreds of live channels is incredibly tedious if you do not know what is currently airing. This is where an EPG ([Electronic Program Guide](/blog/understanding-epg-electronic-program-guide)) becomes essential.
 
 An EPG transforms your channel list into a familiar grid, showing you current and upcoming shows, movie descriptions, and air times. In this guide, we will explain how to set up an EPG in Vanto Player.
 
@@ -14,7 +14,7 @@ An EPG transforms your channel list into a familiar grid, showing you current an
 
 ## Understanding EPG Data (XMLTV)
 
-While your M3U playlist contains the links to the actual video streams, the EPG data is usually provided via a separate link in **XMLTV** format. 
+While your [M3U playlist](/blog/load-m3u-playlist-vanto-player) contains the links to the actual video streams, the EPG data is usually provided via a separate link in **XMLTV** format. 
 
 XMLTV is a standard XML-based format used to describe TV listings. When Vanto Player receives an XMLTV link, it downloads the schedule data and matches the channel names in your M3U playlist with the channel names in the XMLTV file, populating the visual guide on your screen.
 
@@ -30,7 +30,7 @@ Before you can set up the guide, you need the data. You have two main options:
 Adding an EPG is handled through the same centralized dashboard you use to manage your playlists.
 
 1. Open a web browser and go to the Vanto Player [Activation portal](/activation).
-2. Log in using your TV or mobile device's **MAC Address** and **Device Key**.
+2. Log in using your TV or mobile device's **[MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address** and **Device Key**.
 3. Locate the playlist you have already added (or add a new one).
 4. Look for the field labeled **EPG URL** or **XMLTV Link**.
 5. Paste your EPG link exactly as provided.
@@ -40,7 +40,7 @@ Adding an EPG is handled through the same centralized dashboard you use to manag
 
 Once the EPG URL is saved to your profile on the web portal, you need to tell your Vanto Player app to download the new schedule data.
 
-1. Open Vanto Player on your Smart TV, Firestick, or computer.
+1. Open Vanto Player on your [Smart TV](/blog/install-vanto-player-smart-tv), [Firestick](/blog/install-vanto-player-firestick), or computer.
 2. The app may automatically detect the change and begin downloading the guide data on startup.
 3. If it does not, navigate to the **Settings** or **Playlist** menu inside the app.
 4. Select the option to **Refresh EPG** or **Force Sync**. 
@@ -63,5 +63,5 @@ Yes, if you have multiple playlists loaded, you can assign a unique EPG URL to e
 **How often does the EPG update?**
 Vanto Player is designed to periodically refresh the EPG data in the background (usually upon app startup or every 24 hours) to ensure you always have the latest TV schedule.
 
-**Can I use Xtream Codes instead of M3U and XMLTV?**
-Absolutely. If you log in using the Xtream Codes API method (Username, Password, Portal URL), the EPG data is automatically handled by the server API, meaning you do not need to paste a separate XMLTV link.
+**Can I use [Xtream Codes](/blog/what-is-xtream-codes-api) instead of M3U and XMLTV?**
+Absolutely. If you log in using the [Xtream Codes API](/blog/what-is-xtream-codes-api) method (Username, Password, Portal URL), the EPG data is automatically handled by the server API, meaning you do not need to paste a separate XMLTV link.

@@ -23,15 +23,15 @@ When you load your playlist into a premium media player, the software reads this
 
 Your EPG data is usually provided directly by your playlist provider. It is delivered in one of two ways:
 
-1. **Integrated via Xtream Codes API:** If you log in using a Username, Password, and Portal URL, the EPG data is pulled automatically from the server. You don't have to do anything.
-2. **Via an XMLTV Link:** If you use an M3U playlist link, you may also be given a second link ending in `.xml`. You must paste this XML link into your media player's EPG settings to sync the guide.
+1. **Integrated via [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api):** If you log in using a Username, Password, and Portal URL, the EPG data is pulled automatically from the server. You don't have to do anything.
+2. **Via an XMLTV Link:** If you use an [M3U playlist](/blog/load-m3u-playlist-vanto-player) link, you may also be given a second link ending in `.xml`. You must paste this XML link into your media player's EPG settings to sync the guide.
 
 ## How to Fix Missing EPG Data
 
 It is incredibly frustrating when you open your app and see "No Information Available" across your TV guide. Here is how to fix it:
 
 * **Force Sync:** In your app settings, look for an option to "Refresh EPG" or "Update Playlist." 
-* **Check the Timezone:** EPG data relies heavily on server time. Ensure your Smart TV or Android device is set to the correct local timezone.
+* **Check the Timezone:** EPG data relies heavily on server time. Ensure your [Smart TV](/blog/install-vanto-player-smart-tv) or Android device is set to the correct local timezone.
 * **Provider Outage:** Sometimes, the provider's EPG server goes down. If this happens, you simply have to wait for them to fix it on their end.
 
 ## Vanto Player and EPG Integration

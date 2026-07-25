@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -16,13 +17,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   try {
     const post = getPostBySlug(slug);
-    return {
+    return buildMetadata({
       title: `${post.title} | Vanto Player Blog`,
       description: post.excerpt,
-      alternates: {
-        canonical: `https://vantoplayer.com/blog/${slug}`
-      }
-    };
+      path: `/blog/${slug}`
+    });
   } catch (error) {
     return {
       title: 'Post Not Found | Vanto Player'

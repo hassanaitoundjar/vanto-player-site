@@ -7,7 +7,7 @@ author: "Vanto Player Team"
 
 A common misconception among cord-cutters is that simply purchasing "Gigabit Internet" guarantees a perfect streaming experience. While having high [bandwidth](https://en.wikipedia.org/wiki/Bandwidth_(computing)) is important, it is only one piece of the puzzle.
 
-If you are experiencing buffering, stuttering, or resolution drops, here is a technical breakdown of the exact internet speeds you really need for IPTV in 2026.
+If you are experiencing [buffering](/blog/how-to-avoid-iptv-buffering-2026), stuttering, or resolution drops, here is a technical breakdown of the exact internet speeds you really need for IPTV in 2026.
 
 ## The Minimum Speed Requirements
 
@@ -31,7 +31,7 @@ Latency measures how long it takes for a packet of data to travel from your prov
 
 ## Wi-Fi vs. Ethernet: The Ultimate Bottleneck
 
-You could pay your ISP for the fastest internet in the world, but if your Smart TV is connected via a weak Wi-Fi signal, it doesn't matter.
+You could pay your ISP for the fastest internet in the world, but if your [Smart TV](/blog/install-vanto-player-smart-tv) is connected via a weak Wi-Fi signal, it doesn't matter.
 
 Wi-Fi is susceptible to packet loss and interference from walls, microwaves, and neighboring routers. For stable 4K streaming, **you must hardwire your device using a Cat6 Ethernet cable.** Ethernet provides a dedicated, interference-free pipeline for heavy video data.
 

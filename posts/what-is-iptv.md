@@ -18,7 +18,7 @@ IPTV is different. Instead of broadcasting everything at once, IPTV services sto
 Here's a breakdown of the process:
 1. **Content Preparation**: Live TV signals or pre-recorded videos (VOD) are digitized and compressed (usually into MPEG4 format) so they can be streamed efficiently.
 2. **Delivery**: The content is sent over your internet connection using IP (Internet Protocol). 
-3. **Playback**: Your device (whether it's a Smart TV, a smartphone, or a computer running a media player like Vanto Player) receives the data packets, decodes them, and plays the video on your screen.
+3. **Playback**: Your device (whether it's a [Smart TV](/blog/install-vanto-player-smart-tv), a smartphone, or a computer running a media player like Vanto Player) receives the data packets, decodes them, and plays the video on your screen.
 
 ## Types of IPTV Services
 
@@ -39,7 +39,7 @@ There are three main types of IPTV services:
 
 To start using IPTV, you need three things:
 1. A stable internet connection (preferably 10Mbps or higher for HD streaming).
-2. A subscription to an IPTV provider who provides you with an M3U playlist or Xtream Codes.
+2. A subscription to an IPTV provider who provides you with an [M3U playlist](/blog/load-m3u-playlist-vanto-player) or [Xtream Codes](/blog/what-is-xtream-codes-api).
 3. A reliable media player, such as **Vanto Player**, to decode and display the content beautifully on your screen.
 
 *Disclaimer: Vanto Player is a media player only and does not provide any content or subscriptions. You must provide your own playlists.*

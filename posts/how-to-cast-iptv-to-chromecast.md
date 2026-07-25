@@ -5,7 +5,7 @@ excerpt: "Don't want to install apps directly on your TV? Learn how to seamlessl
 author: "Vanto Player Team"
 ---
 
-Not every television is a top-of-the-line Smart TV. If you have an older TV, a hotel room television, or simply prefer controlling everything from your smartphone, [Google Chromecast](https://support.google.com/chromecast) is a lifesaver.
+Not every television is a top-of-the-line [Smart TV](/blog/install-vanto-player-smart-tv). If you have an older TV, a hotel room television, or simply prefer controlling everything from your smartphone, [Google Chromecast](https://support.google.com/chromecast) is a lifesaver.
 
 Casting allows you to use your mobile phone as the "brain" and the remote control, while the TV simply acts as a display monitor. Here is how to cast your IPTV playlists from your Android or iOS device in 2026.
 
@@ -22,7 +22,7 @@ To cast successfully, you need three things:
 First, download a media player that natively supports Google Cast. [**Vanto Player**](/download) is fully equipped with advanced casting protocols for both Android and iOS devices.
 
 **2. Load Your Playlist**
-Open the app on your phone and input your M3U link or Xtream Codes API login. Wait a few seconds for your Live TV, Movies, and Series to populate on your mobile screen.
+Open the app on your phone and input your M3U link or [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api) login. Wait a few seconds for your Live TV, Movies, and Series to populate on your mobile screen.
 
 **3. Connect to the TV**
 At the top right corner of the Vanto Player mobile interface, tap the **Cast Icon** (it looks like a small TV screen with Wi-Fi waves). A menu will pop up listing all available devices on your network. Select your Living Room TV.

@@ -15,10 +15,10 @@ In the streaming world, the two most prominent codecs are **H.264 (AVC)** and **
 
 **Pros of H.264:**
 * **Universal Compatibility:** Virtually every digital device manufactured in the last 15 years can easily decode H.264 video.
-* **Low Hardware Demand:** It requires very little processing power to decode, meaning it runs smoothly on older, budget Smart TVs and legacy Android boxes.
+* **Low Hardware Demand:** It requires very little processing power to decode, meaning it runs smoothly on older, budget [Smart TVs](/blog/install-vanto-player-smart-tv) and legacy Android boxes.
 
 **Cons of H.264:**
-* **Inefficient for 4K:** H.264 files are large. Streaming a 4K video using H.264 requires massive amounts of internet bandwidth (often 30+ Mbps), which can lead to buffering for users with slower connections.
+* **Inefficient for 4K:** H.264 files are large. Streaming a 4K video using H.264 requires massive amounts of internet bandwidth (often 30+ Mbps), which can lead to [buffering](/blog/how-to-avoid-iptv-buffering-2026) for users with slower connections.
 
 ## What is H.265 (High Efficiency Video Coding - HEVC)?
 

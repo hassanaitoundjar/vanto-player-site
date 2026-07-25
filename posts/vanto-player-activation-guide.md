@@ -14,11 +14,11 @@ If you have just downloaded Vanto Player and are stuck on the initial screen, yo
 
 ## Step 1: Launch the Application
 
-When you launch Vanto Player for the first time on any new device (such as an Amazon Firestick, LG Smart TV, or Android phone), you will be greeted by the login screen. 
+When you launch Vanto Player for the first time on any new device (such as an Amazon [Firestick](/blog/install-vanto-player-firestick), LG [Smart TV](/blog/install-vanto-player-smart-tv), or Android phone), you will be greeted by the login screen. 
 
 ![Vanto Player Login Options](/screenshots/welcome-screen.png)
 
-This screen gives you multiple options to connect your service. The two most common and reliable methods are **Xtream Codes API** and **M3U Playlist**.
+This screen gives you multiple options to connect your service. The two most common and reliable methods are **[[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api)** and **[M3U Playlist](/blog/load-m3u-playlist-vanto-player)**.
 
 ## Step 2: Choose Your Login Method
 
@@ -31,7 +31,7 @@ Xtream Codes is the industry standard. It is generally faster, organizes Live TV
 
 ![Xtream Codes Login Screen](/screenshots/login-xtream-api-screen.png)
 
-**Method B: M3U URL**
+**Method B: [M3U URL](/blog/load-m3u-playlist-vanto-player)**
 If your provider only gave you a long URL link ending in `.m3u` or `.m3u8`, you will use this option.
 1. Select **M3U Playlist**.
 2. Enter a name for the playlist.

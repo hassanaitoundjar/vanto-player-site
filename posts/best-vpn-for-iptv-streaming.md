@@ -13,7 +13,7 @@ While a VPN is not strictly required to use software like Vanto Player, there ar
 
 Internet Service Providers (ISPs) are known to monitor user traffic. During peak evening hours, if your ISP detects that you are using massive amounts of bandwidth for video streaming, they may intentionally slow down (throttle) your connection to save network capacity.
 
-When this happens, your stream will start buffering incessantly, even if you pay for high-speed internet. As mentioned in our guide on [How to Avoid IPTV Buffering](/blog/how-to-avoid-iptv-buffering-2026), a VPN encrypts your traffic. Because your ISP can no longer see *what* you are doing, they cannot selectively throttle your streaming data.
+When this happens, your stream will start [buffering](/blog/how-to-avoid-iptv-buffering-2026) incessantly, even if you pay for high-speed internet. As mentioned in our guide on [How to Avoid IPTV Buffering](/blog/how-to-avoid-iptv-buffering-2026), a VPN encrypts your traffic. Because your ISP can no longer see *what* you are doing, they cannot selectively throttle your streaming data.
 
 ## 2. Bypassing Geo-Blocks
 
@@ -30,7 +30,7 @@ Using a reputable VPN (you can find privacy-focused recommendations at [PrivacyT
 ## How to Use a VPN with Vanto Player
 
 Using a VPN with Vanto Player is incredibly simple because Vanto operates entirely independently of your network configuration. 
-1. Download a reputable VPN app directly to your Smart TV, Android Box, or PC.
+1. Download a reputable VPN app directly to your [Smart TV](/blog/install-vanto-player-smart-tv), Android Box, or PC.
 2. Connect to a server of your choice.
 3. Open Vanto Player and load your playlists as usual.
 

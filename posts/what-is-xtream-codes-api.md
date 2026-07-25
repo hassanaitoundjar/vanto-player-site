@@ -5,7 +5,7 @@ excerpt: "Confused by IPTV login methods? Learn the difference between M3U playl
 author: "Vanto Player Team"
 ---
 
-When configuring your [Internet Protocol television (IPTV)](https://en.wikipedia.org/wiki/Internet_Protocol_television) media player, you will generally be asked to input your playlist in one of two formats: an **M3U URL** or **Xtream Codes API**. 
+When configuring your [Internet Protocol television (IPTV)](https://en.wikipedia.org/wiki/Internet_Protocol_television) media player, you will generally be asked to input your playlist in one of two formats: an **[M3U URL](/blog/load-m3u-playlist-vanto-player)** or **Xtream Codes API**. 
 
 If you are new to the cord-cutting world, these technical terms can be confusing. Here is a simple breakdown of both formats and which one you should use.
 
@@ -18,8 +18,8 @@ An M3U (MP3 URL) is a computer file format that stores multimedia playlists. In 
 * Very easy to edit manually if you want to remove specific channels using an M3U editor.
 
 **Cons of M3U:**
-* The links are extremely long and tedious to type into a Smart TV using a remote.
-* Updating the Electronic Program Guide (EPG) usually requires a separate XMLTV link.
+* The links are extremely long and tedious to type into a [Smart TV](/blog/install-vanto-player-smart-tv) using a remote.
+* Updating the [Electronic Program Guide](/blog/understanding-epg-electronic-program-guide) (EPG) usually requires a separate XMLTV link.
 
 ## What is Xtream Codes API?
 

@@ -31,6 +31,6 @@ An IPTV service becomes illegal if the provider is distributing copyrighted cont
 In most jurisdictions, the primary legal target of copyright enforcement agencies is the *distributor* (the person hosting and selling the illegal streams), not the end-user. However, laws are constantly evolving, and streaming pirated content is a violation of copyright law in many countries.
 
 **As a user of media player software:**
-You are responsible for ensuring that the M3U playlists, JSON files, or Xtream Codes you input into your media player are sourced from legal, authorized providers. 
+You are responsible for ensuring that the [M3U playlists](/blog/load-m3u-playlist-vanto-player), JSON files, or [Xtream Codes](/blog/what-is-xtream-codes-api) you input into your media player are sourced from legal, authorized providers. 
 
 Software like Vanto Player exists to give you the best possible viewing experience for your legally obtained media libraries, home videos, and authorized public domain broadcasts.

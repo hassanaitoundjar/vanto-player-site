@@ -6,9 +6,9 @@ author: "Vanto Player Team"
 ---
 # How to Load an M3U or JSON Playlist into Vanto Player
 
-You've successfully downloaded Vanto Player, but when you open the app, the screen is empty. Don't worry—this is exactly how it is supposed to work! Vanto Player is a premium, blank-canvas media player. To start watching, you need to load your own M3U or JSON playlist.
+You've successfully downloaded Vanto Player, but when you open the app, the screen is empty. Don't worry—this is exactly how it is supposed to work! Vanto Player is a premium, blank-canvas media player. To start watching, you need to load your own M3U or [JSON playlist](/blog/m3u-vs-json-playlist-formats).
 
-This guide will show you how to securely upload your playlist via the web portal and sync it directly to your device, whether you are using Android, iOS, Windows, macOS, or a Smart TV.
+This guide will show you how to securely upload your playlist via the web portal and sync it directly to your device, whether you are using Android, iOS, [Windows](/blog/vanto-player-mac-windows-web-browser), [macOS](/blog/vanto-player-mac-windows-web-browser), or a [Smart TV](/blog/install-vanto-player-smart-tv).
 
 *Disclaimer: Vanto Player is a software application only. It does not host, provide, or sell any media content, channels, or subscriptions. Users are solely responsible for the content they upload.*
 
@@ -16,7 +16,7 @@ This guide will show you how to securely upload your playlist via the web portal
 
 Before uploading, ensure you have the following ready:
 1. **Your Vanto Player Device Details:** Open the Vanto Player app on your TV or mobile device. Note down the **MAC Address** and **Device Key** displayed on the screen.
-2. **Your Playlist URL or File:** You need an active M3U link (URL), an Xtream Codes API login, or a local JSON/M3U file provided by your content provider.
+2. **Your Playlist URL or File:** You need an active M3U link (URL), an [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api) login, or a local JSON/M3U file provided by your content provider.
 
 ## Step-by-Step Playlist Upload Guide
 

@@ -6,7 +6,7 @@ author: "Vanto Player Team"
 ---
 # How to Set Up Parental Controls in Vanto Player
 
-When you load a comprehensive M3U playlist into a media player, it often includes thousands of channels and VODs from around the world. In many cases, these expansive playlists contain mature content, late-night programming, or specific categories that you may not want accessible to younger members of your household.
+When you load a comprehensive [M3U playlist](/blog/load-m3u-playlist-vanto-player) into a media player, it often includes thousands of channels and VODs from around the world. In many cases, these expansive playlists contain mature content, late-night programming, or specific categories that you may not want accessible to younger members of your household.
 
 Fortunately, Vanto Player includes robust, easy-to-use Parental Control features. You can securely lock specific categories or completely hide unwanted content behind a PIN code. 
 

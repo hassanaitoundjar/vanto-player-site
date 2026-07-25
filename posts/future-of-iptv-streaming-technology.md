@@ -11,11 +11,11 @@ Here are the most exciting trends and technological advancements shaping the fut
 
 ## 1. The Normalization of 8K Streaming
 
-While 4K is currently the gold standard, 8K televisions are rapidly dropping in price. To support this massive pixel density, we will see the widespread adoption of the **AV1 Video Codec**. AV1 provides incredibly high compression rates without losing quality, making it possible to stream 8K video over standard broadband connections. Modern [tech blogs](https://techcrunch.com) predict AV1 hardware decoding will be standard in all devices by 2028.
+While 4K is currently the gold standard, 8K televisions are rapidly dropping in price. To support this massive pixel density, we will see the widespread adoption of the **AV1 [Video Codec](/blog/understanding-video-codecs-h264-vs-h265)**. AV1 provides incredibly high compression rates without losing quality, making it possible to stream 8K video over standard broadband connections. Modern [tech blogs](https://techcrunch.com) predict AV1 hardware decoding will be standard in all devices by 2028.
 
 ## 2. AI-Driven Content Aggregation
 
-One of the biggest frustrations for users today is fragmentation—having to switch between Netflix, Hulu, Prime, and M3U playlists to find something to watch.
+One of the biggest frustrations for users today is fragmentation—having to switch between Netflix, Hulu, Prime, and [M3U playlists](/blog/load-m3u-playlist-vanto-player) to find something to watch.
 
 In the near future, media players will utilize localized Artificial Intelligence. Your media player will learn your viewing habits and create a unified, dynamic "Home" screen that seamlessly blends content from your personal IPTV playlists and your commercial subscriptions into one intelligent feed.
 
