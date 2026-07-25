@@ -67,7 +67,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">1</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <Search className="w-4 h-4 text-gray-400" / aria-hidden="true"> Get Downloader
+                      <Search className="w-4 h-4 text-gray-300" / aria-hidden="true"> Get Downloader
                     </h4>
                     <p className="text-gray-600 font-medium">Install the <strong>Downloader</strong> app from your device's native App Store.</p>
                   </div>
@@ -77,7 +77,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">2</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <Hash className="w-4 h-4 text-gray-400" / aria-hidden="true"> Enter Quick Code
+                      <Hash className="w-4 h-4 text-gray-300" / aria-hidden="true"> Enter Quick Code
                     </h4>
                     <p className="text-gray-600 font-medium">Open Downloader and type our quick code: <span className="inline-block bg-blue-50 text-blue-700 font-bold px-3 py-1 rounded-md border border-blue-100 ml-1">7392829</span></p>
                   </div>
@@ -87,7 +87,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">3</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <Download className="w-4 h-4 text-gray-400" / aria-hidden="true"> Download & Install
+                      <Download className="w-4 h-4 text-gray-300" / aria-hidden="true"> Download & Install
                     </h4>
                     <p className="text-gray-600 font-medium">Click <strong>Go</strong> to download the APK. Follow the on-screen prompts to install.</p>
                   </div>
@@ -97,7 +97,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">4</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <PlayCircle className="w-4 h-4 text-gray-400" / aria-hidden="true"> Open & Stream
+                      <PlayCircle className="w-4 h-4 text-gray-300" / aria-hidden="true"> Open & Stream
                     </h4>
                     <p className="text-gray-600 font-medium">Launch Vanto Player, add your credentials, and start streaming instantly.</p>
                   </div>
@@ -121,7 +121,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">1</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <Globe className="w-4 h-4 text-gray-400" / aria-hidden="true"> No Installation Required
+                      <Globe className="w-4 h-4 text-gray-300" / aria-hidden="true"> No Installation Required
                     </h4>
                     <p className="text-gray-600 font-medium">Vanto Player works directly in your web browser. No need to download any apps.</p>
                   </div>
@@ -131,7 +131,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">2</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <Monitor className="w-4 h-4 text-gray-400" / aria-hidden="true"> Access Web Player
+                      <Monitor className="w-4 h-4 text-gray-300" / aria-hidden="true"> Access Web Player
                     </h4>
                     <p className="text-gray-600 font-medium">Simply navigate to the <a href="https://web.vantoplayer.com" target="_blank" className="text-purple-600 font-bold hover:underline">Vanto Web Player</a> using Chrome, Safari, or Edge.</p>
                   </div>
@@ -141,7 +141,7 @@ export default function DownloadPage() {
                   <div className="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md">3</div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gray-400" / aria-hidden="true"> Login & Play
+                      <CheckCircle2 className="w-4 h-4 text-gray-300" / aria-hidden="true"> Login & Play
                     </h4>
                     <p className="text-gray-600 font-medium">Enter your playlist details and instantly access your content on any screen size.</p>
                   </div>

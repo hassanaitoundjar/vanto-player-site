@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: Props) {
         <section className="relative w-full pt-32 pb-24 px-6 md:px-8 xl:px-12 bg-[#111111] border-b border-white/5">
           <div className="container mx-auto max-w-4xl relative z-10">
             {/* Breadcrumbs */}
-            <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8 font-medium">
+            <nav className="flex items-center gap-2 text-sm text-gray-300 mb-8 font-medium">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <span>›</span>
               <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
@@ -78,19 +78,19 @@ export default async function BlogPostPage({ params }: Props) {
             </h1>
             
             {/* Excerpt */}
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-8 leading-relaxed">
               {post.excerpt}
             </p>
             
             {/* Author & Date */}
             <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
               <span className="flex items-center gap-2">
-                <User className="w-4 h-4 text-gray-400" / aria-hidden="true">
+                <User className="w-4 h-4 text-gray-300" / aria-hidden="true">
                 By {post.author}
               </span>
               <span>•</span>
               <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-gray-400" / aria-hidden="true">
+                <Calendar className="w-4 h-4 text-gray-300" / aria-hidden="true">
                 {new Date(post.date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="mt-16 bg-[#111111] rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
               <div className="max-w-xl">
                 <h3 className="text-2xl font-bold text-white mb-2">Ready to Try Vanto Player?</h3>
-                <p className="text-gray-400 text-sm md:text-base">Experience the ultimate media player for your IPTV playlists. Download now and enjoy seamless 4K streaming.</p>
+                <p className="text-gray-300 text-sm md:text-base">Experience the ultimate media player for your IPTV playlists. Download now and enjoy seamless 4K streaming.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
                 <Link href="/download" className="px-8 py-3 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-600 transition-colors">

@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
               <span className="text-2xl font-bold tracking-tight text-white">Vanto Player</span>
             </Link>
-            <p className="text-gray-400 text-[15px] leading-relaxed">
+            <p className="text-gray-300 text-[15px] leading-relaxed">
               The ultimate media player for your digital life. Stream smarter and binge better with a beautifully designed, intuitive interface optimized for all your devices.
             </p>
             {/* Social Links - Add back when real profiles exist */}
@@ -26,28 +26,28 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Product</h4>
-            <Link href="/#features" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Features</Link>
-            <Link href="/download" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Download</Link>
-            <Link href="/#devices" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Compatible Devices</Link>
-            <Link href="/#parental" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Parental Control</Link>
+            <Link href="/#features" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Features</Link>
+            <Link href="/download" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Download</Link>
+            <Link href="/#devices" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Compatible Devices</Link>
+            <Link href="/#parental" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Parental Control</Link>
           </div>
 
           {/* Support */}
           <div className="flex flex-col gap-5">
             <h4 className="text-white font-semibold text-lg tracking-tight mb-1">Support</h4>
-            <Link href="/support" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Support Center</Link>
-            <Link href="/contact" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Contact Us</Link>
-            <Link href="/support#faq" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
-            <Link href="/#fraud" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Report Fraud</Link>
+            <Link href="/support" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Support Center</Link>
+            <Link href="/contact" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Contact Us</Link>
+            <Link href="/support#faq" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">FAQ</Link>
+            <Link href="/#fraud" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Report Fraud</Link>
           </div>
 
           {/* Legal */}
           <div className="flex flex-col gap-5">
             <Link href="/legal" className="text-white font-semibold text-lg tracking-tight mb-1 hover:text-[#3b82f6] transition-colors">Legal</Link>
-            <Link href="/terms" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Terms of Service</Link>
-            <Link href="/privacy" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Privacy Policy</Link>
-            <Link href="/refund" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Refund Policy</Link>
-            <Link href="/dmca" className="text-gray-400 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">DMCA Policy</Link>
+            <Link href="/terms" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Terms of Service</Link>
+            <Link href="/privacy" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Privacy Policy</Link>
+            <Link href="/refund" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">Refund Policy</Link>
+            <Link href="/dmca" className="text-gray-300 text-sm hover:text-[#3b82f6] transition-colors w-max font-medium">DMCA Policy</Link>
           </div>
 
         </div>

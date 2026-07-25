@@ -33,7 +33,7 @@ export default function ActivationPage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Digital Playlist</span>
             </h1>
             
-            <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed mb-8">
+            <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-8">
               Unlock the full potential of your media. Activate your device once and seamlessly sync your content across multiple platforms with Vanto Player.
             </p>
 
@@ -65,7 +65,7 @@ export default function ActivationPage() {
               
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-white mb-2">Welcome Back</h2>
-                <p className="text-sm text-gray-400">Enter your device details to continue</p>
+                <p className="text-sm text-gray-300">Enter your device details to continue</p>
               </div>
 
               <form className="space-y-5">
@@ -118,7 +118,7 @@ export default function ActivationPage() {
                         required
                       />
                     </div>
-                    <button type="button" className="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-lg transition-all" title="Refresh Captcha">
+                    <button type="button" className="p-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all" title="Refresh Captcha">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                     </button>
                   </div>
@@ -135,7 +135,7 @@ export default function ActivationPage() {
               </form>
 
               <p className="text-center text-xs text-gray-500 mt-6">
-                By logging in, you agree to our <Link href="/terms" className="text-gray-400 hover:text-white underline decoration-gray-600 underline-offset-2">Terms of Service</Link>
+                By logging in, you agree to our <Link href="/terms" className="text-gray-300 hover:text-white underline decoration-gray-600 underline-offset-2">Terms of Service</Link>
               </p>
             </div>
           </div>

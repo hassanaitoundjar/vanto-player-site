@@ -30,7 +30,7 @@ export default function BlogIndexPage() {
             Guides, Tips & <span className="text-[#3b82f6]">News</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-medium">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-medium">
             Expert articles on IPTV setup, troubleshooting, app features, and everything you need to get the most out of your streaming experience.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function BlogIndexPage() {
                 {posts[0].title}
               </h2>
               
-              <p className="text-lg text-gray-400 mb-10 max-w-3xl leading-relaxed">
+              <p className="text-lg text-gray-300 mb-10 max-w-3xl leading-relaxed">
                 {posts[0].excerpt}
               </p>
               
@@ -96,7 +96,7 @@ export default function BlogIndexPage() {
                       <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                       GUIDES
                     </span>
-                    <span className="text-gray-400">{post.readingTime} MIN READ</span>
+                    <span className="text-gray-500">{post.readingTime} MIN READ</span>
                   </div>
                   
                   <h4 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#3b82f6] transition-colors leading-snug line-clamp-3">
@@ -108,7 +108,7 @@ export default function BlogIndexPage() {
                   </p>
                   
                   <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-50">
-                    <span className="text-sm font-medium text-gray-400">
+                    <span className="text-sm font-medium text-gray-500">
                       {new Date(post.date).toLocaleDateString('en-US', {
                         month: 'short',
                         day: 'numeric',
@@ -126,7 +126,7 @@ export default function BlogIndexPage() {
           
           {/* Pagination */}
           <div className="flex items-center justify-center gap-6 mt-16">
-            <button className="px-6 py-2.5 rounded-full border border-gray-200 text-gray-400 font-bold text-xs tracking-widest uppercase hover:bg-gray-50 transition-colors cursor-not-allowed opacity-50">
+            <button className="px-6 py-2.5 rounded-full border border-gray-200 text-gray-500 font-bold text-xs tracking-widest uppercase hover:bg-gray-50 transition-colors cursor-not-allowed opacity-50">
               Previous
             </button>
             <span className="text-gray-500 font-bold text-xs tracking-widest uppercase">

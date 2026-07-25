@@ -9,7 +9,7 @@ export default function NotFound() {
         <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           Page Not Found
         </h2>
-        <p className="text-lg text-gray-400">
+        <p className="text-lg text-gray-300">
           Oops! We couldn&apos;t find the page you&apos;re looking for. It might have been removed, renamed, or didn&apos;t exist in the first place.
         </p>
 
@@ -30,28 +30,28 @@ export default function NotFound() {
               <Download className="h-5 w-5 text-blue-500 mr-4 group-hover:scale-110 transition-transform" / aria-hidden="true">
               <div>
                 <div className="font-medium text-white">Download</div>
-                <div className="text-sm text-gray-400">Get Vanto Player for your device</div>
+                <div className="text-sm text-gray-300">Get Vanto Player for your device</div>
               </div>
             </Link>
             <Link href="/blog" className="group flex items-center p-4 rounded-xl border border-gray-800 bg-[#111] hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all">
               <BookOpen className="h-5 w-5 text-blue-500 mr-4 group-hover:scale-110 transition-transform" / aria-hidden="true">
               <div>
                 <div className="font-medium text-white">Blog</div>
-                <div className="text-sm text-gray-400">Read our latest tutorials & news</div>
+                <div className="text-sm text-gray-300">Read our latest tutorials & news</div>
               </div>
             </Link>
             <Link href="/support" className="group flex items-center p-4 rounded-xl border border-gray-800 bg-[#111] hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all">
               <Search className="h-5 w-5 text-blue-500 mr-4 group-hover:scale-110 transition-transform" / aria-hidden="true">
               <div>
                 <div className="font-medium text-white">Support</div>
-                <div className="text-sm text-gray-400">Find answers to common questions</div>
+                <div className="text-sm text-gray-300">Find answers to common questions</div>
               </div>
             </Link>
             <Link href="/contact" className="group flex items-center p-4 rounded-xl border border-gray-800 bg-[#111] hover:border-blue-500/50 hover:bg-[#1a1a1a] transition-all">
               <MessageSquare className="h-5 w-5 text-blue-500 mr-4 group-hover:scale-110 transition-transform" / aria-hidden="true">
               <div>
                 <div className="font-medium text-white">Contact Us</div>
-                <div className="text-sm text-gray-400">Get in touch with our team</div>
+                <div className="text-sm text-gray-300">Get in touch with our team</div>
               </div>
             </Link>
           </div>

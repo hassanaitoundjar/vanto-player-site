@@ -86,7 +86,7 @@ export default function AppScreenshots() {
               </svg>
             </div>
             <h3 className="text-white text-2xl font-bold mb-3 tracking-tight">Premium UI</h3>
-            <p className="text-gray-400 text-sm font-medium leading-relaxed">
+            <p className="text-gray-300 text-sm font-medium leading-relaxed">
               Designed with absolute precision. Every pixel crafted to perfection for your media.
             </p>
           </div>
