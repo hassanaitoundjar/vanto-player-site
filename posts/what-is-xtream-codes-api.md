@@ -1,5 +1,6 @@
 ---
 title: "What is Xtream Codes API? M3U vs Xtream Explained"
+category: "Comparisons"
 date: "2026-07-22"
 excerpt: "Confused by IPTV login methods? Learn the difference between M3U playlists and Xtream Codes API, and which one provides a better streaming experience."
 author: "Vanto Player Team"

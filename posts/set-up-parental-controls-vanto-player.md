@@ -1,5 +1,6 @@
 ---
 title: "How to Set Up Parental Controls & Hide Channels in Vanto Player"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Keep your streaming experience family-friendly. Learn how to set up PIN codes, restrict content, and hide specific channels using Vanto Player's parental controls."
 author: "Vanto Player Team"

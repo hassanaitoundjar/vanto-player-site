@@ -1,5 +1,6 @@
 ---
 title: "How to Set Up an EPG (Electronic Program Guide) in Vanto Player"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Make navigating Live TV easier. Learn how to set up and sync an Electronic Program Guide (EPG) XMLTV link with your playlist in Vanto Player."
 author: "Vanto Player Team"

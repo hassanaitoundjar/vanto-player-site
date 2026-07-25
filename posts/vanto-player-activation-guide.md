@@ -1,5 +1,6 @@
 ---
 title: "Vanto Player Setup Guide: Xtream Codes & M3U"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Learn how to easily set up Vanto Player. Connect your IPTV service directly on your device using Xtream Codes API or M3U URLs."
 author: "Vanto Player Team"

@@ -1,5 +1,6 @@
 ---
 title: "How to Choose the Best IPTV Subscription Service in 2026"
+category: "Guides"
 date: "2026-07-31"
 excerpt: "Don't get scammed. Learn the crucial factors to look for when choosing an IPTV subscription service in 2026, from server stability to EPG reliability."
 author: "Vanto Player Team"

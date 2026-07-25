@@ -1,5 +1,6 @@
 ---
 title: "Is IPTV Legal in 2026? Everything You Need to Know"
+category: "General"
 date: "2026-07-23"
 excerpt: "Is streaming IPTV legal? We break down the legal landscape of Internet Protocol Television, media players, and copyright laws in 2026."
 author: "Vanto Player Team"

@@ -1,5 +1,6 @@
 ---
 title: "How to Watch IPTV on Windows and Mac (2026 Guide)"
+category: "Guides"
 date: "2026-08-01"
 excerpt: "Want to stream live TV on your computer? Discover the best methods and media players for watching IPTV on Windows PCs and MacBooks in 2026."
 author: "Vanto Player Team"

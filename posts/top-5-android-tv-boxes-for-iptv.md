@@ -1,5 +1,6 @@
 ---
 title: "Top 5 Android TV Boxes for IPTV Streaming in 2026"
+category: "General"
 date: "2026-08-04"
 excerpt: "Looking to upgrade your living room setup? We rank the 5 best Android TV boxes and streaming sticks for running heavy IPTV playlists in 2026."
 author: "Vanto Player Team"

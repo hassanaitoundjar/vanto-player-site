@@ -1,5 +1,6 @@
 ---
 title: "Understanding M3U vs JSON Playlist Formats (Beginner Guide)"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Confused about playlist formats? Learn the difference between M3U and JSON files, and discover which format is best for Vanto Player."
 author: "Vanto Player Team"

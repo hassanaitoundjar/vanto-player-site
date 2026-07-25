@@ -1,5 +1,6 @@
 ---
 title: "Vanto Player on Mac, Windows, and Web Browser: Which to Choose?"
+category: "General"
 date: "2026-07-15"
 excerpt: "Want to stream on your computer? Compare Vanto Player for Mac, Windows, and Web Browser to find the best way to watch your M3U playlists on a desktop."
 author: "Vanto Player Team"

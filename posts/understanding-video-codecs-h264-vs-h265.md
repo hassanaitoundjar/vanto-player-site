@@ -1,5 +1,6 @@
 ---
 title: "H.264 vs H.265 (HEVC): Which is Better for IPTV Streaming?"
+category: "Comparisons"
 date: "2026-08-03"
 excerpt: "A deep dive into video compression codecs. Learn the difference between H.264 and H.265 (HEVC) and why modern hardware decoding is vital for 4K streaming."
 author: "Vanto Player Team"

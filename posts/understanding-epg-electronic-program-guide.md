@@ -1,5 +1,6 @@
 ---
 title: "What is EPG? Electronic Program Guides for IPTV Explained"
+category: "Guides"
 date: "2026-07-26"
 excerpt: "Discover what an Electronic Program Guide (EPG) is, how it works with your IPTV M3U playlist, and how to fix common TV guide sync issues in 2026."
 author: "Vanto Player Team"

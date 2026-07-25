@@ -1,5 +1,6 @@
 ---
 title: "How to Stop IPTV Buffering: The Ultimate 2026 Fix Guide"
+category: "Guides"
 date: "2026-07-20"
 excerpt: "Is your IPTV stream constantly pausing? Learn the top technical fixes to stop buffering, reduce latency, and ensure smooth 4K playback in 2026."
 author: "Vanto Player Team"

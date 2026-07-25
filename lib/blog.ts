@@ -8,6 +8,7 @@ export interface BlogPost {
   date: string;
   excerpt: string;
   content: string;
+  category?: string;
   coverImage?: string;
   author?: string;
   readingTime?: number;
@@ -36,6 +37,7 @@ export function getPostBySlug(slug: string): BlogPost {
     title: data.title || 'Untitled',
     date: data.date || '',
     excerpt: data.excerpt || '',
+    category: data.category || 'General',
     coverImage: data.coverImage || null,
     author: data.author || 'Vanto Player Team',
     readingTime,

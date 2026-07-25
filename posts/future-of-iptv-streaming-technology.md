@@ -1,5 +1,6 @@
 ---
 title: "The Future of IPTV and Streaming Technology (2026-2030)"
+category: "General"
 date: "2026-07-29"
 excerpt: "What does the future hold for cord-cutters? From AI-driven recommendations to 8K streaming, explore the exciting future of IPTV technology."
 author: "Vanto Player Team"

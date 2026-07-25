@@ -1,5 +1,6 @@
 ---
 title: "Why You Might Need a VPN for IPTV Streaming in 2026"
+category: "General"
 date: "2026-07-24"
 excerpt: "Discover why utilizing a Virtual Private Network (VPN) can improve your IPTV streaming experience, prevent ISP throttling, and protect your privacy."
 author: "Vanto Player Team"

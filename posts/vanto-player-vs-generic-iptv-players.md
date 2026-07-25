@@ -1,5 +1,6 @@
 ---
 title: "Vanto Player vs Generic IPTV Players: What to Look For in 2026"
+category: "Comparisons"
 date: "2026-07-15"
 excerpt: "Discover why Vanto Player stands out against generic IPTV players. Compare features like 4K stability, UI design, and multi-platform sync for 2026."
 author: "Vanto Player Team"

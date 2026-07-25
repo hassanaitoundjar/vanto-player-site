@@ -1,5 +1,6 @@
 ---
 title: "What Internet Speed Do You Really Need for 4K IPTV?"
+category: "General"
 date: "2026-08-02"
 excerpt: "Tired of buffering? We break down the exact internet speeds, bandwidth requirements, and networking tips needed to stream 4K IPTV flawlessly in 2026."
 author: "Vanto Player Team"

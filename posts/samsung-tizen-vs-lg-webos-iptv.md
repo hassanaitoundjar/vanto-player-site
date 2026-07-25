@@ -1,5 +1,6 @@
 ---
 title: "Samsung Tizen vs LG WebOS: Which is Better for IPTV?"
+category: "Comparisons"
 date: "2026-07-27"
 excerpt: "Choosing a new Smart TV for streaming? We compare Samsung's Tizen OS and LG's WebOS to see which operating system is better for IPTV media players in 2026."
 author: "Vanto Player Team"

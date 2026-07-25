@@ -1,5 +1,6 @@
 ---
 title: "How to Fix Playlist Errors & Buffering in Vanto Player"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Experiencing buffering or 'playlist not working' errors in Vanto Player? Use our troubleshooting guide to fix M3U connection issues and optimize playback."
 author: "Vanto Player Team"

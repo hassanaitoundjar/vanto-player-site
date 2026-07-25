@@ -46,7 +46,7 @@ export default function BlogIndexPage() {
                   FEATURED
                 </span>
                 <span className="bg-white/5 text-gray-300 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded">
-                  GUIDES
+                  {posts[0].category}
                 </span>
               </div>
               
@@ -92,7 +92,7 @@ export default function BlogIndexPage() {
                   <div className="flex items-center gap-4 mb-6 text-[11px] font-bold uppercase tracking-wider">
                     <span className="flex items-center gap-1.5 text-[#3b82f6]">
                       <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                      GUIDES
+                      {post.category}
                     </span>
                     <span className="text-gray-500">{post.readingTime} MIN READ</span>
                   </div>

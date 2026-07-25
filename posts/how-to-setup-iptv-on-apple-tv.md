@@ -1,5 +1,6 @@
 ---
 title: "How to Set Up IPTV on Apple TV (Step-by-Step 2026 Guide)"
+category: "Guides"
 date: "2026-07-25"
 excerpt: "Learn how to turn your Apple TV into a powerful IPTV streaming machine with our comprehensive 2026 setup guide and media player recommendations."
 author: "Vanto Player Team"

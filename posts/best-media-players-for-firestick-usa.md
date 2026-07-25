@@ -1,5 +1,6 @@
 ---
 title: "Best Streaming Media Players for Amazon Firestick in the US (2026)"
+category: "Comparisons"
 date: "2026-08-07"
 excerpt: "The Amazon Firestick is the most popular streaming device in the USA. Discover the absolute best IPTV media player apps to install on your Fire TV in 2026."
 author: "Vanto Player Team"

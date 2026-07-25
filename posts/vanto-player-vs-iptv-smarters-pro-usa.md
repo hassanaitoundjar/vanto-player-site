@@ -1,5 +1,6 @@
 ---
 title: "Vanto Player vs IPTV Smarters Pro: Which is the Best App in the USA?"
+category: "Comparisons"
 date: "2026-08-06"
 excerpt: "A direct comparison between the two biggest media players in the US market. Find out why Vanto Player is rapidly replacing IPTV Smarters Pro in 2026."
 author: "Vanto Player Team"

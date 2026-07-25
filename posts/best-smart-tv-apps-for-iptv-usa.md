@@ -1,5 +1,6 @@
 ---
 title: "Best Smart TV Apps for IPTV in the USA (Samsung & LG 2026)"
+category: "Comparisons"
 date: "2026-08-09"
 excerpt: "Don't want to use a streaming stick? Discover the best native Smart TV applications for Samsung Tizen and LG WebOS available in the US market for 2026."
 author: "Vanto Player Team"

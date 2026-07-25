@@ -6,6 +6,7 @@ import { Calendar, User, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/siteConfig';
+import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -48,10 +49,22 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   const allPosts = getAllPosts();
-  const relatedPosts = allPosts.filter(p => p.slug !== slug).slice(0, 3);
+  let relatedPosts = allPosts.filter(p => p.slug !== slug && p.category === post.category);
+  if (relatedPosts.length < 3) {
+    const otherPosts = allPosts.filter(p => p.slug !== slug && p.category !== post.category);
+    relatedPosts = [...relatedPosts, ...otherPosts];
+  }
+  relatedPosts = relatedPosts.slice(0, 3);
 
   return (
     <div className="flex flex-col items-center justify-start flex-1 w-full bg-white">
+      <BreadcrumbListLd
+        items={[
+          { name: 'Home', item: 'https://vantoplayer.com' },
+          { name: 'Blog', item: 'https://vantoplayer.com/blog' },
+          { name: post.title, item: `https://vantoplayer.com/blog/${slug}` }
+        ]}
+      />
       <article className="w-full">
         {/* Dark Hero Section */}
         <section className="relative w-full pt-32 pb-24 px-6 md:px-8 xl:px-12 bg-[#111111] border-b border-white/5">
@@ -68,7 +81,7 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Category Tag */}
             <div className="mb-6">
               <span className="inline-block bg-[#3b82f6] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-md">
-                GUIDE
+                {post.category}
               </span>
             </div>
 
@@ -144,7 +157,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedPosts.map((relatedPost) => (
                   <Link href={`/blog/${relatedPost.slug}`} key={relatedPost.slug} className="group flex flex-col gap-3">
-                    <span className="text-[#3b82f6] text-xs font-bold uppercase tracking-wider">Guide</span>
+                    <span className="text-[#3b82f6] text-xs font-bold uppercase tracking-wider">{relatedPost.category}</span>
                     <h4 className="font-bold text-gray-900 group-hover:text-[#3b82f6] transition-colors line-clamp-2">{relatedPost.title}</h4>
                     <span className="text-gray-500 text-sm">
                       {new Date(relatedPost.date).toLocaleDateString('en-US', {

@@ -1,5 +1,6 @@
 ---
 title: "How to Load an M3U Playlist into Vanto Player (Easy Guide)"
+category: "Guides"
 date: "2026-07-15"
 excerpt: "Learn how to easily load and manage M3U and JSON playlists in Vanto Player. Follow this guide to sync your content across Android, iOS, and Smart TVs."
 author: "Vanto Player Team"

@@ -1,5 +1,6 @@
 ---
 title: "The Ultimate Guide to Cord-Cutting in 2026: Apps, IPTV & M3U"
+category: "Guides"
 date: "2026-07-21"
 excerpt: "Ready to cancel your expensive cable subscription? Learn how to successfully cut the cord in 2026 using IPTV, M3U playlists, and modern media players."
 author: "Vanto Player Team"

@@ -1,5 +1,6 @@
 ---
 title: "How to Cast IPTV from Android & iOS to Chromecast"
+category: "Guides"
 date: "2026-07-28"
 excerpt: "Don't want to install apps directly on your TV? Learn how to seamlessly cast your M3U IPTV playlists from your mobile phone to your Chromecast in 2026."
 author: "Vanto Player Team"
