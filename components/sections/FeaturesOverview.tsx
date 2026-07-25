@@ -44,7 +44,7 @@ export default function FeaturesOverview() {
             {features.map((feature, idx) => (
               <div key={idx} className="flex items-start gap-4 group">
                 <div className="mt-1 shrink-0">
-                  <CheckCircle2 className="w-6 h-6 text-white fill-[#3b82f6] group-hover:scale-110 transition-transform" />
+                  <CheckCircle2 className="w-6 h-6 text-white fill-[#3b82f6] group-hover:scale-110 transition-transform" / aria-hidden="true">
                 </div>
                 <div className="leading-relaxed">
                   <h3 className="text-[#334155] font-semibold text-[17px] inline mr-1">{feature.title}</h3>
@@ -69,7 +69,7 @@ export default function FeaturesOverview() {
               />
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">
-                  <Play className="w-6 h-6 text-black fill-black ml-1" />
+                  <Play className="w-6 h-6 text-black fill-black ml-1" / aria-hidden="true">
                 </div>
               </div>
               {/* Fake Video Player Bar */}
@@ -96,7 +96,7 @@ export default function FeaturesOverview() {
               />
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">
-                  <Play className="w-5 h-5 text-black fill-black ml-1" />
+                  <Play className="w-5 h-5 text-black fill-black ml-1" / aria-hidden="true">
                 </div>
               </div>
             </div>

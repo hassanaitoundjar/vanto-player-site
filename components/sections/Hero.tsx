@@ -42,11 +42,11 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl pointer-events-none"></div>
           
           <button className="absolute top-4 right-4 text-white/40 hover:text-white transition-colors z-10" aria-label="Close disclaimer">
-            <X className="w-4 h-4" />
+            <X className="w-4 h-4" / aria-hidden="true">
           </button>
           
           <div className="flex gap-3 relative z-10">
-            <Info className="w-5 h-5 text-[#3b82f6] shrink-0 mt-0.5" />
+            <Info className="w-5 h-5 text-[#3b82f6] shrink-0 mt-0.5" / aria-hidden="true">
             <p className="text-xs text-white/70 leading-relaxed pr-4">
               <strong className="text-white font-semibold">Legal Notice:</strong> VANTO PLAYER does not sell playlists or subscriptions. It is a media player and does not offer channels or include any content. Clients must provide their own content. VANTO PLAYER is not responsible for the content utilized within our app. We offer a 7-day trial period; afterward, a one-time license must be purchased. No refunds after purchase.
             </p>
