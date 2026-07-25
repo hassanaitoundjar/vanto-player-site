@@ -263,7 +263,7 @@ export default function DownloadSection() {
               <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version</p>
 
               <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/linux/vanto_player" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
+                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/linux/vanto_player-x86_64.AppImage" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
                   <Terminal className="w-6 h-6 text-white" aria-hidden="true" />
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-300">Available for</span>
