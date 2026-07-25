@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import DownloadSection from '@/components/sections/Download';
 import CompatibleDevices from '@/components/sections/CompatibleDevices';
 import FAQSection from '@/components/sections/FAQ';

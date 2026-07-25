@@ -364,6 +364,65 @@ export default function DownloadSection() {
           </div>
 
         </div>
+
+        {/* Uninstall Instructions */}
+        <div className="mt-20 max-w-4xl mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-8 md:p-12 border border-gray-100">
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">How to Uninstall Vanto Player</h3>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto text-sm md:text-base">
+            If you need to remove Vanto Player from your device, follow the instructions below based on your operating system.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Windows */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <Terminal className="w-4 h-4 text-blue-600" aria-hidden="true" />
+                </div>
+                <h4 className="font-bold text-gray-900">Windows</h4>
+              </div>
+              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
+                <li>Open <strong className="text-gray-800">Settings</strong> {'>'} <strong className="text-gray-800">Apps</strong>.</li>
+                <li>Search for &quot;Vanto Player&quot; in the list.</li>
+                <li>Click on it and select <strong className="text-gray-800">Uninstall</strong>.</li>
+                <li>Follow the on-screen prompts.</li>
+              </ol>
+            </div>
+
+            {/* Mac */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <Apple className="w-4 h-4 text-blue-600" aria-hidden="true" />
+                </div>
+                <h4 className="font-bold text-gray-900">macOS</h4>
+              </div>
+              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
+                <li>Open the <strong className="text-gray-800">Finder</strong>.</li>
+                <li>Go to the <strong className="text-gray-800">Applications</strong> folder.</li>
+                <li>Locate &quot;Vanto Player&quot;.</li>
+                <li>Drag the app to the <strong className="text-gray-800">Trash</strong>.</li>
+              </ol>
+            </div>
+
+            {/* Android / Smart TV */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <Monitor className="w-4 h-4 text-blue-600" aria-hidden="true" />
+                </div>
+                <h4 className="font-bold text-gray-900">Android & TV</h4>
+              </div>
+              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
+                <li>Go to device <strong className="text-gray-800">Settings</strong>.</li>
+                <li>Navigate to <strong className="text-gray-800">Apps</strong>.</li>
+                <li>Find and select &quot;Vanto Player&quot;.</li>
+                <li>Choose <strong className="text-gray-800">Uninstall</strong> and confirm.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
