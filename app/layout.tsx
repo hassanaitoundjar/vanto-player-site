@@ -48,9 +48,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
       <body className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans selection:bg-[#3b82f6] selection:text-white">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#3b82f6] focus:text-white focus:font-bold rounded-md">Skip to main content</a>
         <OrganizationLd />
         <Header />
-        <main className="flex-1 flex flex-col">{children}</main>
+        <main id="main-content" className="flex-1 flex flex-col">{children}</main>
         <Footer />
       </body>
     </html>
