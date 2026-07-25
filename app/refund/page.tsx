@@ -1,12 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Refund Policy | Vanto Player',
   description: 'Read the Refund Policy for Vanto Player. Understand the terms under which refunds are provided.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/refund',
-  },
-};
+  path: '/refund',
+});
 
 export default function RefundPolicyPage() {
   return (

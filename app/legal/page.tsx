@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import { Shield, FileText, Scale, RefreshCcw, ArrowRight } from 'lucide-react';
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Legal Terms | Vanto Player',
   description: 'Legal terms, privacy policy, and other legal documents for Vanto Player.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/legal'
-  }
-};
+  path: '/legal',
+});
 
 const legalDocs = [
   {

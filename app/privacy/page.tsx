@@ -1,12 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Privacy Policy | Vanto Player',
   description: 'Read the Privacy Policy for Vanto Player to understand how we handle your data.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/privacy',
-  },
-};
+  path: '/privacy',
+});
 
 export default function PrivacyPolicyPage() {
   return (

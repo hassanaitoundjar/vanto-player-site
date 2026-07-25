@@ -1,12 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'DMCA Policy | Vanto Player',
   description: 'Digital Millennium Copyright Act (DMCA) policy for Vanto Player.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/dmca',
-  },
-};
+  path: '/dmca',
+});
 
 export default function DMCAPolicyPage() {
   return (

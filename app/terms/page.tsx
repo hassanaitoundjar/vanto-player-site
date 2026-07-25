@@ -1,12 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Terms of Service | Vanto Player',
   description: 'Read the Terms of Service for using Vanto Player. Vanto Player is a media player and does not provide any media content or playlists.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/terms',
-  },
-};
+  path: '/terms',
+});
 
 export default function TermsOfServicePage() {
   return (

@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
-import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/siteConfig';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Blog | Vanto Player',
   description: 'Read the latest news, tutorials, and articles about IPTV and Vanto Player.',
-  alternates: {
-    canonical: 'https://vantoplayer.com/blog'
-  }
-};
+  path: '/blog',
+});
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();
