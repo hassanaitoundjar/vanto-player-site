@@ -36,9 +36,9 @@ export default function Header() {
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105" onClick={() => setIsMobileMenuOpen(false)} aria-label="Vanto Player Home">
             <div className="relative h-10 w-10 rounded-xl overflow-hidden shadow-lg shadow-black/50">
-              <Image 
-                src="/logo.png" 
-                alt="Vanto Player Logo" 
+              <Image
+                src="/logo.png"
+                alt="Vanto Player Logo"
                 fill
                 priority
                 className="object-cover"
@@ -56,7 +56,7 @@ export default function Header() {
                 <NavLink key={link.text} href={link.href} text={link.text} />
               ))}
             </nav>
-            <Link 
+            <Link
               href="/download"
               className="bg-[#3b82f6] text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-blue-500/20 hover:bg-blue-600 hover:shadow-blue-500/40 transition-all active:scale-95 text-sm tracking-wider uppercase"
             >
@@ -65,7 +65,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button (Hamburger/Close) */}
-          <button 
+          <button
             className="lg:hidden text-white/80 hover:text-white p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md z-50 relative w-10 h-10 flex flex-col justify-center items-center gap-1.5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
@@ -79,24 +79,22 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div 
-        className={`fixed inset-0 bg-black z-40 transition-all duration-500 lg:hidden ${
-          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
-      >
-        <div 
-          className={`flex flex-col items-center justify-center min-h-screen px-6 py-24 transition-all duration-500 ease-out transform ${
-            isMobileMenuOpen ? 'translate-y-0 scale-100 opacity-100' : '-translate-y-10 scale-95 opacity-0'
+      <div
+        className={`fixed inset-0 bg-black z-40 transition-all duration-500 lg:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           }`}
+      >
+        <div
+          className={`flex flex-col items-center justify-center min-h-screen px-6 py-24 transition-all duration-500 ease-out transform ${isMobileMenuOpen ? 'translate-y-0 scale-100 opacity-100' : '-translate-y-10 scale-95 opacity-0'
+            }`}
         >
           <div className="w-full max-w-sm flex flex-col gap-6 text-center">
             {navLinks.map((link, index) => (
-              <Link 
-                key={link.text} 
+              <Link
+                key={link.text}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-white text-xl font-bold tracking-widest uppercase hover:text-[#3b82f6] transition-colors"
-                style={{ 
+                style={{
                   transitionDelay: `${isMobileMenuOpen ? index * 75 : 0}ms`,
                   opacity: isMobileMenuOpen ? 1 : 0,
                   transform: isMobileMenuOpen ? 'translateY(0)' : 'translateY(20px)',
@@ -107,21 +105,21 @@ export default function Header() {
                 {link.text}
               </Link>
             ))}
-            
-            <div 
+
+            <div
               className="w-full h-px bg-white/10 my-4"
-              style={{ 
+              style={{
                 transitionDelay: `${isMobileMenuOpen ? navLinks.length * 75 : 0}ms`,
                 opacity: isMobileMenuOpen ? 1 : 0,
                 transitionDuration: '500ms'
               }}
             ></div>
-            
-            <Link 
+
+            <Link
               href="/download"
               onClick={() => setIsMobileMenuOpen(false)}
               className="bg-[#3b82f6] text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-600 transition-all active:scale-95 tracking-wider"
-              style={{ 
+              style={{
                 transitionDelay: `${isMobileMenuOpen ? (navLinks.length + 1) * 75 : 0}ms`,
                 opacity: isMobileMenuOpen ? 1 : 0,
                 transform: isMobileMenuOpen ? 'translateY(0)' : 'translateY(20px)',
@@ -139,8 +137,8 @@ export default function Header() {
 
 function NavLink({ href, text }: { href: string; text: string }) {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className="text-[13px] font-bold tracking-widest text-white/80 hover:text-[#3b82f6] transition-colors duration-200 uppercase"
     >
       {text}
