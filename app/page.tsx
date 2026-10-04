@@ -20,7 +20,7 @@ export const metadata = buildMetadata({
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-start flex-1 w-full">
-      <SoftwareApplicationLd />
+      <5 />
       <VideoObjectLd />
       <FAQPageLd />
       <Hero />
