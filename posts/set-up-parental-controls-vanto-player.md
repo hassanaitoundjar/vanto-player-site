@@ -54,7 +54,7 @@ Once locked, a padlock icon will appear next to the category name. Whenever anyo
 
 If you ever need to unlock a category permanently or change your security settings, simply return to the **Settings > Parental Controls** menu. You will need to enter your current PIN to access this area.
 
-If you forget your PIN, you may need to clear the app data or uninstall and reinstall Vanto Player to reset the security settings. Note that doing so will require you to re-enter your device credentials at the [Activation portal](/activation).
+If you forget your PIN, you may need to clear the app data or uninstall and reinstall Vanto Player to reset the security settings.
 
 ## Frequently Asked Questions (FAQ)
 

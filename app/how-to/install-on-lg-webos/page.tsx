@@ -38,7 +38,7 @@ export default function InstallLGWebOS() {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">What's Next?</h2>
         <p>
-          When you first launch the app, you'll see your device's MAC address and Device Key. Make a note of these details. You can now proceed to our <a href="/activation" className="text-blue-400 hover:underline">activation page</a> to link your M3U playlist to your TV.
+          When you first launch the app, you'll see your device's MAC address and Device Key. Make a note of these details. You can now proceed to upload your M3U playlist via the app's playlist manager.
         </p>
       </div>
       <HowToRelatedLinks />

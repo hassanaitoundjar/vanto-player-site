@@ -49,10 +49,19 @@ JSON playlists are generally used in very specific, customized scenarios or clos
 Regardless of which format you use, getting it into Vanto Player is easy.
 
 1. Locate your M3U URL or JSON link.
-2. Go to the Vanto Player [Activation portal](/activation).
+2. Open the Vanto Player playlist manager.
 3. Log in using your Device [MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address and Device Key.
 4. Paste the URL into the "Add Playlist" section.
 5. Save, and open Vanto Player on your device to sync the content.
+
+## Vanto Player Interface
+
+Once your playlist is successfully added, Vanto Player automatically organizes your content into a beautiful, easy-to-navigate interface:
+
+![Vanto Player Dashboard](/images/home-page.png)
+![Vanto Player Live TV](/screenshots/live-screen.png)
+![Vanto Player Movies Grid](/screenshots/movies-screen.png)
+![Vanto Player Movie Details](/screenshots/movie-details.png)
 
 ## Frequently Asked Questions (FAQ)
 

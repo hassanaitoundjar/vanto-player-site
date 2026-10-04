@@ -21,15 +21,6 @@ const supportResources = [
     border: 'border-blue-100'
   },
   {
-    title: 'Manage Playlists',
-    description: 'Learn how to add, edit, and organize your M3U playlists in the Vanto Player dashboard.',
-    icon: BookOpen,
-    href: '/activation',
-    color: 'text-purple-500',
-    bg: 'bg-purple-50',
-    border: 'border-purple-100'
-  },
-  {
     title: 'Contact Support Team',
     description: 'Can\'t find what you\'re looking for? Reach out to our technical support team for assistance.',
     icon: MessageSquare,
@@ -64,7 +55,7 @@ export default function SupportPage() {
       {/* Resources Grid */}
       <section className="w-full py-24 px-6 md:px-8 xl:px-12 relative z-10">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-24">
             {supportResources.map((resource, index) => {
               const Icon = resource.icon;
               return (

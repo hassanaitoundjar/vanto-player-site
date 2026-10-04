@@ -52,12 +52,9 @@ export default function AppScreenshots() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-8 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
               <div className="flex items-center gap-3 mb-2">
-                 <div className="bg-[#3b82f6] w-10 h-10 rounded-xl flex items-center justify-center shadow-lg">
-                   <Tablet className="text-white w-5 h-5" aria-hidden="true" />
-                 </div>
-                 <h3 className="text-white text-2xl font-bold tracking-tight">Tablet & Web</h3>
+                 <h3 className="text-white text-2xl font-bold tracking-tight">Live TV & EPG</h3>
               </div>
-              <p className="text-gray-200 text-sm font-medium mt-2">Perfect adaptive scaling for browsers and tablets.</p>
+              <p className="text-gray-200 text-sm font-medium mt-2">Browse channels with an integrated program guide.</p>
             </div>
           </div>
 
@@ -72,23 +69,25 @@ export default function AppScreenshots() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
               <div className="flex items-center gap-3 mb-1">
-                 <Smartphone className="text-white w-5 h-5" aria-hidden="true" />
-                 <h3 className="text-white text-xl font-bold">Mobile iOS & Android</h3>
+                 <h3 className="text-white text-xl font-bold">VOD Library</h3>
               </div>
             </div>
           </div>
 
-          {/* Bottom Right - Brand Accent Box */}
-          <div className="col-span-1 md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group bg-gradient-to-br from-[#0f172a] to-[#1e293b] flex flex-col justify-center items-center p-8 text-center border border-gray-800">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[#3b82f6] to-[#60a5fa] flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
-              <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
+          {/* Bottom Right - Movie Details */}
+          <div className="col-span-1 md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative group border border-gray-100">
+            <Image 
+              src="/screenshots/movie-details.png" 
+              alt="Vanto Player Movie Details Interface" 
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out object-left"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-6 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+              <div className="flex items-center gap-3 mb-1">
+                 <h3 className="text-white text-xl font-bold">Rich Metadata</h3>
+              </div>
             </div>
-            <h3 className="text-white text-2xl font-bold mb-3 tracking-tight">Premium UI</h3>
-            <p className="text-gray-300 text-sm font-medium leading-relaxed">
-              Designed with absolute precision. Every pixel crafted to perfection for your media.
-            </p>
           </div>
 
         </div>

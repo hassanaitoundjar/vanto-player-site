@@ -39,7 +39,7 @@ export default function InstallSamsungTV() {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Next Steps: Activating and Adding Your Playlist</h2>
         <p>
-          After installation, the app will display a unique MAC address and Device Key on the screen. You will need these to activate your device and upload your M3U playlist via our <a href="/activation" className="text-blue-400 hover:underline">Manage Playlists</a> portal.
+          After installation, the app will display a unique MAC address and Device Key on the screen. You will need these to activate your device and upload your M3U playlist.
         </p>
       </div>
       <HowToRelatedLinks />

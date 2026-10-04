@@ -30,7 +30,7 @@ Before you can set up the guide, you need the data. You have two main options:
 
 Adding an EPG is handled through the same centralized dashboard you use to manage your playlists.
 
-1. Open a web browser and go to the Vanto Player [Activation portal](/activation).
+1. Open the Vanto Player app and go to the playlist manager.
 2. Log in using your TV or mobile device's **[MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address** and **Device Key**.
 3. Locate the playlist you have already added (or add a new one).
 4. Look for the field labeled **EPG URL** or **XMLTV Link**.

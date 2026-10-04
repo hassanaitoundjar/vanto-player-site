@@ -17,7 +17,7 @@ If you encounter a "Playlist Not Working" error or experience constant [bufferin
 
 If Vanto Player displays an error that your playlist cannot be loaded or is empty, try the following steps:
 
-* **Check for Typos:** If you typed your [M3U URL](/blog/load-m3u-playlist-vanto-player) manually, a single incorrect character (like an uppercase 'I' instead of a lowercase 'l') will break the link. We highly recommend using the [web activation portal](/activation) to copy and paste your link directly.
+* **Check for Typos:** If you typed your [M3U URL](/blog/load-m3u-playlist-vanto-player) manually, a single incorrect character (like an uppercase 'I' instead of a lowercase 'l') will break the link.
 * **Verify Provider Uptime:** The server hosting your playlist might be temporarily down. Paste your M3U URL directly into a standard web browser on your computer. If the browser fails to connect or download a file, your provider's server is offline.
 * **Expired Subscription:** If you are using a paid playlist service, ensure your account hasn't expired.
 * **Geo-Blocking or ISP Blocks:** Some Internet Service Providers actively block connections to certain media servers. If the playlist loads on your phone's cellular data but fails on your home Wi-Fi, your ISP is likely blocking the connection. Using a reliable VPN can bypass these restrictions.

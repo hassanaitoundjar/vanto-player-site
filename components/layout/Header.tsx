@@ -18,8 +18,6 @@ export default function Header() {
 
   const navLinks = [
     { href: "/download", text: "DOWNLOADS" },
-    { href: "/activation", text: "ACTIVATE DEVICE" },
-    { href: "/activation", text: "MANAGE PLAYLISTS" },
     { href: "/blog", text: "HOW TO TUTORIALS" },
     { href: "/support", text: "SUPPORT" },
     { href: "/legal", text: "LEGAL TERMS" },

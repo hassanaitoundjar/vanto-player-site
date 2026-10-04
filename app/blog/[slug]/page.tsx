@@ -133,9 +133,6 @@ export default async function BlogPostPage({ params }: Props) {
                 <Link href="/download" className="px-8 py-3 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-600 transition-colors">
                   Download Now
                 </Link>
-                <Link href="/activation" className="px-8 py-3 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-colors border border-white/5">
-                  Activate Device
-                </Link>
               </div>
             </div>
 
