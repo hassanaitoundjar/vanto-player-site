@@ -25,6 +25,7 @@ export default function AppScreenshots() {
               src="/images/home-page.png" 
               alt="Vanto Player Smart TV Interface Screenshot" 
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
             {/* Dark gradient fade for text */}
@@ -47,6 +48,7 @@ export default function AppScreenshots() {
               src="/screenshots/live-screen.png" 
               alt="Vanto Player Web Interface Screenshot" 
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
@@ -64,6 +66,7 @@ export default function AppScreenshots() {
               src="/screenshots/movies-screen.png" 
               alt="Vanto Player Mobile Interface Screenshot" 
               fill
+              sizes="(max-width: 768px) 100vw, 25vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
@@ -80,6 +83,7 @@ export default function AppScreenshots() {
               src="/screenshots/movie-details.png" 
               alt="Vanto Player Movie Details Interface" 
               fill
+              sizes="(max-width: 768px) 100vw, 25vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out object-left"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>

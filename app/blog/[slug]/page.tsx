@@ -15,11 +15,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  
+
   try {
     const post = getPostBySlug(slug);
     return buildMetadata({
-      title: `${post.title} | Vanto Player Blog`,
+      title: `${post.title} | Vanto Player `,
       description: post.excerpt,
       path: `/blog/${slug}`
     });
@@ -40,7 +40,7 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: Props) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  
+
   let post;
   try {
     post = getPostBySlug(slug);
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
               <span>›</span>
               <span className="text-gray-300 truncate">{post.title}</span>
             </nav>
-            
+
             {/* Category Tag */}
             <div className="mb-6">
               <span className="inline-block bg-[#3b82f6] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-md">
@@ -89,12 +89,12 @@ export default async function BlogPostPage({ params }: Props) {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-[1.1]">
               {post.title}
             </h1>
-            
+
             {/* Excerpt */}
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-8 leading-relaxed">
               {post.excerpt}
             </p>
-            
+
             {/* Author & Date */}
             <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
               <span className="flex items-center gap-2">
@@ -138,16 +138,16 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* Author Box */}
             <div className="mt-12 bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center shrink-0">
+              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <User className="w-8 h-8 text-gray-500" aria-hidden="true" />
               </div>
               <div className="text-center sm:text-left">
                 <h4 className="text-lg font-bold text-gray-900">{post.author}</h4>
-                <p className="text-[#3b82f6] text-sm font-bold uppercase tracking-wider mb-2">Vanto Player Team</p>
-                <p className="text-gray-600 text-sm leading-relaxed">Dedicated to bringing you the best media player experience. We share tips, tutorials, and updates to help you get the most out of your IPTV playlists.</p>
+                <p className="text-[#3b82f6] text-sm font-bold uppercase tracking-wider mb-2">Streaming Technology Expert</p>
+                <p className="text-gray-600 text-sm leading-relaxed">With years of deep expertise in IPTV protocols, media encoding, and streaming applications, {post.author} leads technical content at Vanto Player. They share advanced setup tutorials, performance optimization tips, and industry insights to help you build the ultimate home theater experience.</p>
               </div>
             </div>
-            
+
             {/* Related Articles */}
             <div className="mt-20">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-100 pb-4">Related Articles</h3>

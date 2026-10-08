@@ -12,15 +12,14 @@ import { buildMetadata } from '@/lib/siteConfig';
 import { SoftwareApplicationLd, VideoObjectLd, FAQPageLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
-  title: 'Vanto Player: Premium IPTV & Media Player',
-  description: 'Vanto Player is a premium IPTV & media player supporting M3U/JSON playlists on Smart TV, Android, iOS, and Web. 4K playback, zero buffering. Download free.',
+  title: 'Vanto Player: Best IPTV Player App & Online Web Player',
+  description: 'Vanto Player is the ultimate IPTV player app and online media player. Stream your M3U/JSON playlists on Smart TV, Android, iOS, and Web. Try it today.',
   path: '/',
 });
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-start flex-1 w-full">
-      <5 />
       <VideoObjectLd />
       <FAQPageLd />
       <Hero />

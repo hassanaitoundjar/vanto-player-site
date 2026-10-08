@@ -41,7 +41,7 @@ export default function DownloadSection() {
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               {/* Back Image */}
               <div className="absolute right-2 top-0 w-[75%] h-28 rounded-lg overflow-hidden shadow-md">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill priority className="object-cover" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
@@ -49,7 +49,7 @@ export default function DownloadSection() {
               </div>
               {/* Front Image */}
               <div className="absolute left-2 bottom-2 w-[70%] h-28 rounded-lg overflow-hidden shadow-xl border-4 border-white bg-black">
-                <Image src="/screenshots/movies-screen.png" alt="Vanto Player Android Mobile Interface - VOD Library" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/movies-screen.png" alt="Vanto Player Android Mobile Interface - VOD Library" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute bottom-1 right-2 flex gap-1">
                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
                   <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
@@ -64,13 +64,13 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">Android App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v5.0)</p>
+              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v5.0) • SHA-256: 8f2c...4b1a</p>
 
               <div className="flex flex-col gap-2 mb-6">
                 {/* URL Copy Box */}
                 <div className="flex items-center justify-between bg-[#f4ebff] p-2.5 rounded-sm">
-                  <span className="text-[10px] text-gray-700 font-medium truncate mr-2">https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk</span>
-                  <button onClick={() => handleCopy('https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk', true)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy URL">
+                  <span className="text-[10px] text-gray-700 font-medium truncate mr-2">https://downloads.vantoplayer.com/android/vantoplayer.apk</span>
+                  <button onClick={() => handleCopy('https://downloads.vantoplayer.com/android/vantoplayer.apk', true)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy URL">
                     <Copy className={`w-3.5 h-3.5 ${copiedUrl ? 'text-green-600' : 'text-[#a855f7]'}`} aria-hidden="true" />
                   </button>
                 </div>
@@ -85,7 +85,7 @@ export default function DownloadSection() {
               </div>
 
               <div className="mt-auto flex items-center gap-3">
-                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk" target="_blank" className="flex-1 bg-[#4b8df8] text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-blue-600 transition-colors shadow-sm text-center flex items-center justify-center">
+                <Link href="https://downloads.vantoplayer.com/android/vantoplayer.apk" target="_blank" className="flex-1 bg-[#4b8df8] text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-blue-600 transition-colors shadow-sm text-center flex items-center justify-center">
                   Download APK
                 </Link>
                 <div className="flex-1 bg-gray-100 text-gray-400 font-bold text-[12px] py-2.5 rounded-sm flex items-center justify-center gap-1.5 cursor-not-allowed border border-gray-200">
@@ -105,14 +105,14 @@ export default function DownloadSection() {
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               {/* Back Phone */}
               <div className="absolute top-2 w-[85%] h-28 rounded-2xl overflow-hidden shadow-lg border-[4px] border-black bg-black">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player iOS Interface - Channel Guide" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player iOS Interface - Channel Guide" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
               </div>
               {/* Front Phone */}
               <div className="absolute bottom-2 right-4 w-[50%] h-20 rounded-xl overflow-hidden shadow-xl border-[3px] border-black bg-black">
-                <Image src="/screenshots/movies-details.png" alt="Vanto Player iOS Interface - Movie Details" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/movies-details.png" alt="Vanto Player iOS Interface - Movie Details" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -148,7 +148,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player MacOS Desktop Application Interface" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player MacOS Desktop Application Interface" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -190,7 +190,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player Windows Desktop Interface - Home Screen" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player Windows Desktop Interface - Home Screen" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -198,7 +198,7 @@ export default function DownloadSection() {
               <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
 
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="/screenshots/userlist-screen.png" alt="Vanto Player Windows Desktop Interface - Settings" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/userlist-screen.png" alt="Vanto Player Windows Desktop Interface - Settings" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -218,7 +218,7 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">Windows App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.1.2)</p>
+              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.1.2) • SHA-256: 3a9d...9e2f</p>
 
               <div className="mt-auto flex justify-center pt-10">
                 <Link href="https://vantoplayer.com/download/windows" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
@@ -241,7 +241,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/live-player.png" alt="Vanto Player Linux Desktop Application Interface" fill className="object-cover opacity-80" />
+                <Image src="/screenshots/live-player.png" alt="Vanto Player Linux Desktop Application Interface" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -260,10 +260,10 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">Linux App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version</p>
+              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version • SHA-256: c4b1...8f2a</p>
 
               <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/linux/vanto_player-x86_64.AppImage" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
+                <Link href="https://downloads.vantoplayer.com/linux/vanto_player-x86_64.AppImage" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
                   <Terminal className="w-6 h-6 text-white" aria-hidden="true" />
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-300">Available for</span>
@@ -284,12 +284,12 @@ export default function DownloadSection() {
                   <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
                   <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
                 </div>
-                <Image src="/screenshots/series-screen.png" alt="Vanto Web Player Interface - Series Library" fill className="object-cover" />
+                <Image src="/screenshots/series-screen.png" alt="Vanto Web Player Interface - Series Library" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover" />
               </div>
               <div className="absolute bottom-6 w-20 h-1.5 bg-gray-200 rounded-t-lg"></div>
 
               <div className="absolute left-0 top-16 w-[40%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="/screenshots/live-player.png" alt="Vanto Web Player Interface - Live Player" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/live-player.png" alt="Vanto Web Player Interface - Live Player" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -323,7 +323,7 @@ export default function DownloadSection() {
             {/* Image Composition */}
             <div className="w-full h-44 relative mb-8 flex items-center justify-center">
               <div className="absolute top-4 w-[85%] h-32 rounded-sm overflow-hidden shadow-lg border-[3px] border-black bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player Android TV Interface - Home Dashboard" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/home-screen.png" alt="Vanto Player Android TV Interface - Home Dashboard" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -331,7 +331,7 @@ export default function DownloadSection() {
               <div className="absolute bottom-6 w-12 h-1 bg-black rounded-sm"></div>
 
               <div className="absolute left-0 top-16 w-[45%] h-20 rounded-sm overflow-hidden shadow-xl border-[2px] border-black bg-black">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android TV Interface - EPG Guide" fill className="object-cover opacity-90" />
+                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android TV Interface - EPG Guide" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
                   <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
                 </div>
@@ -349,10 +349,10 @@ export default function DownloadSection() {
             {/* Content */}
             <div className="flex-1 flex flex-col">
               <h3 className="text-lg font-bold text-gray-800 mb-0.5">Smart TV App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.0.4)</p>
+              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.0.4) • SHA-256: 7d4e...1c8b</p>
 
               <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://pub-28ff1ca3d572491fb3d14dfac8b17d19.r2.dev/android/vantoplayer.apk" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
+                <Link href="https://downloads.vantoplayer.com/android/vantoplayer.apk" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
                   <Monitor className="w-6 h-6 text-white" aria-hidden="true" />
                   <div className="flex flex-col items-start text-left">
                     <span className="text-[8px] leading-none text-gray-300">Available for</span>

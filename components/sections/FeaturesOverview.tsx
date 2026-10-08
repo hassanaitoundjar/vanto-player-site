@@ -64,8 +64,7 @@ export default function FeaturesOverview() {
               <Image 
                 src="/screenshots/live-player.png" 
                 alt="Vanto Player High Quality Streaming Interface" 
-                fill
-                className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">
@@ -91,8 +90,7 @@ export default function FeaturesOverview() {
               <Image 
                 src="/screenshots/multiscreen.png" 
                 alt="Vanto Player Mobile Streaming Interface" 
-                fill
-                className="object-cover opacity-90"
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90"
               />
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">

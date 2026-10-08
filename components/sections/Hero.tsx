@@ -17,22 +17,19 @@ export default function Hero() {
         <div className="max-w-3xl">
           {/* SEO Optimized Hero Title */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.1]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]">Vanto Player:</span><br/> The Ultimate IPTV & Media Player
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]">Vanto Player:</span><br/> The Best IPTV Player App & Online Player
           </h1>
 
           {/* SEO Optimized Subtitle */}
           <p className="text-base md:text-xl text-white/70 max-w-2xl mb-10 font-medium leading-relaxed">
-            Experience the next generation of streaming. Seamlessly play your m3u playlists, live TV, and VOD on Smart TVs, Android devices, and Web with crystal-clear 4K resolution, zero buffering, and a stunningly beautiful interface.
+            Experience the next generation of streaming with our premium IPTV player app. Seamlessly play your m3u playlists on Smart TVs, Android, and online via our web player with crystal-clear 4K resolution and a beautiful interface.
           </p>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="https://vantoplayer.com/download" className="px-10 py-4 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 text-sm md:text-base shadow-[0_0_30px_-10px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.7)] hover:-translate-y-1 text-center inline-block">
-              Download App
+              Start 7-Day Free Trial
             </Link>
-            <button className="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm md:text-base backdrop-blur-md hover:-translate-y-1">
-              Become a Reseller
-            </button>
           </div>
         </div>
 

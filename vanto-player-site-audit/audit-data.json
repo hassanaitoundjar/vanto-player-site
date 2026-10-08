@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "health_score": 60,
+    "business_type": "SaaS / Software",
+    "top_findings": [
+      "Contradictory claims: Free vs. Paid, EPG availability, and live vs. coming soon platforms",
+      "Trust & Security: APK hosted on unbranded URL without version/hash metadata",
+      "Content Cannibalization: 26 scaled blog posts published rapidly with overlapping topics and no author",
+      "Image Performance: next/image missing sizes prop, causing LCP bloat"
+    ],
+    "quick_wins": [
+      "Add X-Content-Type-Options: nosniff in next.config.ts",
+      "Fix duplicated brand names on blog titles and set og:type='article'",
+      "Remove dead 'Become a Reseller' CTA and unsubstantiated claims"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 85,
+      "what_works": [
+        "Verified: robots.txt, sitemap.xml, canonicals, HTTPS redirects",
+        "HTML lang attribute correctly set to 'en'"
+      ],
+      "findings": [
+        {
+          "title": "Missing Security Headers",
+          "severity": "Low",
+          "description": "Missing X-Content-Type-Options header.",
+          "recommendation": "Add this header in next.config.ts."
+        },
+        {
+          "title": "Nested Anchor Bug",
+          "severity": "Medium",
+          "description": "HTML nested-anchor bug detected in the Smarters article.",
+          "recommendation": "Fix the nested anchor structure to ensure valid HTML."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 40,
+      "what_works": [
+        "Good initial text volume on the homepage"
+      ],
+      "findings": [
+        {
+          "title": "UX & Messaging Contradictions",
+          "severity": "Critical",
+          "description": "Contradictory claims regarding pricing (free vs 7-day trial), EPG features, and platform availability.",
+          "recommendation": "Harmonize messaging and publish a clear pricing page."
+        },
+        {
+          "title": "Scaled Content Issues",
+          "severity": "High",
+          "description": "Blog contains 26 quickly published, overlapping posts with no named author or bio.",
+          "recommendation": "Consolidate overlapping posts into pillar pages and add author profiles."
+        }
+      ]
+    },
+    {
+      "name": "Trust & Security",
+      "score": 45,
+      "what_works": [
+        "HTTPS enforced with HSTS header"
+      ],
+      "findings": [
+        {
+          "title": "Unbranded APK Hosting",
+          "severity": "High",
+          "description": "The Android APK is served from a generic r2.dev bucket instead of a branded domain.",
+          "recommendation": "Move APK to downloads.vantoplayer.com and display version/SHA-256 metadata."
+        }
+      ]
+    },
+    {
+      "name": "Images & Performance",
+      "score": 60,
+      "what_works": [
+        "Lazy loading is correctly implemented on most below-fold images"
+      ],
+      "findings": [
+        {
+          "title": "Missing sizes Prop",
+          "severity": "Medium",
+          "description": "w=3840 image URLs point to a missing sizes prop, increasing LCP and page weight.",
+          "recommendation": "Ensure sizes prop is configured on next/image elements."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {"name": "Phase 1: Critical Fixes", "timeframe": "Week 1", "items": ["Resolve free vs. paid contradictions", "Clarify EPG and platform availability"]},
+      {"name": "Phase 2: High-Impact Improvements", "timeframe": "Weeks 2-3", "items": ["Move APK to branded domain with metadata", "Fix next/image sizes prop and nested-anchor bug"]},
+      {"name": "Phase 3: Content & Authority", "timeframe": "Month 2", "items": ["Consolidate 26 overlapping blog posts into pillar pages", "Add author profiles"]},
+      {"name": "Phase 4: Monitoring & Iteration", "timeframe": "Ongoing", "items": ["Monitor Search Console for correct indexation of consolidated blog content"]}
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}
