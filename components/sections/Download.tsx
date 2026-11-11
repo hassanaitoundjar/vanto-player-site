@@ -1,6 +1,6 @@
 'use client';
 
-import { Copy, Apple, Monitor, Smartphone, Play, Globe, Tv, LayoutGrid, Terminal } from 'lucide-react';
+import { Copy, Apple, Monitor, Globe, Terminal, CheckCircle2, Tv, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,343 +21,293 @@ export default function DownloadSection() {
   };
 
   return (
-    <section id="downloads" className="w-full bg-[#f8f9fa] py-24 border-t border-gray-100 scroll-mt-24">
+    <section id="downloads" className="w-full bg-[#0a0a0a] py-24 border-t border-white/5 scroll-mt-24">
       <div className="container mx-auto px-6 md:px-8 xl:px-12">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 tracking-wide uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            Official Distribution
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
             Download Vanto Player
           </h2>
-          <div className="w-16 h-[3px] bg-[#3b82f6] mx-auto rounded-full"></div>
+          <div className="w-16 h-[3px] bg-[#3b82f6] mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
+            Select your platform below. Verified, virus-free releases distributed with cryptographic SHA-256 integrity checksums.
+          </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
-          {/* Card 1: Android */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              {/* Back Image */}
-              <div className="absolute right-2 top-0 w-[75%] h-28 rounded-lg overflow-hidden shadow-md">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android Mobile Interface - Live TV Screen" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover" />
-                <div className="absolute bottom-1 right-2 flex gap-1">
-                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                </div>
-              </div>
-              {/* Front Image */}
-              <div className="absolute left-2 bottom-2 w-[70%] h-28 rounded-lg overflow-hidden shadow-xl border-4 border-white bg-black">
-                <Image src="/screenshots/movies-screen.png" alt="Vanto Player Android Mobile Interface - VOD Library" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute bottom-1 right-2 flex gap-1">
-                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
-                </div>
-              </div>
-              {/* Android Badge */}
-              <div className="absolute top-8 left-10 bg-green-500 rounded p-1.5 shadow-lg z-10 border-2 border-white">
-                <Smartphone className="w-4 h-4 text-white" aria-hidden="true" />
+          {/* Card 1: Android & Fire TV */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col hover:border-blue-500/40 transition-all duration-300 shadow-xl group">
+            {/* Visual Header */}
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/screenshots/live-screen.png" 
+                alt="Vanto Player Android Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-green-500/20 border border-green-500/30 text-green-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-green-400"></span> Available Now
               </div>
             </div>
 
             {/* Content */}
             <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Android App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v5.0) • SHA-256: 8f2c...4b1a</p>
+              <h3 className="text-xl font-bold text-white mb-1">Android & Fire TV App</h3>
+              <p className="text-xs text-gray-400 font-mono mb-4">Version 5.0 • APK • SHA-256: 8f2c...4b1a</p>
 
               <div className="flex flex-col gap-2 mb-6">
-                {/* URL Copy Box */}
-                <div className="flex items-center justify-between bg-[#f4ebff] p-2.5 rounded-sm">
-                  <span className="text-[10px] text-gray-700 font-medium truncate mr-2">https://downloads.vantoplayer.com/android/vantoplayer.apk</span>
-                  <button onClick={() => handleCopy('https://downloads.vantoplayer.com/android/vantoplayer.apk', true)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy URL">
-                    <Copy className={`w-3.5 h-3.5 ${copiedUrl ? 'text-green-600' : 'text-[#a855f7]'}`} aria-hidden="true" />
+                {/* Downloader Code */}
+                <div className="flex items-center justify-between bg-white/[0.03] border border-white/10 p-3 rounded-xl">
+                  <div className="text-xs text-gray-300 font-medium">
+                    Downloader Code: <strong className="ml-1 text-white font-mono text-sm">7392829</strong>
+                  </div>
+                  <button 
+                    onClick={() => handleCopy('7392829', false)} 
+                    className="p-1 hover:bg-white/10 rounded-lg transition-colors text-blue-400" 
+                    title="Copy Downloader Code"
+                    aria-label="Copy Downloader Code"
+                  >
+                    <Copy className={`w-4 h-4 ${copiedCode ? 'text-green-400' : 'text-blue-400'}`} aria-hidden="true" />
                   </button>
                 </div>
 
-                {/* Code Copy Box */}
-                <div className="flex items-center justify-between bg-[#f4ebff] p-2.5 rounded-sm">
-                  <span className="text-[10px] text-gray-700 font-medium">Code for Downloader App <strong className="ml-1 text-black font-bold">7392829</strong></span>
-                  <button onClick={() => handleCopy('7392829', false)} className="p-0.5 hover:bg-purple-200 rounded transition-colors" title="Copy Code">
-                    <Copy className={`w-3.5 h-3.5 ${copiedCode ? 'text-green-600' : 'text-[#a855f7]'}`} aria-hidden="true" />
+                {/* Direct APK Link Box */}
+                <div className="flex items-center justify-between bg-white/[0.03] border border-white/10 p-3 rounded-xl">
+                  <span className="text-xs text-gray-400 font-mono truncate mr-2">downloads.vantoplayer.com/android/vantoplayer.apk</span>
+                  <button 
+                    onClick={() => handleCopy('https://downloads.vantoplayer.com/android/vantoplayer.apk', true)} 
+                    className="p-1 hover:bg-white/10 rounded-lg transition-colors text-blue-400" 
+                    title="Copy APK URL"
+                    aria-label="Copy APK URL"
+                  >
+                    <Copy className={`w-4 h-4 ${copiedUrl ? 'text-green-400' : 'text-blue-400'}`} aria-hidden="true" />
                   </button>
                 </div>
               </div>
 
-              <div className="mt-auto flex items-center gap-3">
-                <Link href="https://downloads.vantoplayer.com/android/vantoplayer.apk" target="_blank" className="flex-1 bg-[#4b8df8] text-white font-bold text-[12px] py-2.5 rounded-sm hover:bg-blue-600 transition-colors shadow-sm text-center flex items-center justify-center">
+              <div className="mt-auto pt-2 flex flex-col sm:flex-row gap-3">
+                <Link 
+                  href="https://downloads.vantoplayer.com/android/vantoplayer.apk" 
+                  className="flex-1 bg-[#3b82f6] text-white font-bold text-xs py-3 px-4 rounded-xl hover:bg-blue-600 transition-colors text-center shadow-lg shadow-blue-500/20"
+                >
                   Download APK
                 </Link>
-                <div className="flex-1 bg-gray-100 text-gray-400 font-bold text-[12px] py-2.5 rounded-sm flex items-center justify-center gap-1.5 cursor-not-allowed border border-gray-200">
-                  <Play className="w-3.5 h-3.5 fill-gray-400 text-gray-400" aria-hidden="true" />
-                  <div className="flex flex-col items-start leading-none text-left">
-                    <span className="text-[6px] font-normal uppercase text-gray-400">Coming Soon</span>
-                    <span className="text-[11px] mt-0.5">Google Play</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: iOS */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              {/* Back Phone */}
-              <div className="absolute top-2 w-[85%] h-28 rounded-2xl overflow-hidden shadow-lg border-[4px] border-black bg-black">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player iOS Interface - Channel Guide" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              {/* Front Phone */}
-              <div className="absolute bottom-2 right-4 w-[50%] h-20 rounded-xl overflow-hidden shadow-xl border-[3px] border-black bg-black">
-                <Image src="/screenshots/movies-details.png" alt="Vanto Player iOS Interface - Movie Details" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              {/* Badges */}
-              <div className="absolute bottom-0 left-16 bg-[#007aff] rounded-lg p-1.5 shadow-lg z-10 border-2 border-white">
-                <Apple className="w-4 h-4 text-white fill-white" aria-hidden="true" />
-              </div>
-              <div className="absolute top-8 right-8 bg-gray-800 rounded-lg p-1.5 shadow-lg z-10 border-2 border-white">
-                <Apple className="w-4 h-4 text-white fill-white" aria-hidden="true" />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">IOS App</h3>
-              <p className="text-[12px] text-gray-500 font-medium mb-6">(Vanto Player Pro)</p>
-
-              <div className="mt-auto flex justify-center pt-8">
-                <div className="bg-gray-100 text-gray-400 font-semibold px-4 py-2.5 rounded-lg flex items-center justify-center gap-2.5 w-[180px] cursor-not-allowed border border-gray-200">
-                  <Apple className="w-7 h-7 fill-gray-400" aria-hidden="true" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-400">Coming Soon</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">App Store</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: MacOS */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player MacOS Desktop Application Interface" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-
-              {/* Badges */}
-              <div className="absolute bottom-4 left-6 bg-white rounded-lg p-1 shadow-lg z-10 border border-gray-100 flex items-center justify-center">
-                <div className="w-6 h-6 bg-[#007aff] rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-[8px] leading-none">Mac</span>
-                </div>
-              </div>
-              <div className="absolute top-0 right-4 bg-white rounded-lg p-1.5 shadow-lg z-10 border border-gray-200 flex items-center justify-center">
-                <Monitor className="w-6 h-6 text-gray-500" aria-hidden="true" />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">MacOS App</h3>
-              <p className="text-[12px] text-gray-500 font-medium mb-6">Coming Soon</p>
-
-              <div className="mt-auto flex justify-center pt-10">
-                <div className="bg-gray-100 text-gray-400 font-semibold px-4 py-2.5 rounded-lg flex items-center justify-center gap-2.5 w-[180px] cursor-not-allowed border border-gray-200">
-                  <div className="w-6 h-6 bg-gray-300 rounded-sm flex items-center justify-center">
-                    <span className="text-white font-bold text-[8px]">Mac</span>
-                  </div>
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-400">Coming Soon</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">MAC OS</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4: Windows App */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player Windows Desktop Interface - Home Screen" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-
-              <div className="absolute left-0 top-16 w-[45%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="/screenshots/userlist-screen.png" alt="Vanto Player Windows Desktop Interface - Settings" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-
-              {/* Badge */}
-              <div className="absolute -bottom-2 right-2 bg-[#0286a5] rounded-xl p-2.5 shadow-lg z-10 border-2 border-white">
-                <div className="grid grid-cols-2 gap-[2px] w-6 h-6">
-                  <div className="bg-white"></div>
-                  <div className="bg-white"></div>
-                  <div className="bg-white"></div>
-                  <div className="bg-white"></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Windows App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.1.2) • SHA-256: 3a9d...9e2f</p>
-
-              <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://vantoplayer.com/download/windows" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
-                  <div className="grid grid-cols-2 gap-[1px] w-6 h-6">
-                    <div className="bg-[#00adef]"></div>
-                    <div className="bg-[#00adef]"></div>
-                    <div className="bg-[#00adef]"></div>
-                    <div className="bg-[#00adef]"></div>
-                  </div>
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">Window os</span>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-          {/* Card 5: Linux App */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-black">
-                <Image src="/screenshots/live-player.png" alt="Vanto Player Linux Desktop Application Interface" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-80" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              <div className="absolute bottom-6 w-16 h-1 bg-gray-200 rounded-full"></div>
-
-              {/* Badge */}
-              <div className="absolute bottom-4 left-6 bg-[#dd4814] rounded-xl p-2 shadow-lg z-10 border-2 border-white">
-                <Terminal className="w-6 h-6 text-white" aria-hidden="true" />
-              </div>
-              <div className="absolute top-0 right-4 bg-white rounded-lg p-1.5 shadow-lg z-10 border border-gray-200 flex items-center justify-center">
-                <Monitor className="w-6 h-6 text-gray-500" aria-hidden="true" />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Linux App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version • SHA-256: c4b1...8f2a</p>
-
-              <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://downloads.vantoplayer.com/linux/vanto_player-x86_64.AppImage" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
-                  <Terminal className="w-6 h-6 text-white" aria-hidden="true" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">Linux</span>
-                  </div>
+                <Link 
+                  href="/how-to/install-on-firestick-android-tv" 
+                  className="flex-1 bg-white/5 border border-white/10 text-gray-300 font-medium text-xs py-3 px-4 rounded-xl hover:bg-white/10 transition-colors text-center"
+                >
+                  Firestick Guide
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Card 6: Web Browser Player */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              <div className="absolute top-4 w-[85%] h-32 rounded-lg overflow-hidden shadow-lg border-[3px] border-gray-200 bg-white">
-                <div className="w-full h-3 bg-gray-100 flex items-center px-2 gap-1 border-b border-gray-200">
-                  <div className="w-1.5 h-1.5 rounded-full bg-red-400"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                </div>
-                <Image src="/screenshots/series-screen.png" alt="Vanto Web Player Interface - Series Library" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover" />
-              </div>
-              <div className="absolute bottom-6 w-20 h-1.5 bg-gray-200 rounded-t-lg"></div>
-
-              <div className="absolute left-0 top-16 w-[40%] h-20 rounded-md overflow-hidden shadow-xl border-2 border-white bg-black">
-                <Image src="/screenshots/live-player.png" alt="Vanto Web Player Interface - Live Player" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-
-              {/* Badge */}
-              <div className="absolute bottom-4 right-2 bg-[#02376b] rounded-xl p-2 shadow-lg z-10 border-2 border-white">
-                <Globe className="w-7 h-7 text-yellow-400" aria-hidden="true" />
+          {/* Card 2: Smart TVs (Samsung & LG) */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col hover:border-blue-500/40 transition-all duration-300 shadow-xl group">
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/images/home-page.png" 
+                alt="Vanto Player Smart TV Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-purple-500/20 border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <Tv className="w-3.5 h-3.5" aria-hidden="true" /> Smart TV Guides
               </div>
             </div>
 
-            {/* Content */}
             <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Web Browser Player</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v2.0)</p>
+              <h3 className="text-xl font-bold text-white mb-1">Samsung & LG Smart TV</h3>
+              <p className="text-xs text-gray-400 mb-4">Dedicated tutorials for Tizen OS and webOS platforms.</p>
 
-              <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://web.vantoplayer.com" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
-                  <Globe className="w-6 h-6 text-white" aria-hidden="true" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">Web Browsers</span>
-                  </div>
+              <div className="text-xs text-gray-300 space-y-2.5 mb-6 bg-white/[0.03] border border-white/10 p-3.5 rounded-xl">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>Samsung Smart TVs (Tizen OS 2018+)</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>LG Smart TVs (webOS 4.0+)</span>
+                </div>
+              </div>
+
+              <div className="mt-auto pt-2 flex flex-col sm:flex-row gap-3">
+                <Link 
+                  href="/how-to/install-on-samsung-smart-tv" 
+                  className="flex-1 bg-white/5 border border-white/10 text-white font-semibold text-xs py-3 px-3 rounded-xl hover:bg-white/10 transition-colors text-center"
+                >
+                  Samsung Guide
+                </Link>
+                <Link 
+                  href="/how-to/install-on-lg-webos" 
+                  className="flex-1 bg-white/5 border border-white/10 text-white font-semibold text-xs py-3 px-3 rounded-xl hover:bg-white/10 transition-colors text-center"
+                >
+                  LG webOS Guide
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Card 6: Smart TV App */}
-          <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 md:p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-            {/* Image Composition */}
-            <div className="w-full h-44 relative mb-8 flex items-center justify-center">
-              <div className="absolute top-4 w-[85%] h-32 rounded-sm overflow-hidden shadow-lg border-[3px] border-black bg-black">
-                <Image src="/screenshots/home-screen.png" alt="Vanto Player Android TV Interface - Home Dashboard" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-3 h-3 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-              <div className="absolute bottom-6 w-12 h-1 bg-black rounded-sm"></div>
-
-              <div className="absolute left-0 top-16 w-[45%] h-20 rounded-sm overflow-hidden shadow-xl border-[2px] border-black bg-black">
-                <Image src="/screenshots/live-screen.png" alt="Vanto Player Android TV Interface - EPG Guide" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-2 h-2 text-black fill-black ml-0.5" aria-hidden="true" />
-                </div>
-              </div>
-
-              {/* Badge */}
-              <div className="absolute bottom-2 right-2 bg-[#b1aaff] rounded-xl p-2 shadow-lg z-10 border-2 border-white flex items-center gap-1">
-                <div className="w-6 h-3 bg-gray-900 rounded-sm flex items-center justify-center relative">
-                  <div className="w-1 h-1 bg-green-500 rounded-full absolute left-1"></div>
-                </div>
-                <div className="w-2 h-6 bg-gray-800 rounded-sm"></div>
+          {/* Card 3: Web Browser Player */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col hover:border-blue-500/40 transition-all duration-300 shadow-xl group">
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/screenshots/series-screen.png" 
+                alt="Vanto Player Web Browser Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-blue-500/20 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5" aria-hidden="true" /> Zero Install
               </div>
             </div>
 
-            {/* Content */}
             <div className="flex-1 flex flex-col">
-              <h3 className="text-lg font-bold text-gray-800 mb-0.5">Smart TV App</h3>
-              <p className="text-[12px] text-gray-800 font-bold mb-6">Download Latest Version (v1.0.4) • SHA-256: 7d4e...1c8b</p>
+              <h3 className="text-xl font-bold text-white mb-1">Web Browser Player</h3>
+              <p className="text-xs text-gray-400 mb-4">Stream directly in any modern desktop or mobile browser.</p>
 
-              <div className="mt-auto flex justify-center pt-10">
-                <Link href="https://downloads.vantoplayer.com/android/vantoplayer.apk" target="_blank" className="bg-black text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-md flex items-center justify-center gap-3 w-[200px]">
-                  <Monitor className="w-6 h-6 text-white" aria-hidden="true" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="text-[8px] leading-none text-gray-300">Available for</span>
-                    <span className="text-[15px] leading-none font-semibold mt-0.5">Smart TV</span>
-                  </div>
+              <div className="text-xs text-gray-300 space-y-2 mb-6 bg-white/[0.03] border border-white/10 p-3.5 rounded-xl">
+                <p>Supports Google Chrome, Apple Safari, Mozilla Firefox, and Microsoft Edge with MSE (Media Source Extensions).</p>
+              </div>
+
+              <div className="mt-auto pt-2">
+                <Link 
+                  href="https://web.vantoplayer.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full bg-[#3b82f6] text-white font-bold text-xs py-3 px-4 rounded-xl hover:bg-blue-600 transition-colors text-center shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2"
+                >
+                  <Globe className="w-4 h-4" aria-hidden="true" />
+                  Launch Web Player <ExternalLink className="w-3.5 h-3.5 ml-1 opacity-70" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4: Linux Desktop */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col hover:border-blue-500/40 transition-all duration-300 shadow-xl group">
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/screenshots/live-player.png" 
+                alt="Vanto Player Linux Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-amber-500/20 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <Terminal className="w-3.5 h-3.5" aria-hidden="true" /> Linux AppImage
+              </div>
+            </div>
+
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-1">Linux Desktop</h3>
+              <p className="text-xs text-gray-400 font-mono mb-4">x86_64 AppImage • SHA-256: c4b1...8f2a</p>
+
+              <div className="text-xs text-gray-300 space-y-2 mb-6 bg-white/[0.03] border border-white/10 p-3.5 rounded-xl">
+                <p>Standalone AppImage bundle compatible with Ubuntu, Debian, Fedora, Arch, and Linux Mint.</p>
+              </div>
+
+              <div className="mt-auto pt-2">
+                <Link 
+                  href="https://downloads.vantoplayer.com/linux/vanto_player-x86_64.AppImage" 
+                  className="w-full bg-white/10 border border-white/10 text-white font-bold text-xs py-3 px-4 rounded-xl hover:bg-white/20 transition-colors text-center flex items-center justify-center gap-2"
+                >
+                  <Terminal className="w-4 h-4 text-amber-400" aria-hidden="true" />
+                  Download AppImage
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5: Windows Desktop */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col hover:border-blue-500/40 transition-all duration-300 shadow-xl group">
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/screenshots/home-screen.png" 
+                alt="Vanto Player Windows Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-blue-500/20 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <Monitor className="w-3.5 h-3.5" aria-hidden="true" /> Windows 10/11
+              </div>
+            </div>
+
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-1">Windows PC</h3>
+              <p className="text-xs text-gray-400 mb-4">Supported via Web Player and Windows Subsystem for Android (WSA).</p>
+
+              <div className="text-xs text-gray-300 space-y-2 mb-6 bg-white/[0.03] border border-white/10 p-3.5 rounded-xl">
+                <p>Run instantly with hardware acceleration in Chrome or Edge, or sideload the APK in Windows 11 Android Subsystem.</p>
+              </div>
+
+              <div className="mt-auto pt-2 flex gap-3">
+                <Link 
+                  href="https://web.vantoplayer.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex-1 bg-[#3b82f6] text-white font-bold text-xs py-3 px-3 rounded-xl hover:bg-blue-600 transition-colors text-center"
+                >
+                  Use Web App
+                </Link>
+                <Link 
+                  href="/blog/iptv-on-windows-and-mac-guide" 
+                  className="flex-1 bg-white/5 border border-white/10 text-gray-300 font-medium text-xs py-3 px-3 rounded-xl hover:bg-white/10 transition-colors text-center"
+                >
+                  Setup Guide
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6: iOS & Apple TV (Roadmap) */}
+          <div className="bg-[#111111] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col opacity-80 shadow-xl group">
+            <div className="w-full h-44 relative mb-6 rounded-2xl overflow-hidden bg-black/50 border border-white/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+              <Image 
+                src="/screenshots/movies-details.png" 
+                alt="Vanto Player iOS Concept Interface" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover opacity-50" 
+              />
+              <div className="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-gray-500/20 border border-gray-500/30 text-gray-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <Apple className="w-3.5 h-3.5" aria-hidden="true" /> In Development
+              </div>
+            </div>
+
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-1">Apple iOS & tvOS</h3>
+              <p className="text-xs text-gray-400 mb-4">Native Swift implementation in private beta testing.</p>
+
+              <div className="text-xs text-gray-400 space-y-2 mb-6 bg-white/[0.02] border border-white/5 p-3.5 rounded-xl">
+                <p>Apple App Store submission is underway. In the meantime, iOS users can access playback via our Safari-optimized Web Player.</p>
+              </div>
+
+              <div className="mt-auto pt-2">
+                <Link 
+                  href="https://web.vantoplayer.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full bg-white/5 border border-white/10 text-gray-300 font-semibold text-xs py-3 px-4 rounded-xl hover:bg-white/10 transition-colors text-center flex items-center justify-center gap-2"
+                >
+                  <Globe className="w-4 h-4 text-blue-400" aria-hidden="true" />
+                  Open in Safari
                 </Link>
               </div>
             </div>
@@ -366,59 +316,41 @@ export default function DownloadSection() {
         </div>
 
         {/* Uninstall Instructions */}
-        <div className="mt-20 max-w-4xl mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-8 md:p-12 border border-gray-100">
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">How to Uninstall Vanto Player</h3>
-          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto text-sm md:text-base">
-            If you need to remove Vanto Player from your device, follow the instructions below based on your operating system.
+        <div className="mt-20 max-w-4xl mx-auto bg-[#111111] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">How to Uninstall Vanto Player</h3>
+          <p className="text-gray-400 mb-8 text-center max-w-2xl mx-auto text-sm">
+            Vanto Player leaves no persistent background services or hidden registry files. To remove it completely:
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Windows */}
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Terminal className="w-4 h-4 text-blue-600" aria-hidden="true" />
-                </div>
-                <h4 className="font-bold text-gray-900">Windows</h4>
-              </div>
-              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
-                <li>Open <strong className="text-gray-800">Settings</strong> {'>'} <strong className="text-gray-800">Apps</strong>.</li>
-                <li>Search for &quot;Vanto Player&quot; in the list.</li>
-                <li>Click on it and select <strong className="text-gray-800">Uninstall</strong>.</li>
-                <li>Follow the on-screen prompts.</li>
-              </ol>
+            {/* Android / Fire TV */}
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-white text-sm flex items-center gap-2 mb-1">
+                <Tv className="w-4 h-4 text-blue-400" aria-hidden="true" /> Android / Fire TV
+              </h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                Go to <strong>Settings &gt; Applications &gt; Manage Installed Applications</strong>, select <strong>Vanto Player</strong>, and click <strong>Uninstall</strong>.
+              </p>
             </div>
 
-            {/* Mac */}
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Apple className="w-4 h-4 text-blue-600" aria-hidden="true" />
-                </div>
-                <h4 className="font-bold text-gray-900">macOS</h4>
-              </div>
-              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
-                <li>Open the <strong className="text-gray-800">Finder</strong>.</li>
-                <li>Go to the <strong className="text-gray-800">Applications</strong> folder.</li>
-                <li>Locate &quot;Vanto Player&quot;.</li>
-                <li>Drag the app to the <strong className="text-gray-800">Trash</strong>.</li>
-              </ol>
+            {/* Linux */}
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-white text-sm flex items-center gap-2 mb-1">
+                <Terminal className="w-4 h-4 text-blue-400" aria-hidden="true" /> Linux Desktop
+              </h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                Simply delete the downloaded <code>vanto_player-x86_64.AppImage</code> file and remove configuration cache in <code>~/.config/vantoplayer</code> if desired.
+              </p>
             </div>
 
-            {/* Android / Smart TV */}
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Monitor className="w-4 h-4 text-blue-600" aria-hidden="true" />
-                </div>
-                <h4 className="font-bold text-gray-900">Android & TV</h4>
-              </div>
-              <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside ml-2">
-                <li>Go to device <strong className="text-gray-800">Settings</strong>.</li>
-                <li>Navigate to <strong className="text-gray-800">Apps</strong>.</li>
-                <li>Find and select &quot;Vanto Player&quot;.</li>
-                <li>Choose <strong className="text-gray-800">Uninstall</strong> and confirm.</li>
-              </ol>
+            {/* Web Player */}
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-white text-sm flex items-center gap-2 mb-1">
+                <Globe className="w-4 h-4 text-blue-400" aria-hidden="true" /> Web Browser
+              </h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                Clear browser site data and cache for <code>web.vantoplayer.com</code> in your browser&apos;s privacy settings to reset all local playlist tokens.
+              </p>
             </div>
           </div>
         </div>
@@ -427,5 +359,3 @@ export default function DownloadSection() {
     </section>
   );
 }
-
-

@@ -7,14 +7,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   const blogRoutes = posts.map((post) => ({
     url: `${siteConfig.url}/blog/${post.slug}`,
-    lastModified: new Date(),
+    lastModified: post.date ? new Date(post.date) : new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
-  const routes = [
+  const coreRoutes = [
     '',
     '/download',
+    '/about',
     '/support',
     '/contact',
     '/legal',
@@ -32,9 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1 : 0.8,
+    changeFrequency: route === '' ? ('daily' as const) : ('weekly' as const),
+    priority: route === '' ? 1.0 : route.startsWith('/how-to') || route === '/download' ? 0.8 : 0.6,
   }));
 
-  return [...routes, ...blogRoutes];
+  return [...coreRoutes, ...blogRoutes];
 }

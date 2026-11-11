@@ -2,75 +2,92 @@ import { buildMetadata } from '@/lib/siteConfig';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy | Vanto Player',
-  description: 'Read the Privacy Policy for Vanto Player to understand how we handle your data.',
+  description: 'Read the Privacy Policy for Vanto Player to understand how we handle your data, protect user privacy, and process local playback settings.',
   path: '/privacy',
 });
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="flex flex-col items-center justify-start flex-1 w-full bg-[#f8f9fa]">
-      {/* Legal Hero */}
-      <section className="w-full pt-32 pb-16 px-6 md:px-8 xl:px-12 border-b border-gray-100 bg-white">
+    <div className="flex flex-col items-center justify-start flex-1 w-full bg-[#0a0a0a]">
+      {/* Hero */}
+      <section className="w-full pt-32 pb-16 px-6 md:px-8 xl:px-12 border-b border-white/5 bg-[#0a0a0a]">
         <div className="container mx-auto max-w-4xl text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            User Privacy First
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
             Privacy Policy
           </h1>
-          <p className="text-gray-500 font-medium">Last updated: July 2026</p>
+          <p className="text-gray-400 font-medium text-sm">Last updated: November 2026</p>
         </div>
       </section>
 
-      {/* Legal Content */}
-      <section className="w-full py-16 px-6 md:px-8 xl:px-12 bg-[#f8f9fa]">
-        <div className="container mx-auto max-w-4xl text-gray-600 leading-relaxed space-y-8 bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
+      {/* Content */}
+      <section className="w-full py-16 px-6 md:px-8 xl:px-12">
+        <div className="container mx-auto max-w-4xl text-gray-300 leading-relaxed space-y-8 bg-[#111111] p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl">
           
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">1. Overview & Core Privacy Principles</h2>
+            <p>
+              Vanto Player (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) prioritizes user privacy. Vanto Player is designed from the foundation up as client-side playback software. We do not maintain user accounts that track your viewing habits, and we do not log, upload, or analyze the playlists or video files you play through the Application.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4">2. Information Handled Strictly Locally</h2>
             <p className="mb-4">
-              Vanto Player respects your privacy. As a standard media player, we collect minimal data required to provide our services:
+              To operate effectively as a multimedia player, the Application stores certain settings strictly on your local device:
             </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Authentication Data:</strong> We securely process the M3U URLs or Xtream Codes API credentials you provide strictly to load your media library. We do not store these credentials on our servers.</li>
-              <li><strong>Usage Data:</strong> We may collect anonymous crash reports and analytical data to improve the Application's stability and performance.</li>
+            <ul className="list-disc list-inside space-y-2 text-gray-300 ml-2">
+              <li><strong>Playlist &amp; API Configuration:</strong> The M3U URLs, Xtream Codes credentials, or local file paths you enter are saved directly in your device&apos;s encrypted local storage or private application sandbox. This information is never transmitted to our servers.</li>
+              <li><strong>Playback Preferences:</strong> Audio track selections, subtitle font preferences, aspect ratio overrides, and volume levels are kept locally on your device.</li>
+              <li><strong>Parental Control PINs:</strong> Your 4-digit security PIN is stored strictly in your local device settings and is never synchronized to cloud databases.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. What We Do NOT Collect</h2>
-            <p>
-              We <strong className="text-gray-900">do not</strong> collect, monitor, or store any information regarding the playlists you add, the media you play, or your viewing habits. Your media content is processed entirely locally on your device or routed directly from your third-party provider.
+            <h2 className="text-2xl font-bold text-white mb-4">3. Information Collected on the Website</h2>
+            <p className="mb-4">
+              When accessing our website (<strong className="text-white">vantoplayer.com</strong>), limited standard web server information may be collected:
             </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How We Use Your Information</h2>
-            <p>
-              The minimal information we process is used exclusively for:
-            </p>
-            <ul className="list-disc list-inside space-y-2 mt-4">
-              <li>Facilitating your connection to your M3U or Xtream API provider.</li>
-              <li>Providing customer support when you reach out to us with technical issues.</li>
-              <li>Improving the stability and performance of the application.</li>
+            <ul className="list-disc list-inside space-y-2 text-gray-300 ml-2">
+              <li><strong>Web Log Information:</strong> Anonymized IP addresses, browser types, referral URLs, and access timestamps are collected by standard web servers for security diagnostics and DDoS prevention.</li>
+              <li><strong>Support Inquiries:</strong> If you contact us via email at <code>support@vantoplayer.com</code>, we retain your email address and message contents solely to respond to your technical support inquiry.</li>
+              <li><strong>Cookies &amp; Consent:</strong> We use essential cookies to maintain theme preferences and consent preferences. Where third-party analytics or advertising networks (such as Google AdSense) operate, they may use cookies in compliance with regional privacy frameworks (including GDPR, UK GDPR, and CCPA).</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Data Security</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">4. Device Hardware Identifiers (MAC Address)</h2>
             <p>
-              We implement industry-standard security measures to protect your information. However, no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+              For device license verification and activation on Smart TVs, the Application reads the device&apos;s network hardware identifier (MAC address). This identifier is used exclusively to validate whether an active evaluation period or device software license exists for that specific hardware unit. It is not connected to personal identities or viewing histories.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Third-Party Services</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">5. Third-Party Services &amp; Network Streams</h2>
             <p>
-              Vanto Player allows you to connect to third-party media servers via playlists. We are not responsible for the privacy practices or the content of these third-party providers. We encourage you to read the privacy policies of any third-party services you use in conjunction with our app.
+              When playing a network stream, your device establishes a direct network connection between your media hardware and the external media server hosting the stream. Vanto Player acts solely as the playback client rendering that stream and does not proxy, intercept, or inspect the media packets.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">6. Your Rights Under GDPR &amp; CCPA</h2>
+            <p className="mb-4">Depending on your geographic location, you may have statutory privacy rights:</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-300 ml-2">
+              <li>The right to know what personal data is held about you.</li>
+              <li>The right to request deletion of support communications.</li>
+              <li>The right to opt out of third-party advertising cookies via our consent management controls.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4">7. Contact the Privacy Team</h2>
             <p>
-              If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:support@vantoplayer.com" className="text-[#3b82f6] hover:underline font-medium">support@vantoplayer.com</a>.
+              If you have any questions or data requests regarding this Privacy Policy, please email our privacy officer at{' '}
+              <a href="mailto:support@vantoplayer.com" className="text-blue-400 hover:text-blue-300 font-medium">
+                support@vantoplayer.com
+              </a>.
             </p>
           </div>
 

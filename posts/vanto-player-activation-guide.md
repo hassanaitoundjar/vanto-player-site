@@ -19,7 +19,7 @@ When you launch Vanto Player for the first time on any new device (such as an Am
 
 ![Vanto Player Login Options](/screenshots/welcome-screen.png)
 
-This screen gives you multiple options to connect your service. The two most common and reliable methods are **[[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api)** and **[M3U Playlist](/blog/load-m3u-playlist-vanto-player)**.
+This screen gives you multiple options to connect your service. The two most common and reliable methods are **[Xtream Codes API](/blog/what-is-xtream-codes-api)** and **[M3U Playlist](/blog/load-m3u-playlist-vanto-player)**.
 
 ## Step 2: Choose Your Login Method
 

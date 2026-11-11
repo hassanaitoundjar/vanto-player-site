@@ -5,7 +5,7 @@ export const siteConfig = {
   url: 'https://vantoplayer.com',
   ogImage: '/logo.png',
   description:
-    'Vanto Player is the ultimate cross-platform IPTV and M3U media player for Android, Smart TV, Windows, Mac, and Web. Stream live TV, VOD, and series in 4K with zero buffering.',
+    'Vanto Player is a high-performance cross-platform media player for Android, Smart TVs, Windows, Linux, and Web browsers. Play and organize your own legally accessible media streams and playlists with smooth hardware acceleration.',
 };
 
 /**

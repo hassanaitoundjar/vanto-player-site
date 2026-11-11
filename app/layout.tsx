@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/siteConfig";
 import { OrganizationLd } from "@/components/seo/JsonLd";
 import AdBanner from "@/components/ads/AdBanner";
+import CookieConsent from "@/components/ui/CookieConsent";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -23,7 +24,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} - Premium IPTV & M3U Media Player`,
+    default: `${siteConfig.name} - High-Performance Cross-Platform Media Player`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    'google-adsense-account': 'ca-pub-7407561322459315',
   },
 };
 
@@ -49,6 +53,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7407561322459315"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans selection:bg-[#3b82f6] selection:text-white">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#3b82f6] focus:text-white focus:font-bold rounded-md">Skip to main content</a>
         <OrganizationLd />
@@ -58,12 +70,7 @@ export default function RootLayout({
         </main>
         <AdBanner />
         <Footer />
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7407561322459315"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        <CookieConsent />
       </body>
     </html>
   );

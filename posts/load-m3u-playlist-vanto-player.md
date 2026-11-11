@@ -17,7 +17,7 @@ This guide will show you how to securely upload your playlist via the web portal
 
 Before uploading, ensure you have the following ready:
 1. **Your Vanto Player Device Details:** Open the Vanto Player app on your TV or mobile device. Note down the **MAC Address** and **Device Key** displayed on the screen.
-2. **Your Playlist URL or File:** You need an active M3U link (URL), an [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api) login, or a local JSON/M3U file provided by your content provider.
+2. **Your Playlist URL or File:** You need an active M3U link (URL), an [Xtream Codes API](/blog/what-is-xtream-codes-api) login, or a local JSON/M3U file provided by your content provider.
 
 ## Step-by-Step Playlist Upload Guide
 

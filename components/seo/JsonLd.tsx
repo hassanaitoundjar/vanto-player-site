@@ -1,4 +1,5 @@
 import React from 'react';
+import { faqs } from '@/lib/faqData';
 
 export function OrganizationLd() {
   const jsonLd = {
@@ -7,6 +8,7 @@ export function OrganizationLd() {
     name: 'Vanto Player',
     url: 'https://vantoplayer.com',
     logo: 'https://vantoplayer.com/logo.png',
+    description: 'Developer of high-performance, cross-platform multimedia playback software.',
     sameAs: [],
   };
 
@@ -23,8 +25,9 @@ export function SoftwareApplicationLd() {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Vanto Player',
-    operatingSystem: 'Android, Windows, macOS, Linux, Web',
+    operatingSystem: 'Android, Android TV, Fire TV, Samsung Tizen, LG webOS, Linux, Web',
     applicationCategory: 'MultimediaApplication',
+    description: 'Hardware-accelerated media player supporting user-provided M3U playlists, JSON sources, and XMLTV EPG schedules.',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -44,8 +47,8 @@ export function VideoObjectLd() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Vanto Player Features',
-    description: 'A quick overview of the Vanto Player media player features.',
+    name: 'Vanto Player Interface Walkthrough',
+    description: 'Technical walkthrough of the Vanto Player user interface and playback controls.',
     thumbnailUrl: 'https://vantoplayer.com/logo.png',
     uploadDate: '2026-07-25T08:00:00+00:00',
     contentUrl: 'https://vantoplayer.com',
@@ -79,38 +82,58 @@ export function BreadcrumbListLd({ items }: { items: { name: string; item: strin
   );
 }
 
-export function FAQPageLd() {
-  const faqs = [
-    {
-      question: "Does Vanto Player contain any channels? Where can I get a good playlist?",
-      answer: "Vanto Player APP and any administrator do not help you to find a good playlist. Also, we don't provide any kind of playlists. We are not responsible for the content uploaded to our APP. Please don't buy the app when you don't have any playlist or Media for the APP, because no channels are included after the activation in this app. Your payment will not be refunded if you buy it without having any list or something is not working."
+export function ArticleLd({
+  title,
+  description,
+  datePublished,
+  dateModified,
+  slug,
+  authorName = 'Vanto Player Engineering Team',
+}: {
+  title: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  slug: string;
+  authorName?: string;
+}) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: title,
+    description,
+    inLanguage: 'en-US',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://vantoplayer.com/blog/${slug}`,
     },
-    {
-      question: "My MAC address has changed after I switched to another connection type.",
-      answer: "Each TV has 2 MAC addresses (1st is WiFi, 2nd is Ethernet) and a 2nd MAC has activated automatically after you switch to another connection type and restart the app. MAC address is unique for every TV and cannot be changed manually."
+    author: {
+      '@type': 'Organization',
+      name: authorName,
+      url: 'https://vantoplayer.com/about',
     },
-    {
-      question: "Why is the app not working when the PLAYLIST worked on my computer?",
-      answer: "This can be caused because of the ISP lock if your computer is on a different Network. But when the network is the same as your computer and it is not working it can be caused because of your TV's supported format. Not every Smart-TV supports all contents. Every TV model is totally different or may not support specific stream formats!"
+    publisher: {
+      '@type': 'Organization',
+      name: 'Vanto Player',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://vantoplayer.com/logo.png',
+      },
     },
-    {
-      question: "My playlist won't open, freezes or slows down. What to do?",
-      answer: "Make sure your playlist is working and active, that it has no limitations or problems. For privacy reasons we do not have access to the playlists, we do not provide any assistance on them."
-    },
-    {
-      question: "Why I can not start the APP?",
-      answer: "This is maybe because of your internet connection, please check at first your internet connection before you contact your provider. Many times it is caused because of the connection and not because of the provider!"
-    },
-    {
-      question: "Does the Vanto Player APP have an EPG-SYSTEM?",
-      answer: "No, the app didn't have an EPG system integrated but if your provider has an EPG - READY system then it would work with our platform."
-    },
-    {
-      question: "\"Unable to Stream\" Error sorry playlist not working . This message appears when there are restrictions on a playlist.",
-      answer: "For privacy reasons we do not have access to the playlists, we do not provide any assistance on them."
-    }
-  ];
+    datePublished,
+    dateModified: dateModified || datePublished,
+    image: 'https://vantoplayer.com/logo.png',
+  };
 
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
+export function FAQPageLd() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

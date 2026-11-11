@@ -20,7 +20,7 @@ While there are legacy options like GSE Smart IPTV, we highly recommend using a 
 
 To use your media player, you need a playlist. Ensure your provider has given you one of the following:
 * An **M3U Link** (A long URL ending in .m3u)
-* **[[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api) Credentials** (A server URL, a username, and a password)
+* **[Xtream Codes API](/blog/what-is-xtream-codes-api) Credentials** (A server URL, a username, and a password)
 
 ## Step 3: Input Your Credentials
 

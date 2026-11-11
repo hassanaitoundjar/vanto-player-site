@@ -5,7 +5,7 @@ import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Fix Playlist Not Loading or Buffering',
-  description: 'Troubleshooting tips for when your IPTV playlist freezes, buffers, or fails to load in Vanto Player.',
+  description: 'Troubleshooting guide for when your personal playlist freezes, buffers, or fails to load in Vanto Player.',
   path: '/how-to/fix-playlist-not-loading',
 });
 
@@ -24,34 +24,28 @@ export default function FixPlaylist() {
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
         <p>
-          If your playlist won't open, freezes constantly, or gives a "Playback Error", the issue is almost always related to the playlist itself, your internet connection, or an ISP block. 
-          <em>Vanto Player is purely a media player; we do not host or control the streams.</em>
+          If your playlist won&apos;t open, freezes constantly, or displays a &quot;Playback Error&quot;, the issue is almost always related to the playlist URL, network throughput, or remote server availability. 
+          <em>Vanto Player is purely a client-side media player; we do not host, supply, or control the streams.</em>
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">1. Verify Your Playlist Link</h2>
         <p>
-          Make sure your playlist is active. You can test your M3U link in a program like VLC Media Player on your computer. If it doesn't work in VLC, it means the provider's server is down or your subscription has expired.
+          Ensure your playlist URL or server credentials are valid and active. You can verify your M3U link on your computer in an alternative media tool like VLC Media Player. If the stream fails across all tools, the provider&apos;s server is offline or your access has expired.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">2. Check for ISP Blocks (Use a VPN)</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">2. Check Network Stability and Bandwidth</h2>
         <p>
-          Many Internet Service Providers (ISPs) actively block or throttle IPTV traffic, especially during live sporting events. If your playlist works on your mobile data but not your home Wi-Fi, your ISP is blocking it. 
-          <strong>Solution:</strong> Use a reputable VPN on your router or device to bypass these restrictions.
+          HD and 4K media streams require consistent download bandwidth and low latency:
         </p>
+        <ul className="list-disc pl-6 mt-2 space-y-1">
+          <li>Ensure you have at least 25 Mbps stable download speed for 1080p and 50+ Mbps for 4K.</li>
+          <li>If using Wi-Fi, ensure your TV is connected to the 5 GHz band rather than 2.4 GHz.</li>
+          <li>For optimal results, connect your Smart TV or streaming box directly using a Cat6 Ethernet cable.</li>
+        </ul>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">3. Network Speed and Stability</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">3. Clear Application Cache</h2>
         <p>
-          HD and 4K streams require a stable internet connection.
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Ensure you have at least 25 Mbps download speed.</li>
-            <li>If using Wi-Fi, move your router closer to the TV or use a 5GHz band.</li>
-            <li>For the best experience, connect your TV directly to the router using an Ethernet cable.</li>
-          </ul>
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">4. Clear App Cache</h2>
-        <p>
-          Sometimes the app cache becomes full or corrupted. Go to your TV's settings, find the Vanto Player app, and select <strong>"Clear Cache"</strong> (do not clear data, or you will need to re-login). Restart the app afterward.
+          Over time, cached program guides or playlist indices can become outdated. Open your TV&apos;s operating system settings, locate Vanto Player under Applications, and select <strong>&quot;Clear Cache&quot;</strong>. Restart the application to reload fresh stream tokens.
         </p>
       </div>
       <HowToRelatedLinks />

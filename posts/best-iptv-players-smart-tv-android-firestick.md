@@ -45,7 +45,7 @@ TiviMate has long been a favorite among Android TV and Firestick users. It is kn
 
 IPTV Smarters Pro is one of the most widely recognized legacy players. It offers a solid, straightforward layout that many users are familiar with.
 
-* **Pros:** Supports [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api), M3U, and local audio/video files. Available on multiple platforms.
+* **Pros:** Supports [Xtream Codes API](/blog/what-is-xtream-codes-api), M3U, and local audio/video files. Available on multiple platforms.
 * **Cons:** The interface feels dated compared to modern alternatives like Vanto Player. It has also faced frequent removals from major app stores.
 
 ## 4. IBO Player

@@ -24,7 +24,7 @@ When you load your playlist into a premium media player, the software reads this
 
 Your EPG data is usually provided directly by your playlist provider. It is delivered in one of two ways:
 
-1. **Integrated via [[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api):** If you log in using a Username, Password, and Portal URL, the EPG data is pulled automatically from the server. You don't have to do anything.
+1. **Integrated via [Xtream Codes API](/blog/what-is-xtream-codes-api):** If you log in using a Username, Password, and Portal URL, the EPG data is pulled automatically from the server. You don't have to do anything.
 2. **Via an XMLTV Link:** If you use an [M3U playlist](/blog/load-m3u-playlist-vanto-player) link, you may also be given a second link ending in `.xml`. You must paste this XML link into your media player's EPG settings to sync the guide.
 
 ## How to Fix Missing EPG Data

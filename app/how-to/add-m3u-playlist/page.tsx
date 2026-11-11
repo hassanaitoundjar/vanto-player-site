@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export const metadata = buildMetadata({
   title: 'How to Add an M3U Playlist to Vanto Player',
-  description: 'A comprehensive guide on how to upload, manage, and sync your IPTV M3U playlists across all your devices using Vanto Player.',
+  description: 'A comprehensive guide on how to upload, manage, and sync your personal M3U playlists across devices using Vanto Player.',
   path: '/how-to/add-m3u-playlist',
 });
 
@@ -42,16 +42,16 @@ export default function AddPlaylist() {
           <li>
             <strong>Enter Playlist Details:</strong>
             <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
-              <li><strong>Any Name:</strong> Give it a recognizable name (e.g., "My Live TV").</li>
+              <li><strong>Any Name:</strong> Give it a recognizable name (e.g., &quot;My Live TV&quot;).</li>
               <li><strong>Xtream Codes:</strong> Enter your Username, Password, and the Server URL provided by your IPTV service.</li>
-              <li><strong>M3U URL:</strong> If you selected M3U, paste the full `.m3u` link provided by your IPTV service.</li>
+              <li><strong>M3U URL:</strong> If you selected M3U, paste the full <code>.m3u</code> link provided by your IPTV service.</li>
             </ul>
             <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/logi-m3u-screen.png" alt="Adding an M3U playlist via Vanto Player login screen" width={1200} height={675} className="w-full object-cover" />
             </div>
           </li>
           <li>
-            <strong>Add User:</strong> Click the "Add User" or "Login" button. Vanto Player will instantly download and categorize your channels, movies, and series!
+            <strong>Add User:</strong> Click the &quot;Add User&quot; or &quot;Login&quot; button. Vanto Player will instantly download and categorize your channels, movies, and series!
             <div className="mt-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/home-screen.png" alt="Vanto Player Home Screen after syncing playlist" width={1200} height={675} className="w-full object-cover" />
             </div>

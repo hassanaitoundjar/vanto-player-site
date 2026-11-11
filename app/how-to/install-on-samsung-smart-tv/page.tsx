@@ -5,7 +5,7 @@ import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
   title: 'How to Install Vanto Player on Samsung Smart TV',
-  description: 'Step-by-step guide to installing Vanto Player on your Samsung Tizen Smart TV to stream IPTV and M3U playlists easily.',
+  description: 'Step-by-step guide to installing Vanto Player on your Samsung Tizen Smart TV to play M3U playlists and video files.',
   path: '/how-to/install-on-samsung-smart-tv',
 });
 
@@ -24,22 +24,22 @@ export default function InstallSamsungTV() {
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
         <p>
-          Installing Vanto Player on your Samsung Smart TV (Tizen OS) is incredibly straightforward. Since our app is optimized for the Samsung ecosystem, you don't need any complex workarounds.
+          Installing Vanto Player on your Samsung Smart TV (Tizen OS 2018 and newer) is simple and quick. Follow these steps to install the player directly from the Samsung Apps ecosystem.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Step-by-Step Installation Guide</h2>
         <ol className="list-decimal pl-6 space-y-4">
-          <li><strong>Turn on your TV:</strong> Ensure your Samsung Smart TV is connected to the internet.</li>
-          <li><strong>Open the Smart Hub:</strong> Press the Home button on your remote to access the Smart Hub.</li>
-          <li><strong>Navigate to Apps:</strong> Scroll to the "Apps" icon and select it.</li>
-          <li><strong>Search for Vanto Player:</strong> Use the search icon (magnifying glass) in the top right corner and type "Vanto Player".</li>
-          <li><strong>Download and Install:</strong> Select the Vanto Player app from the search results and click "Install".</li>
-          <li><strong>Launch the App:</strong> Once installed, you can open the app directly or find it on your home screen.</li>
+          <li><strong>Turn on your TV:</strong> Ensure your Samsung Smart TV is connected to your local network via Wi-Fi or Ethernet.</li>
+          <li><strong>Open the Smart Hub:</strong> Press the Home or Smart Hub button on your Samsung remote.</li>
+          <li><strong>Navigate to Apps:</strong> Select the <strong>&quot;Apps&quot;</strong> icon on the home ribbon.</li>
+          <li><strong>Search for Vanto Player:</strong> Click the search magnifying glass icon in the top-right corner and enter &quot;Vanto Player&quot;.</li>
+          <li><strong>Download and Install:</strong> Select the official Vanto Player app tile from the search results and click <strong>&quot;Install&quot;</strong>.</li>
+          <li><strong>Launch the App:</strong> Once installed, launch the application to initiate setup.</li>
         </ol>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Next Steps: Activating and Adding Your Playlist</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Adding Your Playlist</h2>
         <p>
-          After installation, the app will display a unique MAC address and Device Key on the screen. You will need these to activate your device and upload your M3U playlist.
+          When you launch the application for the first time, choose between Xtream Codes API or direct M3U URL entry. Input your provider details or personal file link to begin streaming with hardware decoding.
         </p>
       </div>
       <HowToRelatedLinks />

@@ -1,107 +1,112 @@
-import { CheckCircle2, Play } from 'lucide-react';
+import { Cpu, Layers, Tv, ShieldCheck, Sliders } from 'lucide-react';
 import Image from 'next/image';
 
 export default function FeaturesOverview() {
   const features = [
     {
-      title: "User-Friendly Interface",
-      description: "Modern design for bufferfree media playback"
+      icon: Cpu,
+      title: "Hardware-Accelerated Engine",
+      description: "Optimized video decoding for H.264, H.265 (HEVC), and AV1 up to 4K resolution."
     },
     {
-      title: "Multiple Playlist Formats",
-      description: "It Supports M3U, JSON, and other file formats( Video & Audio)"
+      icon: Layers,
+      title: "Universal Playlist Parsing",
+      description: "Seamless support for M3U, M3U8, and local JSON playlist structures, plus Xtream API authentication."
     },
     {
-      title: "High-Quality Playback",
-      description: "Enjoy smooth streaming with advanced video codecs (HD & 4K)"
+      icon: Tv,
+      title: "Electronic Program Guide (EPG)",
+      description: "Parses XMLTV and provider-supplied EPG data for interactive channel schedules."
     },
     {
-      title: "Multi Cross-Platform Support",
-      description: "Available on Android, iOS, Smart TV's, Windows, macOS, and Web"
+      icon: ShieldCheck,
+      title: "Multi-Platform Uniformity",
+      description: "Identical, intuitive interface whether running on Android TV, Firestick, Linux, or Web."
     },
     {
-      title: "Personalized Experience",
-      description: "Customize settings for an excellent viewing experience"
+      icon: Sliders,
+      title: "Granular Playback Controls",
+      description: "Custom aspect ratios, audio track switching, subtitle offset adjustment, and sleep timers."
     }
   ];
 
   return (
-    <section className="w-full bg-[#f8fafe] py-24">
+    <section id="features" className="w-full bg-[#0a0a0a] py-24 border-t border-white/5 scroll-mt-20">
       <div className="container mx-auto px-6 md:px-8 xl:px-12">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e293b] tracking-wide uppercase mb-4">
-            Vanto Player Features Overview
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            Core Architecture
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+            Engineered for Modern Media Playback
           </h2>
-          <div className="w-16 h-[3px] bg-[#3b82f6] mx-auto rounded-full"></div>
+          <div className="w-16 h-[3px] bg-[#3b82f6] mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
+            Vanto Player provides the playback technology and organization layer; users supply their own media libraries and streaming credentials.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 xl:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
           
           {/* Left Column: Features List */}
-          <div className="flex flex-col gap-8">
-            {features.map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-4 group">
-                <div className="mt-1 shrink-0">
-                  <CheckCircle2 className="w-6 h-6 text-white fill-[#3b82f6] group-hover:scale-110 transition-transform" aria-hidden="true" />
+          <div className="flex flex-col gap-6">
+            {features.map((feature, idx) => {
+              const Icon = feature.icon;
+              return (
+                <div key={idx} className="flex items-start gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all group">
+                  <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 shrink-0 group-hover:scale-105 transition-transform">
+                    <Icon className="w-5 h-5" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-semibold text-lg mb-1 flex items-center gap-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="leading-relaxed">
-                  <h3 className="text-[#334155] font-semibold text-[17px] inline mr-1">{feature.title}</h3>
-                  <span className="text-gray-600 text-[17px]">
-                    – {feature.description}
-                  </span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          {/* Right Column: Image Composition */}
-          <div className="relative w-full h-[450px] md:h-[550px] lg:h-[450px] xl:h-[500px] flex items-center justify-center">
-            
+          {/* Right Column: Screenshot Presentation */}
+          <div className="relative w-full h-[420px] md:h-[500px] flex items-center justify-center">
             {/* Back Image (Landscape) */}
-            <div className="absolute right-0 top-10 w-[85%] h-[80%] rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/20">
+            <div className="absolute right-0 top-6 w-[88%] h-[82%] rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10">
               <Image 
                 src="/screenshots/live-player.png" 
                 alt="Vanto Player High Quality Streaming Interface" 
-                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
+                fill 
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">
-                  <Play className="w-6 h-6 text-black fill-black ml-1" aria-hidden="true" />
-                </div>
-              </div>
-              {/* Fake Video Player Bar */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3">
-                <div className="h-1 bg-white/30 rounded-full flex-1 overflow-hidden">
-                  <div className="h-full bg-white w-1/3 rounded-full"></div>
-                </div>
-                <div className="flex gap-2">
-                   {/* Mock controls icons */}
-                   <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                   <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                   <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white/80 bg-black/60 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/10">
+                <span className="font-semibold">Live Playback Engine</span>
+                <span className="text-blue-400 font-mono">4K UHD • 60 FPS • AAC</span>
               </div>
             </div>
 
-            {/* Front Image (Tilted Portrait) */}
-            <div className="absolute left-0 bottom-4 md:bottom-10 w-[50%] h-[75%] rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] bg-black -rotate-[15deg] border-[6px] border-white transition-transform hover:-rotate-6 duration-300 z-10">
+            {/* Front Image (Overlay) */}
+            <div className="absolute left-0 bottom-4 w-[52%] h-[68%] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] bg-black border-2 border-white/20 z-10 hidden sm:block">
               <Image 
                 src="/screenshots/multiscreen.png" 
-                alt="Vanto Player Mobile Streaming Interface" 
-                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"className="object-cover opacity-90"
+                alt="Vanto Player Multi-Screen Dashboard" 
+                fill 
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer hover:scale-110 transition-transform">
-                  <Play className="w-5 h-5 text-black fill-black ml-1" aria-hidden="true" />
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-3 left-3 text-[11px] text-white font-medium">
+                Multi-View Monitor
               </div>
             </div>
-
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
   );

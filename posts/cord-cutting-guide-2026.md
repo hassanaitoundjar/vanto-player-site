@@ -23,7 +23,7 @@ You no longer need an expensive cable box. Today, your streaming hardware is lik
 
 ## Step 3: Understand M3U and Xtream Codes
 
-To replace live TV, many users turn to IPTV services that provide an **[M3U playlist](/blog/load-m3u-playlist-vanto-player)** or **[[Xtream Codes](/blog/what-is-xtream-codes-api) API](/blog/what-is-xtream-codes-api)** login. These formats allow you to load thousands of channels, movies, and series directly into a media player.
+To replace live TV, many users turn to IPTV services that provide an **[M3U playlist](/blog/load-m3u-playlist-vanto-player)** or **[Xtream Codes API](/blog/what-is-xtream-codes-api)** login. These formats allow you to load thousands of channels, movies, and series directly into a media player.
 
 Remember, you must source these playlists yourself. The player is simply the vehicle that delivers the content.
 

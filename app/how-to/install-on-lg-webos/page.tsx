@@ -4,8 +4,8 @@ import { HowToRelatedLinks } from '@/components/ui/HowToRelatedLinks';
 import { BreadcrumbListLd } from '@/components/seo/JsonLd';
 
 export const metadata = buildMetadata({
-  title: 'How to Install Vanto Player on LG webOS',
-  description: 'Learn how to easily install Vanto Player on your LG webOS Smart TV to enjoy high-quality IPTV streaming without buffering.',
+  title: 'How to Install Vanto Player on LG webOS Smart TV',
+  description: 'Step-by-step tutorial on how to install and set up Vanto Player on LG webOS Smart TVs.',
   path: '/how-to/install-on-lg-webos',
 });
 
@@ -24,21 +24,21 @@ export default function InstallLGWebOS() {
       
       <div className="prose prose-lg prose-invert max-w-none text-gray-300">
         <p>
-          Vanto Player is fully compatible with LG Smart TVs running webOS. Follow this quick guide to get started.
+          Vanto Player provides an optimized 10-foot interface for LG Smart TVs running webOS (version 4.0 and higher). Follow this walkthrough to install the application.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Installation Steps</h2>
         <ol className="list-decimal pl-6 space-y-4">
-          <li><strong>Access the Home Menu:</strong> Press the Home button on your Magic Remote.</li>
-          <li><strong>Open LG Content Store:</strong> Scroll through the menu and select the "LG Content Store" or "Apps" icon.</li>
-          <li><strong>Search:</strong> Click the Search icon (magnifying glass) and type "Vanto Player".</li>
-          <li><strong>Install:</strong> Select the Vanto Player app and click the "Install" button.</li>
-          <li><strong>Launch:</strong> Once the download is complete, click "Launch" to open the player.</li>
+          <li><strong>Access the Home Menu:</strong> Press the Home button on your LG Magic Remote.</li>
+          <li><strong>Open LG Content Store:</strong> Scroll through the launcher bar and select the <strong>LG Content Store</strong> (or <strong>Apps</strong> on webOS 6+).</li>
+          <li><strong>Search:</strong> Click the Search icon (magnifying glass) in the top-right corner and enter &quot;Vanto Player&quot;.</li>
+          <li><strong>Install:</strong> Select the official Vanto Player application tile and click the <strong>Install</strong> button.</li>
+          <li><strong>Launch:</strong> Once the download finishes, click <strong>Launch</strong> to start the player.</li>
         </ol>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">What's Next?</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Initial Device Configuration</h2>
         <p>
-          When you first launch the app, you'll see your device's MAC address and Device Key. Make a note of these details. You can now proceed to upload your M3U playlist via the app's playlist manager.
+          When you launch the app for the first time, your TV&apos;s unique hardware MAC address will be displayed on the screen. Select your preferred login method (Xtream Codes API or M3U URL) and input your credentials to load your channels and media library.
         </p>
       </div>
       <HowToRelatedLinks />

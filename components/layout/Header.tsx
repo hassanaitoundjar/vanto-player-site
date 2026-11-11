@@ -17,10 +17,11 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "/download", text: "DOWNLOADS" },
-    { href: "/blog", text: "HOW TO TUTORIALS" },
+    { href: "/#features", text: "FEATURES" },
+    { href: "/download", text: "DOWNLOAD" },
+    { href: "/blog", text: "KNOWLEDGE BASE" },
+    { href: "/about", text: "ABOUT" },
     { href: "/support", text: "SUPPORT" },
-    { href: "/legal", text: "LEGAL TERMS" },
     { href: "/contact", text: "CONTACT" },
   ];
 
@@ -50,7 +51,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             <nav className="flex items-center gap-6 xl:gap-8">
-              {navLinks.filter(link => link.text !== "DOWNLOADS").map((link) => (
+              {navLinks.filter(link => link.href !== "/download").map((link) => (
                 <NavLink key={link.text} href={link.href} text={link.text} />
               ))}
             </nav>
