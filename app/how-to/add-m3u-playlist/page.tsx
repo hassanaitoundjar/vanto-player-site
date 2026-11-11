@@ -43,15 +43,15 @@ export default function AddPlaylist() {
             <strong>Enter Playlist Details:</strong>
             <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
               <li><strong>Any Name:</strong> Give it a recognizable name (e.g., &quot;My Live TV&quot;).</li>
-              <li><strong>Xtream Codes:</strong> Enter your Username, Password, and the Server URL provided by your IPTV service.</li>
-              <li><strong>M3U URL:</strong> If you selected M3U, paste the full <code>.m3u</code> link provided by your IPTV service.</li>
+              <li><strong>Xtream Codes:</strong> Enter your Username, Password, and the Server URL provided by your media provider or personal server.</li>
+              <li><strong>M3U URL:</strong> If you selected M3U, paste the full <code>.m3u</code> link of your legally accessible playlist.</li>
             </ul>
             <div className="mt-4 mb-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/logi-m3u-screen.png" alt="Adding an M3U playlist via Vanto Player login screen" width={1200} height={675} className="w-full object-cover" />
             </div>
           </li>
           <li>
-            <strong>Add User:</strong> Click the &quot;Add User&quot; or &quot;Login&quot; button. Vanto Player will instantly download and categorize your channels, movies, and series!
+            <strong>Add User:</strong> Click the &quot;Add User&quot; or &quot;Login&quot; button. Vanto Player will parse and organize your playlists into clear categories!
             <div className="mt-4 overflow-hidden rounded-xl border border-gray-700/50 shadow-2xl">
                <Image src="/screenshots/home-screen.png" alt="Vanto Player Home Screen after syncing playlist" width={1200} height={675} className="w-full object-cover" />
             </div>

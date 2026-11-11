@@ -15,7 +15,7 @@ If you have just downloaded Vanto Player and are stuck on the initial screen, yo
 
 ## Step 1: Launch the Application
 
-When you launch Vanto Player for the first time on any new device (such as an Amazon [Firestick](/blog/install-vanto-player-firestick), LG [Smart TV](/blog/install-vanto-player-smart-tv), or Android phone), you will be greeted by the login screen. 
+When you launch Vanto Player for the first time on any new device (such as an Amazon [Fire TV device](/how-to/install-on-firestick-android-tv), LG [Smart TV](/how-to/install-on-lg-webos), Samsung [Smart TV](/how-to/install-on-samsung-smart-tv), or Android device), you will be greeted by the login screen. 
 
 ![Vanto Player Login Options](/screenshots/welcome-screen.png)
 

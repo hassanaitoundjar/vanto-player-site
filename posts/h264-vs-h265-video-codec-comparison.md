@@ -79,7 +79,7 @@ To achieve an identical perceptual quality score (measured via **VMAF - Video Mu
 | **4K UHD @ 30 FPS (Movies)** | 24.0 Mbps | 12.0 Mbps | **50%** |
 | **4K UHD @ 60 FPS (HDR Sports)** | 35.0 Mbps | 16.0 Mbps | **54%** |
 
-For households streaming multiple video feeds simultaneously, this bandwidth delta is the difference between smooth, buffer-free playback and constant network congestion.
+For households streaming multiple video feeds simultaneously, this bandwidth delta is the difference between smooth, uninterrupted playback and constant network congestion.
 
 ---
 

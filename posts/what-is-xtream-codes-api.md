@@ -19,7 +19,7 @@ An M3U (MP3 URL) is a computer file format that stores multimedia playlists. In 
 * Very easy to edit manually if you want to remove specific channels using an M3U editor.
 
 **Cons of M3U:**
-* The links are extremely long and tedious to type into a [Smart TV](/blog/install-vanto-player-smart-tv) using a remote.
+* The links are extremely long and tedious to type into a Smart TV using a remote.
 * Updating the [Electronic Program Guide](/blog/understanding-epg-electronic-program-guide) (EPG) usually requires a separate XMLTV link.
 
 ## What is Xtream Codes API?

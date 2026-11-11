@@ -15,8 +15,12 @@ interface AdBannerProps {
   className?: string;
 }
 
-// Disallow ads on policy, legal, utility, and error pages per Google AdSense Publisher Policies
+// Disallow ads on policy, legal, utility, transactional, and download pages per Google AdSense Publisher Policies
 const DISALLOWED_ROUTES = [
+  '/',
+  '/download',
+  '/pricing',
+  '/features',
   '/privacy',
   '/terms',
   '/refund',

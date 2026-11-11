@@ -31,7 +31,7 @@ Before you can set up the guide, you need the data. You have two main options:
 Adding an EPG is handled through the same centralized dashboard you use to manage your playlists.
 
 1. Open the Vanto Player app and go to the playlist manager.
-2. Log in using your TV or mobile device's **[MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address** and **Device Key**.
+2. Log in using your TV or mobile device's **MAC Address** and **Device Key**.
 3. Locate the playlist you have already added (or add a new one).
 4. Look for the field labeled **EPG URL** or **XMLTV Link**.
 5. Paste your EPG link exactly as provided.
@@ -41,7 +41,7 @@ Adding an EPG is handled through the same centralized dashboard you use to manag
 
 Once the EPG URL is saved to your profile on the web portal, you need to tell your Vanto Player app to download the new schedule data.
 
-1. Open Vanto Player on your [Smart TV](/blog/install-vanto-player-smart-tv), [Firestick](/blog/install-vanto-player-firestick), or computer.
+1. Open Vanto Player on your [Samsung Smart TV](/how-to/install-on-samsung-smart-tv), [LG Smart TV](/how-to/install-on-lg-webos), or [Firestick & Android TV](/how-to/install-on-firestick-android-tv).
 2. The app may automatically detect the change and begin downloading the guide data on startup.
 3. If it does not, navigate to the **Settings** or **Playlist** menu inside the app.
 4. Select the option to **Refresh EPG** or **Force Sync**. 

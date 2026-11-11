@@ -32,7 +32,7 @@ Your EPG data is usually provided directly by your playlist provider. It is deli
 It is incredibly frustrating when you open your app and see "No Information Available" across your TV guide. Here is how to fix it:
 
 * **Force Sync:** In your app settings, look for an option to "Refresh EPG" or "Update Playlist." 
-* **Check the Timezone:** EPG data relies heavily on server time. Ensure your [Smart TV](/blog/install-vanto-player-smart-tv) or Android device is set to the correct local timezone.
+* **Check the Timezone:** EPG data relies heavily on server time. Ensure your Smart TV or Android device is set to the correct local timezone.
 * **Provider Outage:** Sometimes, the provider's EPG server goes down. If this happens, you simply have to wait for them to fix it on their end.
 
 ## Vanto Player and EPG Integration

@@ -5,7 +5,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/siteConfig";
 import { OrganizationLd } from "@/components/seo/JsonLd";
-import AdBanner from "@/components/ads/AdBanner";
 import CookieConsent from "@/components/ui/CookieConsent";
 import Script from "next/script";
 
@@ -68,7 +67,6 @@ export default function RootLayout({
         <main id="main-content" className="flex-1 flex flex-col">
           {children}
         </main>
-        <AdBanner />
         <Footer />
         <CookieConsent />
       </body>

@@ -32,7 +32,7 @@ Latency measures how long it takes for a packet of data to travel from your prov
 
 ## Wi-Fi vs. Ethernet: The Ultimate Bottleneck
 
-You could pay your ISP for the fastest internet in the world, but if your [Smart TV](/blog/install-vanto-player-smart-tv) is connected via a weak Wi-Fi signal, it doesn't matter.
+You could pay your ISP for the fastest internet in the world, but if your Smart TV is connected via a weak Wi-Fi signal, it doesn't matter.
 
 Wi-Fi is susceptible to packet loss and interference from walls, microwaves, and neighboring routers. For stable 4K streaming, **you must hardwire your device using a Cat6 Ethernet cable.** Ethernet provides a dedicated, interference-free pipeline for heavy video data.
 

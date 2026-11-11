@@ -7,7 +7,7 @@ author: "Vanto Player Team"
 ---
 # Fixing "Playlist Not Working" and Buffering Issues in Vanto Player
 
-Vanto Player is engineered to provide lightning-fast, buffer-free playback. However, media streaming is a complex chain involving your app, your device, your internet service provider (ISP), and the server hosting your playlist. 
+Vanto Player is engineered to provide high-performance, hardware-accelerated playback. However, media streaming is a complex chain involving your app, your device, your internet service provider (ISP), and the server hosting your playlist. 
 
 If you encounter a "Playlist Not Working" error or experience constant [buffering](/blog/how-to-avoid-iptv-buffering-2026), the issue rarely lies with the player itself. Follow this comprehensive troubleshooting guide to pinpoint and resolve the problem.
 
@@ -27,13 +27,13 @@ If Vanto Player displays an error that your playlist cannot be loaded or is empt
 If your playlist loads but streams constantly pause or stutter, you are experiencing buffering. Here is how to fix it:
 
 ### Optimize Your Local Network
-Wi-Fi signals can be unstable, especially when streaming 4K video. If your [Smart TV](/blog/install-vanto-player-smart-tv) or Android box is far from the router, signal degradation will cause buffering.
+Wi-Fi signals can be unstable, especially when streaming 4K video. If your [Smart TV](/how-to/install-on-samsung-smart-tv) or Android box is far from the router, signal degradation will cause buffering.
 * **Use Ethernet:** Whenever possible, connect your streaming device directly to your router using an Ethernet cable.
 * **Switch to 5GHz Wi-Fi:** If you must use Wi-Fi, ensure your device is connected to the 5GHz band, which offers significantly faster speeds than 2.4GHz.
 
 ### Clear the App Cache
 Over time, temporary files can bog down your device's memory.
-1. Go to your device's **Settings** (e.g., on Android TV or [Firestick](/blog/install-vanto-player-firestick)).
+1. Go to your device's **Settings** (e.g., on Android TV or [Fire TV](/how-to/install-on-firestick-android-tv)).
 2. Navigate to **Applications** > **Manage Installed Applications**.
 3. Select **Vanto Player**.
 4. Click **Clear Cache** (Do NOT click Clear Data, as this will erase your playlist logins).

@@ -19,7 +19,7 @@ IPTV is different. Instead of broadcasting everything at once, IPTV services sto
 Here's a breakdown of the process:
 1. **Content Preparation**: Live TV signals or pre-recorded videos (VOD) are digitized and compressed (usually into MPEG4 format) so they can be streamed efficiently.
 2. **Delivery**: The content is sent over your internet connection using IP (Internet Protocol). 
-3. **Playback**: Your device (whether it's a [Smart TV](/blog/install-vanto-player-smart-tv), a smartphone, or a computer running a media player like Vanto Player) receives the data packets, decodes them, and plays the video on your screen.
+3. **Playback**: Your device (whether it's a Smart TV, a smartphone, or a computer running a media player like Vanto Player) receives the data packets, decodes them, and plays the video on your screen.
 
 ## Types of IPTV Services
 
@@ -34,13 +34,13 @@ There are three main types of IPTV services:
 
 - **Flexibility**: Watch what you want, when you want. You are no longer bound by traditional broadcasting schedules.
 - **Multi-Device Support**: With players like Vanto Player, you can access your IPTV subscriptions on almost any device.
-- **Cost-Effective**: Generally, IPTV services offer more channels for a fraction of the cost of traditional cable packages.
+- **Modern IP Delivery:** Digital media streaming over IP networks offers efficient bandwidth utilization, allowing broadcast networks and authorized streaming platforms to deliver interactive features like time-shifting and multiple audio tracks.
 
 ## How to Get Started with IPTV
 
 To start using IPTV, you need three things:
 1. A stable internet connection (preferably 10Mbps or higher for HD streaming).
-2. A subscription to an IPTV provider who provides you with an [M3U playlist](/blog/load-m3u-playlist-vanto-player) or [Xtream Codes](/blog/what-is-xtream-codes-api).
-3. A reliable media player, such as **Vanto Player**, to decode and display the content beautifully on your screen.
+2. An authorized media service or personal streaming server that provides you with an [M3U playlist](/blog/load-m3u-playlist-vanto-player) or [Xtream Codes API](/blog/what-is-xtream-codes-api) connection.
+3. A reliable media player, such as **Vanto Player**, to decode and display the content on your screen.
 
-*Disclaimer: Vanto Player is a media player only and does not provide any content or subscriptions. You must provide your own playlists.*
+*Disclaimer: Vanto Player is an independent media player software application. It does not provide, host, or sell any content, subscriptions, or channels. You must supply your own legally accessible playlists.*

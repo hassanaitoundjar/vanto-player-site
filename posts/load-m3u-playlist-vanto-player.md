@@ -9,7 +9,7 @@ author: "Vanto Player Team"
 
 You've successfully downloaded Vanto Player, but when you open the app, the screen is empty. Don't worry—this is exactly how it is supposed to work! Vanto Player is a premium, blank-canvas media player. To start watching, you need to load your own M3U or [JSON playlist](/blog/m3u-vs-json-playlist-formats).
 
-This guide will show you how to securely upload your playlist via the web portal and sync it directly to your device, whether you are using Android, iOS, [Windows](/blog/vanto-player-mac-windows-web-browser), [macOS](/blog/vanto-player-mac-windows-web-browser), or a [Smart TV](/blog/install-vanto-player-smart-tv).
+This guide will show you how to enter your playlist credentials and sync them directly on your device, whether you are using Android TV, Amazon Fire TV, Smart TVs (Tizen/webOS), Linux, or our Web Browser Player.
 
 *Disclaimer: Vanto Player is a software application only. It does not host, provide, or sell any media content, channels, or subscriptions. Users are solely responsible for the content they upload.*
 

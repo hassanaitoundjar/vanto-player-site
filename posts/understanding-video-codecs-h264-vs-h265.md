@@ -16,7 +16,7 @@ In the streaming world, the two most prominent codecs are **H.264 (AVC)** and **
 
 **Pros of H.264:**
 * **Universal Compatibility:** Virtually every digital device manufactured in the last 15 years can easily decode H.264 video.
-* **Low Hardware Demand:** It requires very little processing power to decode, meaning it runs smoothly on older, budget [Smart TVs](/blog/install-vanto-player-smart-tv) and legacy Android boxes.
+* **Low Hardware Demand:** It requires very little processing power to decode, meaning it runs smoothly on older, budget Smart TVs and legacy Android boxes.
 
 **Cons of H.264:**
 * **Inefficient for 4K:** H.264 files are large. Streaming a 4K video using H.264 requires massive amounts of internet bandwidth (often 30+ Mbps), which can lead to [buffering](/blog/how-to-avoid-iptv-buffering-2026) for users with slower connections.
@@ -38,4 +38,4 @@ As IPTV providers increasingly switch to H.265 to save server bandwidth and prov
 
 If you use a generic, legacy IPTV app, it will attempt to decode the complex H.265 video using software rendering (forcing the CPU to do the math). The result? Unbearable lag.
 
-[**Vanto Player**](/download) is engineered specifically for the H.265/HEVC era. Our application communicates directly with the dedicated video decoders embedded in modern Smart TVs, Apple TVs, and Android hardware. By offloading the H.265 workload to the GPU via **Hardware Acceleration**, Vanto Player delivers perfectly smooth, buffer-free 4K playback, allowing you to enjoy the bandwidth-saving benefits of HEVC without the hardware lag.
+[**Vanto Player**](/download) is engineered specifically for the H.265/HEVC era. Our application communicates directly with the dedicated video decoders embedded in modern Smart TVs, Fire TV, and Android hardware. By offloading the H.265 workload to the GPU via **Hardware Acceleration**, Vanto Player delivers smooth 4K playback, allowing you to enjoy the bandwidth-saving benefits of HEVC without the hardware lag.

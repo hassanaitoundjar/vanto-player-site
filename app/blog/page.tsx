@@ -3,6 +3,7 @@ import { BookOpen, Terminal } from 'lucide-react';
 import { buildMetadata } from '@/lib/siteConfig';
 import BlogIndexClient from '@/components/blog/BlogIndexClient';
 import { BreadcrumbListLd } from '@/components/seo/JsonLd';
+import AdBanner from '@/components/ads/AdBanner';
 
 export const metadata = buildMetadata({
   title: 'Media Playback Engineering & Knowledge Center',
@@ -57,6 +58,7 @@ export default function BlogIndexPage() {
       <section className="w-full px-6 md:px-8 xl:px-12 py-12">
         <div className="container mx-auto max-w-6xl">
           <BlogIndexClient initialPosts={posts} categories={categories} />
+          <AdBanner slot="8715827832" format="horizontal" className="mt-12" />
         </div>
       </section>
     </div>

@@ -50,7 +50,7 @@ Regardless of which format you use, getting it into Vanto Player is easy.
 
 1. Locate your M3U URL or JSON link.
 2. Open the Vanto Player playlist manager.
-3. Log in using your Device [MAC](/blog/vanto-player-mac-[windows](/blog/vanto-player-mac-windows-web-browser)-web-browser) Address and Device Key.
+3. Log in using your Device MAC Address and Device Key.
 4. Paste the URL into the "Add Playlist" section.
 5. Save, and open Vanto Player on your device to sync the content.
 
